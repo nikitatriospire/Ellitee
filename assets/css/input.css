@@ -1,0 +1,235 @@
+@import "tailwindcss";
+
+/* ---------------------------
+   ✅ Add @font-face Here
+---------------------------- */
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Light.woff2") format("woff2"),
+    url("../fonts/Poppins-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"),
+    url("../fonts/Poppins-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2"),
+    url("../fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("../fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2"),
+    url("../fonts/Poppins-Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@theme {
+  --spacing: 1px;
+  --spacing-space: clamp(3.125rem, 2.2416rem + 4.417vw, 6.25rem);
+
+  --breakpoint-*: initial;
+
+  --breakpoint-xsm: 450px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-1xl: 1440px;
+  --breakpoint-xxl: 1670px;
+
+  --container-*: initial;
+
+  --container-xsm: 450px;
+  --container-sm: 576px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1200px;
+  --container-1xl: 1440px;
+  --container-xxl: 1670px;
+
+  --font-poppins: "Poppins";
+
+  /* h1: 74px desktop → ~42px mobile */
+  --text-h1: clamp(42px, 6vw, 74px);
+  --text-h1--line-height: 1.1;
+  --text-h1--letter-spacing: 0;
+  --text-h1--font-weight: 700;
+
+  /* h2: 46px desktop → ~30px mobile */
+  --text-h2: clamp(30px, 3.5vw, 46px);
+  --text-h2--line-height: 1.2;
+  --text-h2--font-weight: 700;
+
+  /* h2_64: 64px desktop → ~36px mobile */
+  --text-h2_64: clamp(36px, 5vw, 64px);
+  --text-h2_64--line-height: 1.15;
+  --text-h2_64--font-weight: 700;
+
+  /* h3: 24px desktop → ~18px mobile */
+  --text-h3: clamp(18px, 3.6vw, 24px);
+  --text-h3--line-height: 1.3;
+  --text-h3--font-weight: 600;
+
+  /* t_20: 20px desktop → ~16px mobile */
+  --text-t_20: clamp(16px, 1.2vw, 20px);
+  --text-t_20--line-height: 1.4;
+  --text-t_20--font-weight: 500;
+
+  /* body: 18px desktop → ~15px mobile */
+  --text-body: clamp(16px, 1vw, 18px);
+  --text-body--line-height: 1.6;
+  --text-body--font-weight: 400;
+
+  --color-bg_white: #ffffff;
+  --color-bg_light: #fff0eb;
+  --color-dark: #000000;
+  --color-dark1: #06060c;
+  --color-grey: #6a6a6a;
+  --color-grey1: #3f434a;
+  --color-grey_light: #f9f9f9;
+  --color-button-bg: #0e0e0e;
+  --color-button-text: #f5f5f5;
+  --shadow-custom_shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    @apply mx-auto px-16;
+  }
+  body {
+    @apply font-poppins text-body font-medium;
+  }
+  button,
+  a {
+    @apply cursor-pointer;
+  }
+  nav ul li a {
+    @apply relative block text-dark capitalize text-h3 lg:text-[16px] font-medium
+  before:content-[''] before:w-0 before:h-0.5 before:bg-button-bg before:absolute before:left-0 before:-bottom-4 before:opacity-0 before:invisible before:transition-all before:duration-500 before:ease-in-out
+  hover:before:w-full hover:before:visible hover:before:opacity-100
+  focus:outline-none focus:before:w-full focus:before:visible focus:before:opacity-100 focus:ring-0
+  active:text-button-bg active:before:w-full active:before:opacity-100;
+  }
+
+  .btn-dark {
+    @apply relative inline-block overflow-hidden bg-button-bg text-button-text py-12 px-24 font-medium transition-colors duration-500 hover:bg-dark;
+
+    @apply before:content-[''] before:absolute before:inset-0 before:bg-linear-to-r before:from-white/30 before:to-transparent;
+
+    @apply before:-translate-x-[140%] before:opacity-0;
+
+    @apply before:transition-all before:duration-700 before:ease-linear;
+
+    @apply hover:before:translate-x-[140%] hover:before:opacity-100 active:before:translate-x-[140%] active:before:opacity-100 focus:before:translate-x-[140%] focus:before:opacity-100;
+  }
+
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    @apply bg-dark!;
+  }
+  .swiper-pagination-bullet{
+    @apply w-12! h-12! sm:w-16! sm:h-16! mx-6! md:mx-10!
+  }
+  ul.listing-item {
+    @apply mt-16;
+  }
+
+  ul.listing-item  {
+    @apply relative pl-24 before:content-[''] before:w-8 before:h-8 before:bg-grey before:absolute before:left-7 before:top-10 before:rounded-full;
+  }
+}
+
+/* Hide browser default checkbox */
+.custom-checkbox {
+  display: none;
+}
+
+/* Fake checkbox UI box */
+.checkbox-box {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #9ca3af; /* gray-400 */
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1;
+  color: transparent;
+  background-color: transparent;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+/* Show tick only when checked */
+.custom-checkbox:checked + .checkbox-box {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.theme-btn {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #000; /* black thumb */
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 11;
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-thumb {
+  background: #000;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+/* Remove blue focus outline */
+input[type="range"]:focus {
+  outline: none;
+}

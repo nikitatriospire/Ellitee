@@ -1,0 +1,1248 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Ellitee - Shop Skincare by Category: Filters for Skin Type & Concerns</title>
+        <!-- SEO Meta -->
+        <meta name="description" content="Experience scientifically tested skincare solutions that protect and rejuvenate your skin with proven, safe, and effective ingredients.">
+        <meta name="keywords" content="skincare, scientifically tested, beauty, rejuvenation, ellitee, safe ingredients">
+        <meta name="author" content="Ellitee">
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="./assets/css/output.css">
+        <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="sticky top-0 left-0 w-full bg-white border-y border-gray-200 py-34 z-100">
+            <div class="container">
+                <div class="flex items-center justify-between py-4 gap-4">
+                    <!-- Logo -->
+                    <a href="/index.html" aria-label="Go to homepage" class="relative z-100">
+                        <img src="./assets/images/company-logo.svg" alt="Ellitee logo">
+                    </a>
+                    <!-- Navigation -->
+                    <nav id="menu" class="flex-1 flex justify-start lg:justify-center items-start lg:items-center fixed lg:static top-0 left-0 w-full lg:w-auto h-0 lg:h-auto bg-white lg:bg-transparent transition-all duration-300 z-40 overflow-hidden lg:overflow-visible" aria-label="Main navigation">
+                        <ul id="menuList" class="w-full lg:w-auto pt-180 lg:pt-0 flex flex-col lg:flex-row gap-24 lg:gap-32 xl:gap-54 justify-center items-center
+             opacity-0 -translate-y-2 pointer-events-none lg:opacity-100 lg:pointer-events-auto lg:translate-y-0
+             transition-all duration-300">
+                            <li>
+                                <a href="#" aria-current="page">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Learn about us">About us</a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Explore our areas of expertise">Our Expertise</a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Read client testimonials">Testimonials</a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Frequently asked questions">FAQ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="flex justify-center items-center gap-8">
+                        <!-- Contact Desktop Button -->
+                        <a href="tel:+918150096500" class="hidden sm:block btn-dark relative z-100" aria-label="Contact Ellitee team">
+                            Contact Us
+                        </a>
+                        <!-- Contact Mobile Button -->
+                        <a href="tel:+918150096500" class="btn-dark relative z-100 p-12 h-52 sm:hidden flex justify-center items-center" aria-label="Contact Ellitee team">
+                            <img src="./assets/images/call-white.svg" alt=" call icon" class="w-24 h-24">
+                        </a>
+                        <!-- Mobile Hamburger -->
+                        <button
+                            id="menuBtn"
+                            class="lg:hidden flex flex-col gap-6 focus:outline-none w-48 h-48 justify-center items-center relative z-100"
+                            aria-label="Toggle mobile menu"
+                            aria-expanded="false"
+                            aria-controls="menu"
+                        >
+                            <span class="bar w-32 h-2 bg-black rounded transition-all duration-300"></span>
+                            <span class="bar w-32 h-2 bg-black rounded transition-all duration-300"></span>
+                            <span class="bar w-32 h-2 bg-black rounded transition-all duration-300"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- Hero Section -->
+            <section class="relative py-80 md:py-194 w-full h-full" role="banner" aria-label="Hero section for skincare category page">
+                <img
+                    src="./assets/images/category_hero.webp"
+                    srcset="
+        ./assets/images/category_hero.webp 480w,
+        ./assets/images/category_hero.webp 768w,
+        ./assets/images/category_hero.webp 1024w,
+        ./assets/images/category_hero.webp 1440w,
+        ./assets/images/category_hero.webp 1920w
+    "
+                    sizes="100vw"
+                    alt="Hero image depicting moisture and long-lasting hydration for skincare products"
+                    role="img"
+                    class="absolute top-0 left-0 object-cover size-full -z-10"
+                    fetchpriority="high"
+                    decoding="async"
+                    loading="eager"
+                >
+                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10" aria-hidden="true"></div>
+                <div class="container">
+                    <div class="flex flex-col gap-16 sm:justify-end sm:items-end relative z-40">
+                        <span class="block text-[clamp(28px,1.5vw,40px)] text-button-bg">Moisture That Lasts</span>
+                        <h1 class="text-h2.64 font-light text-button-bg">
+                            <span class="font-bold"> Moisture</span>
+                            That Lasts
+                        </h1>
+                        <span class="block text-h3 font-normal text-[#171717]">For soft, supple & protected hands</span>
+                    </div>
+                </div>
+            </section>
+            <!-- Hero Setion End-->
+            <!-- product section (Section-2) -->
+            <section class="pt-30 md:pt-60 xl:pt-100" aria-label="Skincare products section with filters and product grid">
+                <div class="container">
+                    <div class="flex flex-col gap-32 lg:gap-54">
+                        <div class="heading space-y-24">
+                            <h2 class="text-h2 font-light text-center">
+                                <span class="font-bold"> Skincare</span>
+                                Made Simple
+                            </h2>
+                            <div class="space-y-24 text-grey font-normal leading-relaxed text-center">
+                                <p>
+                                    Discover a wide range of skincare essentials designed to match your skin type, target specific concerns, and help you achieve your goals
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-32 lg:flex-row flex-col justify-start items-start">
+                            <!-- Mobile Filter Button -->
+                            <button id="filterToggleBtn" class="lg:hidden w-full px-24 py-16 bg-grey_light text-dark text-body font-medium shadow-md">
+                                Filter & Sort
+                            </button>
+                            <div
+                                id="mobileFilterPanel"
+                                class="lg:w-3/12 pt-100 lg:pt-28 pb-28 px-28 space-y-32 bg-grey_light shadow-sm 
+           fixed lg:sticky top-0 left-0 w-full h-screen lg:h-full overflow-y-auto lg:overflow-y-hidden
+           translate-x-full lg:translate-x-0 transition-transform duration-300 z-200 lg:z-10"
+                                role="complementary"
+                                aria-label="Product filters sidebar"
+                            >
+                                <!-- Close Button -->
+                                <button id="filterCloseBtn" class="lg:hidden absolute top-32 right-32 z-50">
+                                    <img src="./assets/images/close-icon.svg" alt="Close filter" class="w-24 h-24">
+                                </button>
+                                <!-- Sort By -->
+                                <div>
+                                    <label for="sortBy" class="block text-t_20 font-normal mb-16">Sort By:</label>
+                                    <div class="relative w-fit">
+                                        <select id="sortBy" name="sortBy" class="w-ful border border-solid border-grey px-24 py-12 appearance-none font-normal">
+                                            <option value="popular">Popular</option>
+                                            <option value="low-high">Price: Low to High</option>
+                                            <option value="high-low">Price: High to Low</option>
+                                            <option value="newest">Newest First</option>
+                                        </select>
+                                        <span class="absolute right-24 top-1/2 -translate-y-1/2 text-gray-500">▼</span>
+                                    </div>
+                                </div>
+                                <!-- Product Type -->
+                                <div>
+                                    <h3 class="accordion-titles  text-t_20 font-normal mb-16 flex justify-between items-center">Product Type:
+                                        <img src="./assets/images/rightarrow.svg" alt="" class="rightarrow w-18 transition-all duration-300 lg:hidden">
+                                    </h3>
+                                    <div class="accordion-contents space-y-12 hidden lg:block">
+                                        <!-- Cleanser -->
+                                        <label for="cleanser" class="flex items-center gap-12 cursor-pointer group">
+                                            <input
+                                                id="cleanser"
+                                                name="product_type[]"
+                                                value="cleanser"
+                                                type="checkbox"
+                                                class="custom-checkbox peer"
+                                            >
+                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                            <span class="text-grey peer-checked:text-black text-base font-normal">Cleanser</span>
+                                        </label>
+                                        <!-- Toner -->
+                                        <label for="toner" class="flex items-center gap-12 cursor-pointer group">
+                                            <input
+                                                id="toner"
+                                                name="product_type[]"
+                                                value="toner"
+                                                type="checkbox"
+                                                class="custom-checkbox peer"
+                                            >
+                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                            <span class="text-grey peer-checked:text-black text-base font-normal">Toner</span>
+                                        </label>
+                                        <!-- Moisturizer -->
+                                        <label for="moisturizer" class="flex items-center gap-12 cursor-pointer">
+                                            <input
+                                                id="moisturizer"
+                                                name="product_type[]"
+                                                value="moisturizer"
+                                                type="checkbox"
+                                                class="custom-checkbox peer"
+                                            >
+                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                            <span class="text-grey peer-checked:text-black text-base font-normal">Moisturizer</span>
+                                        </label>
+                                        <!-- Sunscreen -->
+                                        <label for="sunscreen" class="flex items-center gap-12 cursor-pointer">
+                                            <input
+                                                id="sunscreen"
+                                                name="product_type[]"
+                                                value="sunscreen"
+                                                type="checkbox"
+                                                class="custom-checkbox peer"
+                                            >
+                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                            <span class="text-grey peer-checked:text-black text-base font-normal">Sunscreen</span>
+                                        </label>
+                                        <!-- Serum -->
+                                        <label for="serum" class="flex items-center gap-12 cursor-pointer">
+                                            <input
+                                                id="serum"
+                                                name="product_type[]"
+                                                value="serum"
+                                                type="checkbox"
+                                                class="custom-checkbox peer"
+                                            >
+                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                            <span class="text-grey peer-checked:text-black text-base font-normal">Serum</span>
+                                        </label>
+                                        <!-- Exfoliator -->
+                                        <label for="exfoliator" class="flex items-center gap-12 cursor-pointer">
+                                            <input
+                                                id="exfoliator"
+                                                name="product_type[]"
+                                                value="exfoliator"
+                                                type="checkbox"
+                                                class="custom-checkbox peer"
+                                            >
+                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                            <span class="text-grey peer-checked:text-black text-base font-normal">Exfoliator</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- Price -->
+                                <div class="w-full lg:max-w-sm space-y-16">
+                                    <h3 class="accordion-titles  text-t_20 font-normal mb-8 flex justify-between items-center">Price:
+                                        <img src="./assets/images/rightarrow.svg" alt="" class="rightarrow w-18 transition-all duration-300 lg:hidden">
+                                    </h3>
+                                    <div class="accordion-contents  items-center gap-16 hidden lg:flex">
+                                        <!-- Min Input -->
+                                        <div class="relative w-fit px-24 py-12 border-2 border-solid border-grey flex justify-center items-center gap-10">
+                                            <span class="text-gray-600">₹</span>
+                                            <input
+                                                id="minInput"
+                                                name="min_price"
+                                                type="number"
+                                                value="0"
+                                                class="w-full focus:outline-none"
+                                            >
+                                        </div>
+                                        <span class="text-base">to</span>
+                                        <!-- Max Input -->
+                                        <div class="relative w-fit px-24 py-12 border-2 border-solid border-grey flex justify-center items-center gap-10">
+                                            <span class="text-gray-600">₹</span>
+                                            <input
+                                                id="maxInput"
+                                                name="max_price"
+                                                type="number"
+                                                value="786"
+                                                class="w-full focus:outline-none"
+                                            >
+                                        </div>
+                                    </div>
+                                    <!-- Range Slider -->
+                                    <div class="relative h-6 mt-4 max-w-sm lg:w-auto">
+                                        <input
+                                            id="minRange"
+                                            name="min_range"
+                                            type="range"
+                                            aria-label="Minimum range value"
+                                            min="0"
+                                            max="786"
+                                            value="0"
+                                            class="absolute inset-0 w-full appearance-none bg-transparent pointer-events-auto"
+                                        >
+                                        <input
+                                            id="maxRange"
+                                            name="max_range"
+                                            type="range"
+                                            aria-label="Maximum range value"
+                                            min="0"
+                                            max="786"
+                                            value="786"
+                                            class="absolute inset-0 w-full appearance-none bg-transparent pointer-events-auto"
+                                        >
+                                        <div class="absolute top-1/2 -translate-y-1/2 w-full h-1 bg-gray-300 rounded-full -z-20"></div>
+                                        <div id="activeTrack" class="absolute top-1/2 -translate-y-1/2 h-2 bg-black rounded-full"></div>
+                                    </div>
+                                </div>
+                                <!-- Skin Type -->
+                                <div>
+                                    <h3 class="accordion-titles text-t_20 font-normal mb-16 flex justify-between items-center">Skin Type:
+                                        <img src="./assets/images/rightarrow.svg" alt="" class="rightarrow w-18 transition-all duration-300 lg:hidden">
+                                    </h3>
+                                    <div class="accordion-contents space-y-12 hidden lg:block">
+                                        <label for="oily" class="flex items-center gap-12 cursor-pointer group">
+                                            <input
+                                                id="oily"
+                                                name="skin_type[]"
+                                                value="oily"
+                                                type="checkbox"
+                                                class="custom-checkbox peer"
+                                            >
+                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                            <span class="text-grey peer-checked:text-black text-base font-normal">Oily</span>
+                                        </label>
+                                        <label for="dry" class="flex items-center gap-12 cursor-pointer group">
+                                            <input
+                                                id="dry"
+                                                name="skin_type[]"
+                                                value="dry"
+                                                type="checkbox"
+                                                class="custom-checkbox peer"
+                                            >
+                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                            <span class="text-grey peer-checked:text-black text-base font-normal">Dry</span>
+                                        </label>
+                                        <label for="combination" class="flex items-center gap-12 cursor-pointer">
+                                            <input
+                                                id="combination"
+                                                name="skin_type[]"
+                                                value="combination"
+                                                type="checkbox"
+                                                class="custom-checkbox peer"
+                                            >
+                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                            <span class="text-grey peer-checked:text-black text-base font-normal">Combination</span>
+                                        </label>
+                                        <label for="sensitive" class="flex items-center gap-12 cursor-pointer">
+                                            <input
+                                                id="sensitive"
+                                                name="skin_type[]"
+                                                value="sensitive"
+                                                type="checkbox"
+                                                class="custom-checkbox peer"
+                                            >
+                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                            <span class="text-grey peer-checked:text-black text-base font-normal">Sensitive</span>
+                                        </label>
+                                        <label for="normal" class="flex items-center gap-12 cursor-pointer">
+                                            <input
+                                                id="normal"
+                                                name="skin_type[]"
+                                                value="normal"
+                                                type="checkbox"
+                                                class="custom-checkbox peer"
+                                            >
+                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                            <span class="text-grey peer-checked:text-black text-base font-normal">Normal</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- Concern -->
+                                <div>
+                                    <h3 class="accordion-titles flex justify-between items-center text-t_20 font-normal mb-16">Concern:
+                                        <img src="./assets/images/rightarrow.svg" alt="" class="rightarrow w-18 transition-all duration-300 lg:hidden">
+                                    </h3>
+                                    <div class="accordion-contents space-y-12 hidden lg:block">
+                                        <label for="acne" class="flex items-center gap-12 cursor-pointer group">
+                                            <input
+                                                id="acne"
+                                                name="concern[]"
+                                                value="acne"
+                                                type="checkbox"
+                                                class="custom-checkbox peer"
+                                            >
+                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                            <span class="text-grey peer-checked:text-black text-base font-normal">Acne & Pimples</span>
+                                        </label>
+                                        <label for="antiaging" class="flex items-center gap-12 cursor-pointer group">
+                                            <input
+                                                id="antiaging"
+                                                name="concern[]"
+                                                value="antiaging"
+                                                type="checkbox"
+                                                class="custom-checkbox peer"
+                                            >
+                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                            <span class="text-grey peer-checked:text-black text-base font-normal">Anti-Aging / Wrinkles</span>
+                                        </label>
+                                        <label for="hydration" class="flex items-center gap-12 cursor-pointer">
+                                            <input
+                                                id="hydration"
+                                                name="concern[]"
+                                                value="hydration"
+                                                type="checkbox"
+                                                class="custom-checkbox peer"
+                                            >
+                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                            <span class="text-grey peer-checked:text-black text-base font-normal">Hydration / Dryness</span>
+                                        </label>
+                                        <label for="pigmentation" class="flex items-center gap-12 cursor-pointer">
+                                            <input
+                                                id="pigmentation"
+                                                name="concern[]"
+                                                value="pigmentation"
+                                                type="checkbox"
+                                                class="custom-checkbox peer"
+                                            >
+                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                            <span class="text-grey peer-checked:text-black text-base font-normal">Pigmentation / Dark Spots</span>
+                                        </label>
+                                        <label for="circles" class="flex items-center gap-12 cursor-pointer">
+                                            <input
+                                                id="circles"
+                                                name="concern[]"
+                                                value="circles"
+                                                type="checkbox"
+                                                class="custom-checkbox peer"
+                                            >
+                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                            <span class="text-grey peer-checked:text-black text-base font-normal">Dark Circles</span>
+                                        </label>
+                                        <label for="sun_protection" class="flex items-center gap-12 cursor-pointer">
+                                            <input
+                                                id="sun_protection"
+                                                name="concern[]"
+                                                value="sun_protection"
+                                                type="checkbox"
+                                                class="custom-checkbox peer"
+                                            >
+                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                            <span class="text-grey peer-checked:text-black text-base font-normal">Sun Protection</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- Discount -->
+                                <div>
+                                    <h3 class="accordion-titles flex justify-between items-center text-t_20 font-normal mb-16">Discount:
+                                        <img src="./assets/images/rightarrow.svg" alt="" class="rightarrow w-18 transition-all duration-300 lg:hidden">
+                                    </h3>
+                                    <div class="accordion-contents space-y-12 hidden lg:block">
+                                        <label for="discount10" class="flex items-center gap-12 cursor-pointer group">
+                                            <input
+                                                id="discount10"
+                                                name="discount[]"
+                                                value="10"
+                                                type="checkbox"
+                                                class="custom-checkbox peer"
+                                            >
+                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                            <span class="text-grey peer-checked:text-black text-base font-normal">10% Off or More</span>
+                                        </label>
+                                        <label for="discount25" class="flex items-center gap-12 cursor-pointer group">
+                                            <input
+                                                id="discount25"
+                                                name="discount[]"
+                                                value="25"
+                                                type="checkbox"
+                                                class="custom-checkbox peer"
+                                            >
+                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                            <span class="text-grey peer-checked:text-black text-base font-normal">25% Off or More</span>
+                                        </label>
+                                        <label for="discount50" class="flex items-center gap-12 cursor-pointer">
+                                            <input
+                                                id="discount50"
+                                                name="discount[]"
+                                                value="50"
+                                                type="checkbox"
+                                                class="custom-checkbox peer"
+                                            >
+                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                            <span class="text-grey peer-checked:text-black text-base font-normal">50% Off or More</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- CLEAR & APPLY -->
+                                <div class="flex items-center justify-between lg:hidden mb-24">
+                                    <button id="filterClearBtn" class="btn-dark bg-transparent border border-grey1 text-dark">Clear</button>
+                                    <button id="filterApplyBtn" class="btn-dark">
+                                        Apply
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="lg:w-3/4">
+                                <div class="product-block grid grid-cols-1 sm:grid-cols-2 1xl:grid-cols-3 gap-32">
+                                    <!-- item1 -->
+                                    <div class="product-item" data-category="cream">
+                                        <a
+                                            href="#"
+                                            class="group flex flex-col gap-24"
+                                            aria-label="View product: Scalp Moisturizing Cream"
+                                            role="link"
+                                        >
+                                            <!-- Product Image -->
+                                            <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
+                                                <img src="./assets/images/product-1.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
+                                                <!-- Action Buttons -->
+                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                    </button>
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    </button>
+                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
+                                                    </button>
+                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- Product Info -->
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
+                                                <span>$29.00</span>
+                                                <span>Scalp Moisturizing Cream</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- item1 -->
+                                    <div class="product-item" data-category="serum">
+                                        <a
+                                            href="#"
+                                            class="group flex flex-col gap-24"
+                                            aria-label="View product: Scalp Moisturizing Cream"
+                                            role="link"
+                                        >
+                                            <!-- Product Image -->
+                                            <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
+                                                <img src="./assets/images/product-2.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
+                                                <!-- Action Buttons -->
+                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible  z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                    </button>
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    </button>
+                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
+                                                    </button>
+                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- Product Info -->
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
+                                                <span>$29.00</span>
+                                                <span>Scalp Moisturizing Cream</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- item1 -->
+                                    <div>
+                                        <a
+                                            href="#"
+                                            class="group flex flex-col gap-24"
+                                            aria-label="View product: Scalp Moisturizing Cream"
+                                            role="link"
+                                        >
+                                            <!-- Product Image -->
+                                            <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
+                                                <img src="./assets/images/product-1.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
+                                                <!-- Action Buttons -->
+                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                    </button>
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    </button>
+                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
+                                                    </button>
+                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- Product Info -->
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
+                                                <span>$29.00</span>
+                                                <span>Scalp Moisturizing Cream</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- item1 -->
+                                    <div>
+                                        <a
+                                            href="#"
+                                            class="group flex flex-col gap-24"
+                                            aria-label="View product: Scalp Moisturizing Cream"
+                                            role="link"
+                                        >
+                                            <!-- Product Image -->
+                                            <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
+                                                <img src="./assets/images/category_product4.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
+                                                <!-- Action Buttons -->
+                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible  z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                    </button>
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    </button>
+                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
+                                                    </button>
+                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- Product Info -->
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
+                                                <span>$29.00</span>
+                                                <span>Scalp Moisturizing Cream</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- item1 -->
+                                    <div>
+                                        <a
+                                            href="#"
+                                            class="group flex flex-col gap-24"
+                                            aria-label="View product: Scalp Moisturizing Cream"
+                                            role="link"
+                                        >
+                                            <!-- Product Image -->
+                                            <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
+                                                <img src="./assets/images/product-4.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
+                                                <!-- Action Buttons -->
+                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                    </button>
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    </button>
+                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
+                                                    </button>
+                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- Product Info -->
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
+                                                <span>$29.00</span>
+                                                <span>Scalp Moisturizing Cream</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- item1 -->
+                                    <div>
+                                        <a
+                                            href="#"
+                                            class="group flex flex-col gap-24"
+                                            aria-label="View product: Scalp Moisturizing Cream"
+                                            role="link"
+                                        >
+                                            <!-- Product Image -->
+                                            <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
+                                                <img src="./assets/images/product-1.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
+                                                <!-- Action Buttons -->
+                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                    </button>
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    </button>
+                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
+                                                    </button>
+                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- Product Info -->
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
+                                                <span>$29.00</span>
+                                                <span>Scalp Moisturizing Cream</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- item1 -->
+                                    <div>
+                                        <a
+                                            href="#"
+                                            class="group flex flex-col gap-24"
+                                            aria-label="View product: Scalp Moisturizing Cream"
+                                            role="link"
+                                        >
+                                            <!-- Product Image -->
+                                            <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
+                                                <img src="./assets/images/product-2.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
+                                                <!-- Action Buttons -->
+                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                    </button>
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    </button>
+                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
+                                                    </button>
+                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- Product Info -->
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
+                                                <span>$29.00</span>
+                                                <span>Scalp Moisturizing Cream</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- item1 -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- product section End (Section-2) -->
+            <!-- Featured product Section (section-3) -->
+            <section class="py-30 md:py-60 xl:py-100">
+                <div class="container">
+                    <div class="inner">
+                        <div class="heading text-center space-y-24">
+                            <h2 class="text-h2 font-light">
+                                <span class="font-bold">Customer</span>
+                                Favorites
+                            </h2>
+                            <div class="text-body text-grey">
+                                <p>Our community’s top-picked skincare essentials  proven, trusted, and loved daily.</p>
+                            </div>
+                        </div>
+                        <div class="products mt-32 lg:mt-54 space-y-32 lg:space-y-54 ">
+                            <div class="swiper productSwiper">
+                                <div class="swiper-wrapper pb-80">
+                                    <!-- Slide 1 -->
+                                    <div class="swiper-slide">
+                                        <a
+                                            href="#"
+                                            class="group flex flex-col gap-24"
+                                            aria-label="View product: Scalp Moisturizing Cream"
+                                            role="link"
+                                        >
+                                            <!-- Product Image -->
+                                            <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
+                                                <img src="./assets/images/product-1.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
+                                                <!-- Action Buttons -->
+                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                    </button>
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    </button>
+                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
+                                                    </button>
+                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- Product Info -->
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
+                                                <span>$29.00</span>
+                                                <span>Scalp Moisturizing Cream</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Slide 2 -->
+                                    <div class="swiper-slide">
+                                        <a
+                                            href="#"
+                                            class="group flex flex-col gap-24"
+                                            aria-label="View product: Scalp Moisturizing Cream"
+                                            role="link"
+                                        >
+                                            <!-- Product Image -->
+                                            <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
+                                                <img src="./assets/images/product-2.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
+                                                <!-- Action Buttons -->
+                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                    </button>
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    </button>
+                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
+                                                    </button>
+                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- Product Info -->
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
+                                                <span>$29.00</span>
+                                                <span>Scalp Moisturizing Cream</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Slide 3 -->
+                                    <div class="swiper-slide">
+                                        <a
+                                            href="#"
+                                            class="group flex flex-col gap-24"
+                                            aria-label="View product: Scalp Moisturizing Cream"
+                                            role="link"
+                                        >
+                                            <!-- Product Image -->
+                                            <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
+                                                <img src="./assets/images/product-3.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
+                                                <!-- Action Buttons -->
+                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                    </button>
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    </button>
+                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
+                                                    </button>
+                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- Product Info -->
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
+                                                <span>$29.00</span>
+                                                <span>Scalp Moisturizing Cream</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Slide 4 -->
+                                    <div class="swiper-slide">
+                                        <a
+                                            href="#"
+                                            class="group flex flex-col gap-24"
+                                            aria-label="View product: Scalp Moisturizing Cream"
+                                            role="link"
+                                        >
+                                            <!-- Product Image -->
+                                            <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
+                                                <img src="./assets/images/product-4.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
+                                                <!-- Action Buttons -->
+                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                    </button>
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    </button>
+                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
+                                                    </button>
+                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- Product Info -->
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
+                                                <span>$29.00</span>
+                                                <span>Scalp Moisturizing Cream</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Slide 3 -->
+                                    <div class="swiper-slide">
+                                        <a
+                                            href="#"
+                                            class="group flex flex-col gap-24"
+                                            aria-label="View product: Scalp Moisturizing Cream"
+                                            role="link"
+                                        >
+                                            <!-- Product Image -->
+                                            <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
+                                                <img src="./assets/images/product-3.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                <!-- Action Buttons -->
+                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                    </button>
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    </button>
+                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
+                                                    </button>
+                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
+                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- Product Info -->
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
+                                                <span>$29.00</span>
+                                                <span>Scalp Moisturizing Cream</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Swiper Pagination -->
+                                <div class="swiper-pagination mt-20"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Featured product Section (section-3) -->
+                    <!-- Clinically Tested Section (section-4) -->
+                    <section class="py-30 md:py-60 xl:py-100 bg-bg_light">
+                        <div class="container">
+                            <div class="flex flex-col gap-32 lg:gap-54">
+                                <div class="block1 flex gap-32 justify-center items-center lg:flex-row flex-col">
+                                    <div class="w-full lg:w-1/2 lg:sticky lg:top-10">
+                                        <div>
+                                            <img src="./assets/images/clinically-tested1.webp" alt="image 1 for clinically tested section">
+                                        </div>
+                                    </div>
+                                    <div class="w-full lg:w-1/2 lg:sticky lg:top-10">
+                                        <div>
+                                            <span class="block text-h3 font-normal mb-8 uppercase">Suitable for all skin types</span>
+                                            <h2 class="text-h2.64 font-normal uppercase">CLINICALLY TESTED</h2>
+                                            <div class="mt-16">
+                                                <p>Every product is crafted with care and backed by science. Formulated to be gentle yet effective, our skincare is tested for safety, efficacy, and long-lasting results. Each ingredient is carefully chosen to address real skin needs while being kind to all skin types, including sensitive skin. We believe that skincare should not just treat but also nurture that’s why our products are dermatologically tested.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="block1 flex gap-32 justify-center items-center lg:flex-row-reverse flex-col">
+                                    <div class="w-full lg:w-1/2 lg:sticky lg:top-10">
+                                        <div>
+                                            <img src="./assets/images/clinically-tested2.webp" alt="image 2 for clinically tested section">
+                                        </div>
+                                    </div>
+                                    <div class="w-full lg:w-1/2 lg:sticky lg:top-10">
+                                        <div>
+                                            <span class="block text-h3 font-normal mb-8 uppercase">INSPIRED BY NATURE, PERFECTED BY SCIENCE</span>
+                                            <h2 class="text-h2.64 font-normal uppercase">Pure Promise</h2>
+                                            <div class="mt-16">
+                                                <p>We go beyond just sourcing every ingredient is handpicked for its purity, potency, and proven benefits. From natural botanicals to science-backed actives, we ensure that what touches your skin is safe, effective, and ethically sourced. Our commitment lies in sustainability and transparency, so you can trust that each formulation not only nurtures your skin but also respects the planet. With us, integrity isn’t just a promise.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Clinically Tested Section End (section-4) -->
+                </main>
+                <!-- Footer Starts -->
+                <footer class="border-t border-t-solid border-t-[#0000001A]">
+                    <div class="container">
+                        <div class="foot-top py-74 border-b border-b-solid border-b-[#0000001A]">
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-12 gap-20 md:gap-40 xl:gap-58">
+                                <div class="foot-block flex flex-col gap-32 xl:col-span-3">
+                                    <!-- Logo -->
+                                    <a href="/index.html" aria-label="Go to homepage" class="relative z-10">
+                                        <img src="./assets/images/company-logo.svg" alt="Ellitee logo">
+                                    </a>
+                                    <div class="space-y-16">
+                                        <span class="inline-block text-sm">
+                                            Find out your skin or hair concerns and
+                              what a dermatologist advises for them, for free.
+                                        </span>
+                                        <div class="flex gap-16 justify-start items-center">
+                                            <a href="#" aria-label="Go to instagram" class="relative z-10">
+                                                <img src="./assets/images/instagram.svg" alt="Instagram logo">
+                                            </a>
+                                            <a href="#" aria-label="Go to linkedin" class="relative z-10">
+                                                <img src="./assets/images/linkedin.svg" alt="linkedin logo">
+                                            </a>
+                                            <a href="#" aria-label="Go to facebook" class="relative z-10">
+                                                <img src="./assets/images/facebook.svg" alt="Facebook logo">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="space-y-16 xl:col-span-2">
+                                    <span class="inline-block text-body font-semibold">Links</span>
+                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal">
+                                        <li>
+                                            <a href="/index.html" role="link">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" role="link">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" role="link">Our Expertise</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" role="link">Testimonials</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">FAQs</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--  -->
+                                <div class="space-y-16 xl:col-span-2">
+                                    <span class="inline-block text-body font-semibold">Our Policy</span>
+                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal">
+                                        <li>
+                                            <a href="#" role="link">Terms of Use</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" role="link">Privacy Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" role="link">Grievance Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" role="link">Refunds & Cancellations Policy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--  -->
+                                <div class="space-y-16 xl:col-span-2">
+                                    <span class="inline-block text-body font-semibold">Treatments</span>
+                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal">
+                                        <li>
+                                            <a href="#" role="link">Dark Spots Treatment</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" role="link">Fungal Infection Treatment</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" role="link">Pimple Treatment</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" role="link">Other Skin Problems</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--  -->
+                                <div class="space-y-16 xl:col-span-3">
+                                    <span class="inline-block text-body font-semibold">Other Skin Problems</span>
+                                    <ul class="address space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li]:text-sm [&_li>a]:font-normal [&_li]:font-normal [&_li]:flex [&_li]:justify-start [&_li]:items-start [&_li]:gap-10">
+                                        <li>
+                                            <img src="./assets/images/phone.svg" alt="icon of phone for calling" role="img">
+                                            <a href="tel:+918150096500" role="link" aria-label="Call 8150096500">8150096500</a>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/images/mail.svg" alt="icon of mail for email address" role="img">
+                                            <a href="mailto:hello@cureskin.com" role="link" aria-label="Send email to hello@cureskin.com">hello@cureskin.com</a>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/images/map-pin.svg" alt="icon of map for location" role="img">
+                                            <span aria-label="Company address">
+                                                Ellitee LLP, #656, 3rd floor, 27th Main, 13th Cross Rd, 
+            opp. PWD Quarters, 1st Sector, HSR Layout, Bengaluru, 
+            Karnataka 560102
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copyright font-normal text-sm text-center py-16 text-dark1">
+                            <p> &copy; 2025-Ellitee™. All Rights Reserved</p>
+                        </div>
+                    </div>
+                </footer>
+                <!-- Footer End -->
+              
+                <script src="./assets/js/swiper-bundle.min.js"></script>
+                  <script src="./assets/js/script.js"></script>
+                <script>
+    const swiper = new Swiper(".productSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  pagination: { el: ".swiper-pagination", clickable: true },
+  loop:true,  
+ autoplay: { delay: 7000, disableOnInteraction: true },
+    speed:1000,
+  breakpoints: {
+     0: {
+      slidesPerView: 0,
+      spaceBetween: 16, 
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 24, 
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+    1280: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+      autoplay: false, 
+    }
+  }
+});
+                </script>
+                <!-- JS for Range Slider -->
+                <script>
+  const minInput = document.getElementById("minInput");
+    const maxInput = document.getElementById("maxInput");
+    const minRange = document.getElementById("minRange");
+    const maxRange = document.getElementById("maxRange");
+    const activeTrack = document.getElementById("activeTrack");
+
+    const max = 786;
+
+    function updateTrack() {
+        const minVal = parseInt(minRange.value);
+        const maxVal = parseInt(maxRange.value);
+
+        const minPercent = (minVal / max) * 100;
+        const maxPercent = (maxVal / max) * 100;
+
+        activeTrack.style.left = minPercent + "%";
+        activeTrack.style.width = (maxPercent - minPercent) + "%";
+    }
+
+    function validateRange() {
+        if (parseInt(minRange.value) > parseInt(maxRange.value)) {
+            minRange.value = maxRange.value;
+        }
+        if (parseInt(maxRange.value) < parseInt(minRange.value)) {
+            maxRange.value = minRange.value;
+        }
+        minInput.value = minRange.value;
+        maxInput.value = maxRange.value;
+        updateTrack();
+    }
+
+    // Range → Input
+    minRange.addEventListener("input", validateRange);
+    maxRange.addEventListener("input", validateRange);
+
+    // Input → Range
+    minInput.addEventListener("input", () => {
+        minRange.value = Math.min(minInput.value, maxRange.value);
+        validateRange();
+    });
+
+    maxInput.addEventListener("input", () => {
+        maxRange.value = Math.max(maxInput.value, minRange.value);
+        validateRange();
+    });
+
+    updateTrack();
+                </script>
+                <script>
+                    // MOBILE FILTER PANEL
+const filterToggleBtn = document.getElementById("filterToggleBtn");
+const mobileFilterPanel = document.getElementById("mobileFilterPanel");
+const filterCloseBtn = document.getElementById("filterCloseBtn");
+
+filterToggleBtn.addEventListener("click", () => {
+    mobileFilterPanel.classList.toggle("translate-x-full");
+});
+filterCloseBtn.addEventListener("click", () => {
+    mobileFilterPanel.classList.add("translate-x-full");
+});
+// ACCORDIONS (mobile only)
+function setupAccordions() {
+    const titles = document.querySelectorAll(".accordion-titles");
+
+    titles.forEach(title => {
+        const content = title.nextElementSibling;
+
+        title.addEventListener("click", () => {
+            content.classList.toggle("hidden");
+        });
+    });
+   titles.forEach(title => {
+    const img = title.querySelector("img"); // image INSIDE the title
+
+    title.addEventListener("click", () => {
+        if (img) {
+            img.classList.toggle("rotate-90");
+        }
+    });
+});
+}
+
+// initialize accordion
+setupAccordions();
+
+
+// ✅ CLEAR & APPLY BUTTONS (ADDED BELOW – NOTHING ELSE CHANGED)
+
+const filterClearBtn = document.getElementById("filterClearBtn");
+const filterApplyBtn = document.getElementById("filterApplyBtn");
+
+// CLEAR ALL FILTERS
+filterClearBtn.addEventListener("click", () => {
+
+    // reset all checkboxes
+    document.querySelectorAll("#mobileFilterPanel input[type='checkbox']")
+        .forEach(cb => cb.checked = false);
+
+    // reset price inputs
+    const minInput = document.getElementById("minInput");
+    const maxInput = document.getElementById("maxInput");
+    const minRange = document.getElementById("minRange");
+    const maxRange = document.getElementById("maxRange");
+    const track = document.getElementById("activeTrack");
+
+    if (minInput) minInput.value = 0;
+    if (maxInput) maxInput.value = 786;
+    if (minRange) minRange.value = 0;
+    if (maxRange) maxRange.value = 786;
+
+    if (track) {
+        track.style.left = "0%";
+        track.style.width = "100%";
+    }
+});
+
+
+// APPLY FILTERS
+filterApplyBtn.addEventListener("click", () => {
+
+    // 👉 If your filtering function exists, call here
+    // example:
+    // applyFilters();  // (optional)
+
+    // close the mobile filter panel
+    mobileFilterPanel.classList.add("translate-x-full");
+});
+                </script>
+            </body>
+        </html>
