@@ -13,12 +13,12 @@
         <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     </head>
     <body>
-        <!-- Header -->
+     <!-- Header -->
         <header class="sticky top-0 left-0 w-full bg-white border-y border-gray-200 py-34 z-100">
             <div class="container">
                 <div class="flex items-center justify-between py-4 gap-4">
                     <!-- Logo -->
-                    <a href="/index.html" aria-label="Go to homepage" class="relative z-100">
+                    <a href="#" aria-label="Go to homepage" class="relative z-100">
                         <img src="./assets/images/company-logo.svg" alt="Ellitee logo">
                     </a>
                     <!-- Navigation -->
@@ -27,7 +27,7 @@
              opacity-0 -translate-y-2 pointer-events-none lg:opacity-100 lg:pointer-events-auto lg:translate-y-0
              transition-all duration-300">
                             <li>
-                                <a href="#" aria-current="page">
+                                <a href="/index.html" aria-current="page">
                                     Home
                                 </a>
                             </li>
@@ -47,11 +47,11 @@
                     </nav>
                     <div class="flex justify-center items-center gap-8">
                         <!-- Contact Desktop Button -->
-                        <a href="tel:+918150096500" class="hidden sm:block btn-dark relative z-100" aria-label="Contact Ellitee team">
+                        <a href="tel:+919510514689" class="hidden sm:block btn-dark relative z-100" aria-label="Contact Ellitee team">
                             Contact Us
                         </a>
                         <!-- Contact Mobile Button -->
-                        <a href="tel:+918150096500" class="btn-dark relative z-100 p-12 h-52 sm:hidden flex justify-center items-center" aria-label="Contact Ellitee team">
+                        <a href="tel:+919510514689" class="btn-dark relative z-100 p-12 h-52 sm:hidden flex justify-center items-center" aria-label="Contact Ellitee team">
                             <img src="./assets/images/call-white.svg" alt=" call icon" class="w-24 h-24">
                         </a>
                         <!-- Mobile Hamburger -->
@@ -71,51 +71,64 @@
             </div>
         </header>
         <main>
-            <!-- Hero Section -->
-            <section class="relative py-80 md:py-194 w-full h-full" role="banner" aria-label="Hero section for skincare category page">
-                <img
-                    src="./assets/images/category_hero.webp"
-                    srcset="
-        ./assets/images/category_hero.webp 480w,
-        ./assets/images/category_hero.webp 768w,
-        ./assets/images/category_hero.webp 1024w,
-        ./assets/images/category_hero.webp 1440w,
-        ./assets/images/category_hero.webp 1920w
-    "
-                    sizes="100vw"
-                    alt="Hero image depicting moisture and long-lasting hydration for skincare products"
-                    role="img"
-                    class="absolute top-0 left-0 object-cover size-full -z-10"
-                    fetchpriority="high"
-                    decoding="async"
-                    loading="eager"
-                >
-                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10" aria-hidden="true"></div>
+           
+            <!-- hero2 Start -->
+            <section class="relative overflow-x-hidden gradient overflow-hidden">
                 <div class="container">
-                    <div class="flex flex-col gap-16 sm:justify-end sm:items-end relative z-40">
-                        <span class="block text-[clamp(28px,1.5vw,40px)] text-button-bg">Moisture That Lasts</span>
-                        <h1 class="text-h2.64 font-light text-button-bg">
-                            <span class="font-bold"> Moisture</span>
-                            That Lasts
-                        </h1>
-                        <span class="block text-h3 font-normal text-[#171717]">For soft, supple & protected hands</span>
+                    <div class="flex flex-col-reverse lg:flex-row gap-20 lg:gap-40 xxl:gap-86 min-h-600">
+                        <!-- Left Content -->
+                        <div class="w-full lg:w-[50%] xl:w-[55%] xxl:w-[45%] flex flex-col justify-center px-16 md:px-0 pb-40 lg:pb-80 xxl:pb-104 pt-20 sm:pt-40 lg:pt-80 xxl:pt-104 space-y-34 relative z-10">
+                            <div class="flex flex-col justify-center space-y-24">
+                                <h1 class="text-h2.64 font-light text-dark w-[90%]">
+                                    <span class="font-bold">Skincare
+                                    </span> Designed to Work Together
+                                </h1>
+                                <div class="text-grey space-y-16 md:space-y-24">
+                                    <p>
+                                        We don’t believe in selling isolated products. Ellitee™ builds complete skincare systems where every formula has a clear role.
+                                    </p>
+                                    <p>Thoughtful formulations, balanced routines, and long-term skin support — without unnecessary complexity.</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <!-- Hero Image -->
+                        <div class="lg:absolute w-full top-0 right-0 flex lg:justify-end lg:items-end h-full z-0">
+                            <img
+                                src="./assets/images/calmgel.webp"
+                                alt="Model applying sunscreen"
+                                class="w-full lg:w-[50%] h-270 sm:h-full lg:h-[70%] xl:h-[80%] 1xl:h-full object-cover object-center xxl:object-right"
+                                fetchpriority="high"
+                            >
+                        </div>
                     </div>
                 </div>
             </section>
-            <!-- Hero Setion End-->
+            <!-- hero2 end -->
+           
             <!-- product section (Section-2) -->
-            <section class="pt-30 md:pt-60 xl:pt-100" aria-label="Skincare products section with filters and product grid">
+            <section class="py-30 md:py-60 xl:py-100" aria-label="Skincare products section with filters and product grid">
                 <div class="container">
                     <div class="flex flex-col gap-32 lg:gap-54">
                         <div class="heading space-y-24">
                             <h2 class="text-h2 font-light text-center">
-                                <span class="font-bold"> Skincare</span>
-                                Made Simple
+                               
+                                Why  <span class="font-bold">Ellitee™ Products</span> Are Different
                             </h2>
-                            <div class="space-y-24 text-grey font-normal leading-relaxed text-center">
+                            <div class="text-grey font-normal leading-relaxed text-center">
                                 <p>
-                                    Discover a wide range of skincare essentials designed to match your skin type, target specific concerns, and help you achieve your goals
+                                    Each Ellitee™ product is designed to support the skin barrier and work in harmony with other steps in your routine.
                                 </p>
+                                <p>Instead of layering multiple competing actives, we focus on balance, tolerance, and consistency helping skin improve steadily over time.</p>
+                            </div>
+                        </div>
+                        <div class="hidden lg:flex justify-between">
+                            <div class="w-3/12">
+                                <p><strong>Sort By:</strong> Shop by skin concern, routine step, or product type to find what fits your skin best.</p>
+                            </div>
+                            <div class="text-right">
+                                <p>Our <strong>Skincare</strong> Essentials</p>
+                                <span class="text-grey1">Every product earns its place in your routine.</span>
                             </div>
                         </div>
                         <div class="flex gap-32 lg:flex-row flex-col justify-start items-start">
@@ -126,7 +139,7 @@
                             <div
                                 id="mobileFilterPanel"
                                 class="lg:w-3/12 pt-100 lg:pt-28 pb-28 px-28 space-y-32 bg-grey_light shadow-sm 
-           fixed lg:sticky top-0 left-0 w-full h-screen lg:h-full overflow-y-auto lg:overflow-y-hidden
+           fixed lg:sticky top-140 left-0 w-full h-screen lg:h-full overflow-y-auto lg:overflow-y-hidden
            translate-x-full lg:translate-x-0 transition-transform duration-300 z-200 lg:z-10"
                                 role="complementary"
                                 aria-label="Product filters sidebar"
@@ -481,33 +494,35 @@
                                             role="link"
                                         >
                                             <!-- Product Image -->
-                                            <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
-                                                <img src="./assets/images/product-1.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
-                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
+                                            <div class="relative overflow-hidden" role="img" aria-label="CalmGel™ Anti-Acne Gel Moisturizer image">
+                                                <img src="./assets/images/antiacnecream.webp" alt="CalmGel™ Anti-Acne Gel Moisturizer" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                
                                                 <!-- Action Buttons -->
-                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark flex justify-center items-center gap-12">
+                                                        Add To Cart
+                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                     </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
                                                     </button>
-                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
-                                                    </button>
-                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
-                                                    </button>
+                                                   
                                                 </div>
                                             </div>
                                             <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
-                                                <span>$29.00</span>
-                                                <span>Scalp Moisturizing Cream</span>
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-left">
+                                                 <span class="text-body">Rs 799.00</span>
+                                                <span class="text-t_20">CalmGel™ Anti-Acne Gel Moisturizer</span>
+                                            
+                                            <div class="text-grey text-body">
+                                                <ul>
+                                                    <li>Acne-prone • Combination • Sensitive</li>
+                                                </ul>
                                             </div>
+                                        </div>
                                         </a>
                                     </div>
-                                    <!-- item1 -->
+                                    <!-- item2 -->
                                     <div class="product-item" data-category="serum">
                                         <a
                                             href="#"
@@ -517,32 +532,34 @@
                                         >
                                             <!-- Product Image -->
                                             <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
-                                                <img src="./assets/images/product-2.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
-                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
+                                                <img src="./assets/images/cleargel-facewash.png" alt="ClearGel™ Anti-Acne Facewash" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                
                                                 <!-- Action Buttons -->
-                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible  z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark flex justify-center items-center gap-12">
+                                                        Add To Cart
+                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                     </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
                                                     </button>
-                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
-                                                    </button>
-                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
-                                                    </button>
+                                                   
                                                 </div>
                                             </div>
                                             <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
-                                                <span>$29.00</span>
-                                                <span>Scalp Moisturizing Cream</span>
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-left">
+                                                 <span class="text-body">Rs 399.00</span>
+                                                <span class="text-t_20">ClearGel™ Anti-Acne Facewash</span>
+                                            
+                                                <div class="text-grey text-body">
+                                                    <ul>
+                                                        <li>Acne-prone • Combination • Sensitive</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </a>
                                     </div>
-                                    <!-- item1 -->
+                                    <!-- item3 -->
                                     <div>
                                         <a
                                             href="#"
@@ -552,172 +569,250 @@
                                         >
                                             <!-- Product Image -->
                                             <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
-                                                <img src="./assets/images/product-1.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
-                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
+                                                <img src="./assets/images/spot-correctorserum.png" alt="SpotCorrect – Advanced Brightening Serum" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                              
                                                 <!-- Action Buttons -->
-                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark flex justify-center items-center gap-12">
+                                                        Add To Cart
+                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                     </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
                                                     </button>
-                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
-                                                    </button>
-                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
-                                                    </button>
+                                                   
                                                 </div>
                                             </div>
                                             <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
-                                                <span>$29.00</span>
-                                                <span>Scalp Moisturizing Cream</span>
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-left">
+                                                 <span class="text-body">Rs 1099.00</span>
+                                                <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
+                                            
+                                                <div class="text-grey text-body">
+                                                    <ul>
+                                                        <li>Acne-prone • Combination • Sensitive</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </a>
                                     </div>
-                                    <!-- item1 -->
+                                    <!-- item4 -->
                                     <div>
                                         <a
                                             href="#"
                                             class="group flex flex-col gap-24"
-                                            aria-label="View product: Scalp Moisturizing Cream"
+                                            aria-label="View product: SpotCorrect™ – Advanced Brightening Serum duo combo"
                                             role="link"
                                         >
                                             <!-- Product Image -->
                                             <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
-                                                <img src="./assets/images/category_product4.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
-                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
-                                                <!-- Action Buttons -->
-                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible  z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                <img src="./assets/images/combo-serummoisturizer.png" alt="combo-serum moisturizer" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                              
+                                               <!-- Action Buttons -->
+                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark flex justify-center items-center gap-12">
+                                                        Add To Cart
+                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                     </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
                                                     </button>
-                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
-                                                    </button>
-                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
-                                                    </button>
+                                                   
                                                 </div>
                                             </div>
                                             <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
-                                                <span>$29.00</span>
-                                                <span>Scalp Moisturizing Cream</span>
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-left">
+                                                 <span class="text-body">Rs 1099.00</span>
+                                                <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
+                                            
+                                                <div class="text-grey text-body">
+                                                    <ul>
+                                                        <li>Acne-prone • Combination • Sensitive/li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </a>
                                     </div>
-                                    <!-- item1 -->
+                                    <!-- item5 -->
                                     <div>
                                         <a
                                             href="#"
                                             class="group flex flex-col gap-24"
-                                            aria-label="View product: Scalp Moisturizing Cream"
+                                            aria-label="View product: Duo combo of serum and clear gel facewash"
                                             role="link"
                                         >
                                             <!-- Product Image -->
-                                            <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
-                                                <img src="./assets/images/product-4.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
-                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
+                                            <div class="relative overflow-hidden" role="img" aria-label="Duo combo of serum and clear gel facewash image">
+                                                <img src="./assets/images/combo-serum-facewash.png" alt="Duo combo of serum and clear gel facewash" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
                                                 <!-- Action Buttons -->
-                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark flex justify-center items-center gap-12">
+                                                        Add To Cart
+                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                     </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
                                                     </button>
-                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
-                                                    </button>
-                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
-                                                    </button>
+                                                   
                                                 </div>
                                             </div>
                                             <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
-                                                <span>$29.00</span>
-                                                <span>Scalp Moisturizing Cream</span>
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-left">
+                                                 <span class="text-body">Rs 1099.00</span>
+                                                <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
+                                            
+                                                <div class="text-grey text-body">
+                                                    <ul>
+                                                        <li>Acne-prone • Combination • Sensitive</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </a>
                                     </div>
-                                    <!-- item1 -->
+                                    <!-- item6 -->
                                     <div>
                                         <a
                                             href="#"
                                             class="group flex flex-col gap-24"
-                                            aria-label="View product: Scalp Moisturizing Cream"
+                                            aria-label="View product: SpotCorrect™ – Advanced Brightening Serum"
                                             role="link"
                                         >
                                             <!-- Product Image -->
-                                            <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
-                                                <img src="./assets/images/product-1.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
-                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
+                                            <div class="relative overflow-hidden" role="img" aria-label="CalmGel™ Anti-Acne Gel Moisturizer with facewash image">
+                                                <img src="./assets/images/combo-moisturizer-facewash.png" alt="CalmGel™ Anti-Acne Gel Moisturizer duo combo with clear gel facewash" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
                                                 <!-- Action Buttons -->
-                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark flex justify-center items-center gap-12">
+                                                        Add To Cart
+                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                     </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
                                                     </button>
-                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
-                                                    </button>
-                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
-                                                    </button>
+                                                   
                                                 </div>
                                             </div>
                                             <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
-                                                <span>$29.00</span>
-                                                <span>Scalp Moisturizing Cream</span>
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-left">
+                                                 <span class="text-body">Rs 1099.00</span>
+                                                <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
+                                            
+                                                <div class="text-grey text-body">
+                                                    <ul>
+                                                        <li>Acne-prone • Combination • Sensitive</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </a>
                                     </div>
-                                    <!-- item1 -->
+                                    <!-- item7 -->
                                     <div>
                                         <a
                                             href="#"
                                             class="group flex flex-col gap-24"
-                                            aria-label="View product: Scalp Moisturizing Cream"
+                                            aria-label="View product: combo-moisturizer-serum"
                                             role="link"
                                         >
                                             <!-- Product Image -->
-                                            <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
-                                                <img src="./assets/images/product-2.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
-                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
+                                            <div class="relative overflow-hidden" role="img" aria-label="combo-moisturizer-serum">
+                                                <img src="./assets/images/combo-moisturizer-serum2.png" alt="Scalp Moisturizing Cream powerful duo for skin care" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
                                                 <!-- Action Buttons -->
-                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark flex justify-center items-center gap-12">
+                                                        Add To Cart
+                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                     </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
                                                     </button>
-                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
-                                                    </button>
-                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
-                                                    </button>
+                                                   
                                                 </div>
                                             </div>
                                             <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
-                                                <span>$29.00</span>
-                                                <span>Scalp Moisturizing Cream</span>
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-left">
+                                                 <span class="text-body">Rs 1099.00</span>
+                                                <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
+                                            
+                                                <div class="text-grey text-body">
+                                                    <ul>
+                                                        <li>Acne-prone • Combination • Sensitive</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </a>
                                     </div>
-                                    <!-- item1 -->
+                                    <!-- item8 -->
+                                     <div>
+                                        <a
+                                            href="#"
+                                            class="group flex flex-col gap-24"
+                                            aria-label="View product: combo-facewash-serum"
+                                            role="link"
+                                        >
+                                            <!-- Product Image -->
+                                            <div class="relative overflow-hidden" role="img" aria-label="combo-moisturizer-serum">
+                                                <img src="./assets/images/combo-facewash-serum2.png" alt=" Moisturizing Cream powerful duo for skin care" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                <!-- Action Buttons -->
+                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark flex justify-center items-center gap-12">
+                                                        Add To Cart
+                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
+                                                    </button>
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
+                                                    </button>
+                                                   
+                                                </div>
+                                            </div>
+                                            <!-- Product Info -->
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-left">
+                                                 <span class="text-body">Rs 1099.00</span>
+                                                <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
+                                            
+                                                <div class="text-grey text-body">
+                                                    <ul>
+                                                        <li>Acne-prone • Combination • Sensitive</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- item9 -->
+                                     <div>
+                                        <a
+                                            href="#"
+                                            class="group flex flex-col gap-24"
+                                            aria-label="View product: combo-moisturizer-serum"
+                                            role="link"
+                                        >
+                                            <!-- Product Image -->
+                                            <div class="relative overflow-hidden" role="img" aria-label="combo-moisturizer-facewash">
+                                                <img src="./assets/images/combo-facewash-moisturiser2.png" alt="Scalp Moisturizing Cream powerful duo for skin care" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                <!-- Action Buttons -->
+                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark flex justify-center items-center gap-12">
+                                                        Add To Cart
+                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
+                                                    </button>
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
+                                                    </button>
+                                                   
+                                                </div>
+                                            </div>
+                                            <!-- Product Info -->
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-left">
+                                                 <span class="text-body">Rs 1099.00</span>
+                                                <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
+                                            
+                                                <div class="text-grey text-body">
+                                                    <ul>
+                                                        <li>Acne-prone • Combination • Sensitive</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -725,6 +820,55 @@
                 </div>
             </section>
             <!-- product section End (Section-2) -->
+            <!-- Result Section starts -->
+            <section class="py-40 md:py-60 xl:py-100 bg-grey_light">
+                <div class="container">
+                    <div class="inner">
+                        <!-- Heading -->
+                        <div class="heading text-center space-y-24">
+                            <h2 id="shop-category-title" class="text-h2 font-light">
+                                Not Sure 
+                                <span class="font-bold">Where to Start?</span>
+                            </h2>
+                            <div class="text-grey font-normal space-y-8">
+                                <p>Great skin isn’t about using more products it’s about using the right ones in the right order.</p>
+                                <p>Ellitee™ helps you build a routine based on your skin’s needs, not trends or guesswork.</p>
+                            </div>
+                            <div class="w-full flex justify-center mt-24 lg:mt-40">
+                                <a href="#" class="btn-dark" aria-label="Build Your Routine">
+                                    Build Your Routine
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Result Section ends -->
+             <!-- Result Section starts -->
+            <section class="py-40 md:py-60 xl:py-100">
+                <div class="container">
+                    <div class="inner">
+                        <!-- Heading -->
+                        <div class="heading text-center space-y-24">
+                            <h2 id="shop-category-title" class="text-h2 font-light">
+                                Skincare That 
+                                <span class="font-bold">Respects Your Skin</span>
+                            </h2>
+                            <div class="text-grey font-normal space-y-8 1xl:w-[55%] mx-auto">
+                                <p>Over-treating skin often leads to irritation, breakouts, and uneven tone.</p>
+                                <p>Ellitee™ products are designed to support the skin barrier first — helping improve clarity, comfort,
+ and balance without overwhelming the skin.</p>
+                            </div>
+                            <div class="w-full flex justify-center mt-24 lg:mt-40">
+                                <a href="#" class="btn-dark" aria-label="Build Your Routine">
+                                    Build Your Routine
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Result Section ends -->
             <!-- Featured product Section (section-3) -->
             <section class="py-30 md:py-60 xl:py-100">
                 <div class="container">
@@ -751,34 +895,36 @@
                                         >
                                             <!-- Product Image -->
                                             <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
-                                                <img src="./assets/images/product-1.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
-                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
-                                                <!-- Action Buttons -->
-                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                <img src="./assets/images/antiacnecream.webp"alt="CalmGel™ Anti-Acne Gel Moisturizer" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                
+                                                 <!-- Action Buttons -->
+                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark flex justify-center items-center gap-12">
+                                                        Add To Cart
+                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                     </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
                                                     </button>
-                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
-                                                    </button>
-                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
-                                                    </button>
+                                                   
                                                 </div>
                                             </div>
-                                            <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
-                                                <span>$29.00</span>
-                                                <span>Scalp Moisturizing Cream</span>
+                                             <!-- Product Info -->
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-left">
+                                                 <span class="text-body">Rs 799.00</span>
+                                                <span class="text-t_20">CalmGel™ Anti-Acne Gel Moisturizer</span>
+                                            
+                                                <div class="text-grey text-body">
+                                                    <ul>
+                                                        <li>Acne-prone • Combination • Sensitive</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </a>
                                     </div>
                                     <!-- Slide 2 -->
                                     <div class="swiper-slide">
-                                        <a
+                                          <a
                                             href="#"
                                             class="group flex flex-col gap-24"
                                             aria-label="View product: Scalp Moisturizing Cream"
@@ -786,34 +932,36 @@
                                         >
                                             <!-- Product Image -->
                                             <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
-                                                <img src="./assets/images/product-2.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
-                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
-                                                <!-- Action Buttons -->
-                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                <img src="./assets/images/cleargel-facewash.png"alt="ClearGel™ Anti-Acne Facewash" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                
+                                                 <!-- Action Buttons -->
+                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add ClearGel™ Anti-Acne Facewash to cart" class="btn-dark flex justify-center items-center gap-12">
+                                                        Add To Cart
+                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                     </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    <button aria-label="Add ClearGel™ Anti-Acne Facewash to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
                                                     </button>
-                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
-                                                    </button>
-                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
-                                                    </button>
+                                                   
                                                 </div>
                                             </div>
-                                            <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
-                                                <span>$29.00</span>
-                                                <span>Scalp Moisturizing Cream</span>
+                                             <!-- Product Info -->
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-left">
+                                                 <span class="text-body">Rs 399.00</span>
+                                                <span class="text-t_20">ClearGel™ Anti-Acne Facewash</span>
+                                            
+                                                <div class="text-grey text-body">
+                                                    <ul>
+                                                        <li>Acne-prone • Combination • Sensitive</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </a>
                                     </div>
                                     <!-- Slide 3 -->
-                                    <div class="swiper-slide">
-                                        <a
+                                     <div class="swiper-slide">
+                                          <a
                                             href="#"
                                             class="group flex flex-col gap-24"
                                             aria-label="View product: Scalp Moisturizing Cream"
@@ -821,34 +969,37 @@
                                         >
                                             <!-- Product Image -->
                                             <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
-                                                <img src="./assets/images/product-3.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
-                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
-                                                <!-- Action Buttons -->
-                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                <img src="./assets/images/combo-facewash-moisturiser2.png"alt="Duo combo facewash-moisturizer" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                
+                                                 <!-- Action Buttons -->
+                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add ClearGel™ Anti-Acne Facewash to cart" class="btn-dark flex justify-center items-center gap-12">
+                                                        Add To Cart
+                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                     </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    <button aria-label="Add ClearGel™ Anti-Acne Facewash to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
                                                     </button>
-                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
-                                                    </button>
-                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
-                                                    </button>
+                                                   
                                                 </div>
                                             </div>
-                                            <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
-                                                <span>$29.00</span>
-                                                <span>Scalp Moisturizing Cream</span>
+                                             <!-- Product Info -->
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-left">
+                                                 <span class="text-body">Rs 1099.00</span>
+                                                <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
+                                            
+                                                <div class="text-grey text-body">
+                                                    <ul>
+                                                        <li>Acne-prone • Combination • Sensitive</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </a>
                                     </div>
                                     <!-- Slide 4 -->
                                     <div class="swiper-slide">
-                                        <a
+                                        <div class="swiper-slide">
+                                          <a
                                             href="#"
                                             class="group flex flex-col gap-24"
                                             aria-label="View product: Scalp Moisturizing Cream"
@@ -856,34 +1007,38 @@
                                         >
                                             <!-- Product Image -->
                                             <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
-                                                <img src="./assets/images/product-4.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
-                                                <div class="overlay bg-[#0000000D] w-full h-full absolute top-0 left-0 z-10 opacity-0 invisible transition-all duration-500 ease-linear group-hover:opacity-100 group-hover:visible"></div>
-                                                <!-- Action Buttons -->
-                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                <img src="./assets/images/cleargel-facewash.png"alt="ClearGel™ Anti-Acne Facewash" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                
+                                                 <!-- Action Buttons -->
+                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add ClearGel™ Anti-Acne Facewash to cart" class="btn-dark flex justify-center items-center gap-12">
+                                                        Add To Cart
+                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                     </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    <button aria-label="Add ClearGel™ Anti-Acne Facewash to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
                                                     </button>
-                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
-                                                    </button>
-                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
-                                                    </button>
+                                                   
                                                 </div>
                                             </div>
-                                            <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
-                                                <span>$29.00</span>
-                                                <span>Scalp Moisturizing Cream</span>
+                                             <!-- Product Info -->
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-left">
+                                                 <span class="text-body">Rs 399.00</span>
+                                                <span class="text-t_20">ClearGel™ Anti-Acne Facewash</span>
+                                            
+                                                <div class="text-grey text-body">
+                                                    <ul>
+                                                        <li>Acne-prone • Combination • Sensitive</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </a>
                                     </div>
+                                    </div>
                                     <!-- Slide 3 -->
                                     <div class="swiper-slide">
-                                        <a
+                                         <div class="swiper-slide">
+                                          <a
                                             href="#"
                                             class="group flex flex-col gap-24"
                                             aria-label="View product: Scalp Moisturizing Cream"
@@ -891,52 +1046,57 @@
                                         >
                                             <!-- Product Image -->
                                             <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
-                                                <img src="./assets/images/product-3.webp" alt="Scalp Moisturizing Cream" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
-                                                <!-- Action Buttons -->
-                                                <div class="absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/cart_icon.svg" alt="Cart icon">
+                                                <img src="./assets/images/cleargel-facewash.png"alt="ClearGel™ Anti-Acne Facewash" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                
+                                                 <!-- Action Buttons -->
+                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                    <button aria-label="Add ClearGel™ Anti-Acne Facewash to cart" class="btn-dark flex justify-center items-center gap-12">
+                                                        Add To Cart
+                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                     </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_eye-linear.svg" alt="Wishlist icon">
+                                                    <button aria-label="Add ClearGel™ Anti-Acne Facewash to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
                                                     </button>
-                                                    <button aria-label="Quick view of Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/solar_star-line-duotone.svg" alt="Quick view icon">
-                                                    </button>
-                                                    <button aria-label="Share Scalp Moisturizing Cream" class="w-54 h-54 bg-white rounded-full flex justify-center items-center">
-                                                        <img src="./assets/images/hugeicons_git-compare.svg" alt="Share icon">
-                                                    </button>
+                                                   
                                                 </div>
                                             </div>
-                                            <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-dark text-center">
-                                                <span>$29.00</span>
-                                                <span>Scalp Moisturizing Cream</span>
+                                             <!-- Product Info -->
+                                            <div class="flex flex-col gap-4 font-normal text-dark text-left">
+                                                 <span class="text-body">Rs 399.00</span>
+                                                <span class="text-t_20">ClearGel™ Anti-Acne Facewash</span>
+                                            
+                                                <div class="text-grey text-body">
+                                                    <ul>
+                                                        <li>Acne-prone • Combination • Sensitive</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </a>
+                                    </div>
                                     </div>
                                 </div>
                                 <!-- Swiper Pagination -->
                                 <div class="swiper-pagination mt-20"></div>
                             </div>
                         </div>
-                    </section>
-                    <!-- Featured product Section (section-3) -->
-                    <!-- Clinically Tested Section (section-4) -->
-                    <section class="py-30 md:py-60 xl:py-100 bg-bg_light">
+            </section>
+            <!-- Featured product Section (section-3) -->
+            <!-- Clinically Tested Section (section-4) -->
+            <section class="py-30 md:py-60 xl:py-100 bg-grey_light">
                         <div class="container">
                             <div class="flex flex-col gap-32 lg:gap-54">
                                 <div class="block1 flex gap-32 justify-center items-center lg:flex-row flex-col">
                                     <div class="w-full lg:w-1/2 lg:sticky lg:top-10">
-                                        <div>
-                                            <img src="./assets/images/clinically-tested1.webp" alt="image 1 for clinically tested section">
+                                        <div class="relative">
+                                            <img src="./assets/images/clinically-tested1.png" alt="image 1 for clinically tested section relative z-10">
+                                            <div class="w-full h-full absolute top-0 left-0 gradient_image -z-10"></div>
                                         </div>
                                     </div>
                                     <div class="w-full lg:w-1/2 lg:sticky lg:top-10">
                                         <div>
-                                            <span class="block text-h3 font-normal mb-8 uppercase">Suitable for all skin types</span>
-                                            <h2 class="text-h2.64 font-normal uppercase">CLINICALLY TESTED</h2>
-                                            <div class="mt-16">
+                                            <span class="block text-h3 font-normal mb-8 uppercase text-button-bg">Suitable for all skin types</span>
+                                            <h2 class="text-h2.64 font-normal capitalize text-button-bg">CLINICALLY TESTED</h2>
+                                            <div class="mt-16 text-grey1">
                                                 <p>Every product is crafted with care and backed by science. Formulated to be gentle yet effective, our skincare is tested for safety, efficacy, and long-lasting results. Each ingredient is carefully chosen to address real skin needs while being kind to all skin types, including sensitive skin. We believe that skincare should not just treat but also nurture that’s why our products are dermatologically tested.</p>
                                             </div>
                                         </div>
@@ -945,15 +1105,16 @@
                                 <!--  -->
                                 <div class="block1 flex gap-32 justify-center items-center lg:flex-row-reverse flex-col">
                                     <div class="w-full lg:w-1/2 lg:sticky lg:top-10">
-                                        <div>
-                                            <img src="./assets/images/clinically-tested2.webp" alt="image 2 for clinically tested section">
+                                        <div class="relative">
+                                            <img src="./assets/images/clinically-tested2.webp" alt="image 2 for clinically tested section relative z-10">
+                                            <div class="w-full h-full absolute top-0 left-0 gradient_image -z-10"></div>
                                         </div>
                                     </div>
                                     <div class="w-full lg:w-1/2 lg:sticky lg:top-10">
                                         <div>
-                                            <span class="block text-h3 font-normal mb-8 uppercase">INSPIRED BY NATURE, PERFECTED BY SCIENCE</span>
-                                            <h2 class="text-h2.64 font-normal uppercase">Pure Promise</h2>
-                                            <div class="mt-16">
+                                            <span class="block text-h3 font-normal mb-8 uppercase text-button-bg">INSPIRED BY NATURE, PERFECTED BY SCIENCE</span>
+                                            <h2 class="text-h2.64 font-normal capitalize text-button-bg">Pure Promise</h2>
+                                            <div class="mt-16 text-grey1">
                                                 <p>We go beyond just sourcing every ingredient is handpicked for its purity, potency, and proven benefits. From natural botanicals to science-backed actives, we ensure that what touches your skin is safe, effective, and ethically sourced. Our commitment lies in sustainability and transparency, so you can trust that each formulation not only nurtures your skin but also respects the planet. With us, integrity isn’t just a promise.</p>
                                             </div>
                                         </div>
@@ -961,15 +1122,357 @@
                                 </div>
                             </div>
                         </div>
-                    </section>
-                    <!-- Clinically Tested Section End (section-4) -->
-                </main>
-                <!-- Footer Starts -->
-                <footer class="border-t border-t-solid border-t-[#0000001A]">
+            </section>
+            <!-- Clinically Tested Section End (section-4) -->
+            <!-- Shopping With Clarity FAQ -->
+             <section>
+                <div class="container">
+                    <div class="inner py-20 sm:py-40 md:py-60 xl:py-100">
+                            <div class="heading text-center space-y-24 mb-32 lg:mb-54 xl:mb-80 1xl:mb-100">
+                                <h2 class="text-h2 font-light">
+                                    
+                                     <span class="font-bold">Shopping</span> With Clarity 
+                                </h2>
+                            </div>
+                            <!--  -->
+                            <div class="flex gap-32 xl:gap-54 flex-col lg:flex-row">
+                                <div class="block-left w-full max-w-1100 mx-auto">
+                                    <div class="w-full max-w-2xl mx-auto space-y-34 flex flex-col justify-start xl:justify-between">
+                                        <!-- Accordion Item 1-->
+                                        <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
+                                            <button class="accordion-btn1 w-full flex justify-between items-center text-left">
+                                                <span class="text-body font-medium">Can I use Ellitee™ products individually?</span>
+                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <!-- Plus Icon -->
+                                                    <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M12 5v14M5 12h14"></path>
+                                                    </svg>
+                                                    <!-- Minus Icon -->
+                                                    <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M5 12h14"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <div class="accordion-content1 overflow-hidden transition-all duration-300">
+                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                                    <p>
+                                                    Yes. Each product is formulated to work on its own. However, products perform best when used as part of a consistent routine.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion Item 2 -->
+                                        <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
+                                            <button class="accordion-btn1 w-full flex justify-between items-center text-left">
+                                                <span class="text-body font-medium">Are Ellitee™ products suitable for daily use?</span>
+                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M12 5v14M5 12h14"></path>
+                                                    </svg>
+                                                    <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M5 12h14"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <div class="accordion-content1 overflow-hidden transition-all duration-300">
+                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                                    <p>
+                                                Yes. All formulations are designed for regular, daily use and barrier compatibility.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion Item 3 -->
+                                        <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
+                                            <button class="accordion-btn1 w-full flex justify-between items-center text-left">
+                                                <span class="text-body font-medium">Do I need all products to see results?</span>
+                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M12 5v14M5 12h14"></path>
+                                                    </svg>
+                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M5 12h14"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
+                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                    <p>
+                                                    Not necessarily. Many users start with one or two products based on their primary concern and expand their routine gradually.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion Item 4 -->
+                                        <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
+                                            <button class="accordion-btn1 w-full flex justify-between items-center text-left">
+                                                <span class="text-body font-medium">Are these products suitable for Indian skin and climate?</span>
+                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M12 5v14M5 12h14"></path>
+                                                    </svg>
+                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M5 12h14"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
+                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                    <p>
+                                                    Yes. Ellitee™ products are designed with Indian skin types, weather conditions, and common concerns in mind.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                    </div>
+                    <!-- Shopping With Clarity Ends-->
+                    <!-- FAQ -->
+                    <div class="inner py-20 sm:py-40 md:py-60 xl:py-100">
+                            <div class="heading text-center space-y-24 mb-32 lg:mb-54 xl:mb-80 1xl:mb-100">
+                                <h2 class="text-h2 font-light">
+                                     <span class="font-bold">Frequently</span> Asked Questions 
+                                </h2>
+                            </div>
+                            <!--  -->
+                            <div class="flex gap-32 xl:gap-54 flex-col lg:flex-row">
+                                <div class="block-left w-full max-w-1100 mx-auto">
+                                    <div class="w-full max-w-2xl mx-auto space-y-34 flex flex-col justify-start xl:justify-between">
+                                        <!-- Accordion Item 1-->
+                                        <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
+                                            <button class="accordion-btn1 w-full flex justify-between items-center text-left">
+                                                <span class="text-body font-medium">Do I need to use all Ellitee™ products together?</span>
+                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <!-- Plus Icon -->
+                                                    <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M12 5v14M5 12h14"></path>
+                                                    </svg>
+                                                    <!-- Minus Icon -->
+                                                    <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M5 12h14"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <div class="accordion-content1 overflow-hidden transition-all duration-300">
+                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                                    <p>
+                                                    No. Each Ellitee™ product is formulated to work on its own. However, products perform best when used together as part of a consistent routine designed around your skin’s needs.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion Item 2 -->
+                                        <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
+                                            <button class="accordion-btn1 w-full flex justify-between items-center text-left">
+                                                <span class="text-body font-medium">Which Ellitee™ product should I start with?</span>
+                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M12 5v14M5 12h14"></path>
+                                                    </svg>
+                                                    <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M5 12h14"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <div class="accordion-content1 overflow-hidden transition-all duration-300">
+                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                                    <p>
+                                                Start with the product that addresses your primary concern, such as acne, pigmentation, or hydration. Many users begin with one product and gradually build a routine as their skin adapts.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion Item 3 -->
+                                        <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
+                                            <button class="accordion-btn1 w-full flex justify-between items-center text-left">
+                                                <span class="text-body font-medium">Are Ellitee™ products suitable for daily use?</span>
+                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M12 5v14M5 12h14"></path>
+                                                    </svg>
+                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M5 12h14"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
+                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                    <p>
+                                                    Yes. All Ellitee™ products are designed for regular, daily use and are formulated to support the skin barrier without causing unnecessary stress or irritation.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion Item 4 -->
+                                        <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
+                                            <button class="accordion-btn1 w-full flex justify-between items-center text-left">
+                                                <span class="text-body font-medium">Can I use Ellitee™ products if I have sensitive or acne-prone skin?</span>
+                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M12 5v14M5 12h14"></path>
+                                                    </svg>
+                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M5 12h14"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
+                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                    <p>
+                                                    Yes. Ellitee™ products are designed with barrier support and tolerance in mind, making them suitable for sensitive and acne-prone skin when used as directed.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion Item 5-->
+                                        <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
+                                            <button class="accordion-btn1 w-full flex justify-between items-center text-left">
+                                                <span class="text-body font-medium">Are Ellitee™ products designed for Indian skin and climate?</span>
+                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <!-- Plus Icon -->
+                                                    <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M12 5v14M5 12h14"></path>
+                                                    </svg>
+                                                    <!-- Minus Icon -->
+                                                    <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M5 12h14"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <div class="accordion-content1 overflow-hidden transition-all duration-300">
+                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                                    <p>
+                                                    Yes. Ellitee™ formulations are created with Indian skin types, weather conditions, and common concerns such as oil imbalance, pigmentation, and sensitivity in mind.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion Item 6 -->
+                                        <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
+                                            <button class="accordion-btn1 w-full flex justify-between items-center text-left">
+                                                <span class="text-body font-medium">Can I combine Ellitee™ products with products from other brands?</span>
+                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M12 5v14M5 12h14"></path>
+                                                    </svg>
+                                                    <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M5 12h14"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <div class="accordion-content1 overflow-hidden transition-all duration-300">
+                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                                    <p>
+                                                You can, but combining multiple active products from different brands may increase the risk of irritation. For best results, Ellitee™ products are designed to be used together in a balanced routine
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion Item 7 -->
+                                        <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
+                                            <button class="accordion-btn1 w-full flex justify-between items-center text-left">
+                                                <span class="text-body font-medium">How long does it take to see results from Ellitee™ skincare?</span>
+                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M12 5v14M5 12h14"></path>
+                                                    </svg>
+                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M5 12h14"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
+                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                    <p>
+                                                    Skin improvement is gradual. With consistent use, many users notice visible changes in skin comfort, balance, and clarity within a few weeks. Long-term results depend on routine consistency and skin type.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion Item 8 -->
+                                        <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
+                                            <button class="accordion-btn1 w-full flex justify-between items-center text-left">
+                                                <span class="text-body font-medium">Are Ellitee™ products non-comedogenic?</span>
+                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M12 5v14M5 12h14"></path>
+                                                    </svg>
+                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M5 12h14"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
+                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                    <p>
+                                                    Yes. Ellitee™ products are formulated to be non-comedogenic, meaning they are designed not to clog pores when used as directed.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion Item 9 -->
+                                        <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
+                                            <button class="accordion-btn1 w-full flex justify-between items-center text-left">
+                                                <span class="text-body font-medium">Do Ellitee™ products promise instant results?</span>
+                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M12 5v14M5 12h14"></path>
+                                                    </svg>
+                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M5 12h14"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
+                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                    <p>
+                                                    No. Ellitee™ focuses on long-term skin health rather than overnight transformation. Our approach prioritizes consistency, balance, and barrier support.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Accordion Item 10 -->
+                                        <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
+                                            <button class="accordion-btn1 w-full flex justify-between items-center text-left">
+                                                <span class="text-body font-medium">How can I choose the right routine for my skin?</span>
+                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M12 5v14M5 12h14"></path>
+                                                    </svg>
+                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <path d="M5 12h14"></path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
+                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                    <p>
+                                                    You can explore products by concern on this page or use Ellitee™ Skin Insights to receive routine guidance based on your skin’s visible patterns and needs.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                    </div>
+                    <!-- Shopping With Clarity Ends-->
+             </div>
+            </section>
+            <div class="tagline bg-grey_light py-28">
+                <div class="container">
+                    <h2 class="text-h2 font-light text-center">Simple <span class="font-bold">routines. Thoughtful</span> formulas. <span class="font-bold">Real skin</span> confidence.</h2>
+                </div>
+            </div>
+        </main>
+            <!-- Footer Starts -->
+             <footer class="border-t border-t-solid border-t-[#0000001A]">
                     <div class="container">
                         <div class="foot-top py-74 border-b border-b-solid border-b-[#0000001A]">
-                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-12 gap-20 md:gap-40 xl:gap-58">
-                                <div class="foot-block flex flex-col gap-32 xl:col-span-3">
+                            <div class="flex justify-between gap-20 md:gap-40 xl:gap-58 flex-wrap">
+                                <div class="foot-block flex flex-col gap-32 w-full md:w-[calc(50%-20px)] xl:w-[calc(30%-58px)]">
                                     <!-- Logo -->
                                     <a href="/index.html" aria-label="Go to homepage" class="relative z-10">
                                         <img src="./assets/images/company-logo.svg" alt="Ellitee logo">
@@ -993,11 +1496,13 @@
                                     </div>
                                 </div>
                                 <!--  -->
-                                <div class="space-y-16 xl:col-span-2">
+                                <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(20%-58px)]">
                                     <span class="inline-block text-body font-semibold">Links</span>
                                     <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal">
                                         <li>
-                                            <a href="/index.html" role="link">Home</a>
+                                              <a href="/index.html" aria-current="page">
+                                            Home
+                                        </a>
                                         </li>
                                         <li>
                                             <a href="#" role="link">About Us</a>
@@ -1009,15 +1514,15 @@
                                             <a href="#" role="link">Testimonials</a>
                                         </li>
                                         <li>
-                                            <a href="#">FAQs</a>
+                                            <a href="#" role="link">FAQs</a>
                                         </li>
                                         <li>
-                                            <a href="#">Contact us</a>
+                                            <a href="#" role="link">Contact us</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <!--  -->
-                                <div class="space-y-16 xl:col-span-2">
+                                <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(20%-58px)]">
                                     <span class="inline-block text-body font-semibold">Our Policy</span>
                                     <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal">
                                         <li>
@@ -1035,34 +1540,17 @@
                                     </ul>
                                 </div>
                                 <!--  -->
-                                <div class="space-y-16 xl:col-span-2">
-                                    <span class="inline-block text-body font-semibold">Treatments</span>
-                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal">
-                                        <li>
-                                            <a href="#" role="link">Dark Spots Treatment</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" role="link">Fungal Infection Treatment</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" role="link">Pimple Treatment</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" role="link">Other Skin Problems</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!--  -->
-                                <div class="space-y-16 xl:col-span-3">
+                               
+                                <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(30%-58px)]">
                                     <span class="inline-block text-body font-semibold">Other Skin Problems</span>
                                     <ul class="address space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li]:text-sm [&_li>a]:font-normal [&_li]:font-normal [&_li]:flex [&_li]:justify-start [&_li]:items-start [&_li]:gap-10">
-                                        <li>
+                                         <li>
                                             <img src="./assets/images/phone.svg" alt="icon of phone for calling" role="img">
-                                            <a href="tel:+918150096500" role="link" aria-label="Call 8150096500">8150096500</a>
+                                            <a href="tel:+919510514689" role="link" aria-label="Call 9510514689">9510514689</a>
                                         </li>
                                         <li>
                                             <img src="./assets/images/mail.svg" alt="icon of mail for email address" role="img">
-                                            <a href="mailto:hello@cureskin.com" role="link" aria-label="Send email to hello@cureskin.com">hello@cureskin.com</a>
+                                            <a href="mailto:contact@ellitee.com" role="link" aria-label="Send email to contact@ellitee.com">contact@ellitee.com</a>
                                         </li>
                                         <li>
                                             <img src="./assets/images/map-pin.svg" alt="icon of map for location" role="img">
@@ -1081,11 +1569,11 @@
                         </div>
                     </div>
                 </footer>
-                <!-- Footer End -->
+            <!-- Footer End -->
               
-                <script src="./assets/js/swiper-bundle.min.js"></script>
-                  <script src="./assets/js/script.js"></script>
-                <script>
+<script src="./assets/js/swiper-bundle.min.js"></script>
+<script src="./assets/js/script.js"></script>
+<script>
     const swiper = new Swiper(".productSwiper", {
   slidesPerView: 1,
   spaceBetween: 20,
@@ -1164,6 +1652,7 @@
 
     updateTrack();
                 </script>
+                <!-- product selector -->
                 <script>
                     // MOBILE FILTER PANEL
 const filterToggleBtn = document.getElementById("filterToggleBtn");
@@ -1236,13 +1725,73 @@ filterClearBtn.addEventListener("click", () => {
 // APPLY FILTERS
 filterApplyBtn.addEventListener("click", () => {
 
-    // 👉 If your filtering function exists, call here
-    // example:
-    // applyFilters();  // (optional)
-
     // close the mobile filter panel
     mobileFilterPanel.classList.add("translate-x-full");
 });
+                </script>
+                <!-- swiper -->
+                <script>
+                const heroSwiper = new Swiper('.hero-swiper', {
+                    loop: true,
+                    speed: 800,
+                    autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                    },
+                    pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    },
+                    navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                    },
+                });
+                </script>
+                <!-- FAQ JS -->
+                <script>
+                    const items = document.querySelectorAll(".accordion-item1");
+
+                    items.forEach((item) => {
+                        const btn = item.querySelector(".accordion-btn1");
+                        const content = item.querySelector(".accordion-content1");
+                        const plusIcon = item.querySelector(".icon-plus");
+                        const minusIcon = item.querySelector(".icon-minus");
+
+                        /* ===============================
+                        ALL ACCORDIONS OPEN BY DEFAULT
+                        =============================== */
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        plusIcon.classList.add("hidden");
+                        minusIcon.classList.remove("hidden");
+
+                        btn.addEventListener("click", () => {
+                            const isOpen = content.style.maxHeight !== "0px";
+
+                            if (isOpen) {
+                                // close self
+                                content.style.maxHeight = "0px";
+                                plusIcon.classList.remove("hidden");
+                                minusIcon.classList.add("hidden");
+                            } else {
+                                // open self
+                                content.style.maxHeight = content.scrollHeight + "px";
+                                plusIcon.classList.add("hidden");
+                                minusIcon.classList.remove("hidden");
+                            }
+                        });
+                    });
+
+
+                    window.addEventListener("resize", () => {
+                        items.forEach(item => {
+                            const content = item.querySelector(".accordion-content1");
+                            if (content.style.maxHeight !== "0px") {
+                                content.style.maxHeight = content.scrollHeight + "px";
+                            }
+                        });
+                    });
+
                 </script>
             </body>
         </html>

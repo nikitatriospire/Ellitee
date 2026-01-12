@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Ellitee - AI Skin Insights: Personalized Analysis & 3-Step Diagnosis</title>
+        <!-- SEO Meta -->
+        <meta name="description" content="Experience scientifically tested skincare solutions that protect and rejuvenate your skin with proven, safe, and effective ingredients.">
+        <meta name="keywords" content="skincare, scientifically tested, beauty, rejuvenation, ellitee, safe ingredients">
+        <meta name="author" content="Ellitee">
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="./assets/css/output.css">
+        <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="sticky top-0 left-0 w-full bg-white border-y border-gray-200 py-34 z-100">
+            <div class="container">
+                <div class="flex items-center justify-between py-4 gap-4">
+                    <!-- Logo -->
+                    <a href="#" aria-label="Go to homepage" class="relative z-100">
+                        <img src="./assets/images/company-logo.svg" alt="Ellitee logo">
+                    </a>
+                    <!-- Navigation -->
+                    <nav id="menu" class="flex-1 flex justify-start lg:justify-center items-start lg:items-center fixed lg:static top-0 left-0 w-full lg:w-auto h-0 lg:h-auto bg-white lg:bg-transparent transition-all duration-300 z-40 overflow-hidden lg:overflow-visible" aria-label="Main navigation">
+                        <ul id="menuList" class="w-full lg:w-auto pt-180 lg:pt-0 flex flex-col lg:flex-row gap-24 lg:gap-32 xl:gap-54 justify-center items-center
+             opacity-0 -translate-y-2 pointer-events-none lg:opacity-100 lg:pointer-events-auto lg:translate-y-0
+             transition-all duration-300">
+                            <li>
+                                <a href="/index.html" aria-current="page">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Learn about us">About us</a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Explore our areas of expertise">Our Expertise</a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Read client testimonials">Testimonials</a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Frequently asked questions">FAQ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="flex justify-center items-center gap-8">
+                        <!-- Contact Desktop Button -->
+                        <a href="tel:+919510514689" class="hidden sm:block btn-dark relative z-100" aria-label="Contact Ellitee team">
+                            Contact Us
+                        </a>
+                        <!-- Contact Mobile Button -->
+                        <a href="tel:+919510514689" class="btn-dark relative z-100 p-12 h-52 sm:hidden flex justify-center items-center" aria-label="Contact Ellitee team">
+                            <img src="./assets/images/call-white.svg" alt=" call icon" class="w-24 h-24">
+                        </a>
+                        <!-- Mobile Hamburger -->
+                        <button
+                            id="menuBtn"
+                            class="lg:hidden flex flex-col gap-6 focus:outline-none w-48 h-48 justify-center items-center relative z-100"
+                            aria-label="Toggle mobile menu"
+                            aria-expanded="false"
+                            aria-controls="menu"
+                        >
+                            <span class="bar w-32 h-2 bg-black rounded transition-all duration-300"></span>
+                            <span class="bar w-32 h-2 bg-black rounded transition-all duration-300"></span>
+                            <span class="bar w-32 h-2 bg-black rounded transition-all duration-300"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="main_content">
+              <!-- hero2 Start -->
+            <section class="relative overflow-x-hidden gradient overflow-hidden">
+                <div class="container">
+                    <div class="flex flex-col-reverse lg:flex-row gap-20 lg:gap-40 xxl:gap-86 min-h-600">
+                        <!-- Left Content -->
+                        <div class="w-full lg:w-[50%] xl:w-[60%] xxl:w-[55%] flex flex-col justify-center px-16 md:px-0 pb-40 lg:pb-80 xxl:pb-104 pt-20 sm:pt-40 lg:pt-80 xxl:pt-104 space-y-34 relative z-10">
+                            <div class="flex flex-col justify-center space-y-24">
+                                <h1 class="text-h2.64 font-light text-dark">
+                                    <span class="font-bold">Real Skin.      
+                                    </span>
+                                    Real Experiences.
+                                </h1>
+                                <div class="text-grey space-y-16 md:space-y-24">
+                                    <p>
+                                        Every skin journey is different. What matters is consistency, clarity, and care that works with your skin — not against it.
+                                    </p>
+                                    <p>Shared by people using Ellitee™ as part of their daily routines.</p>
+                                </div>
+                            </div>
+                          
+                        </div>
+                        <!-- Hero Image -->
+                 
+                        <div class="lg:absolute w-full top-0 right-0 flex lg:justify-end lg:items-end h-full z-0">
+                            <img
+                                src="./assets/images/testimonial1.png"
+                                alt="Model applying sunscreen"
+                                class="w-full lg:w-[50%] h-270 sm:h-full lg:h-[70%] xl:h-[80%] 1xl:h-full object-cover object-center xxl:object-right"
+                                fetchpriority="high"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- hero2 end -->
+            <!-- Result Section starts -->
+            <section class="py-40 md:py-60 xl:py-100">
+                <div class="container">
+                    <div class="inner">
+                        <!-- Heading -->
+                        <div class="heading text-center space-y-24">
+                            <h2 id="shop-category-title" class="text-h2 font-light">
+                                Why
+                                <span class="font-bold">Real Results</span>
+                                Matter
+                            </h2>
+                            <div class="text-grey font-normal space-y-20">
+                                <p>Skincare isn’t about instant transformation — it’s about gradual improvement and comfort you can feel.</p>
+                                <p>We share real experiences from people who use Ellitee™ consistently, so you can understand how our products fit into everyday routines and real skin concerns.</p>
+                                <p>No exaggerated promises. Just honest feedback.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Result Section ends -->
+             <!-- Shop by Category Section -->
+            <section class="py-40 md:py-60 xl:py-100">
+                <div class="container">
+                    <div class="inner">
+                        <!-- Heading -->
+                        <div class="heading text-center space-y-24">
+                            <h2 id="shop-category-title" class="text-h2 font-light">
+                                Real
+                                <span class="font-bold"> Skin.</span> Real
+                                <span class="font-bold"> Results.</span>
+                            </h2>
+                            <div class="text-grey font-normal">
+                                <p>Visible improvements through consistent routines — not overnight claims.</p>
+                            </div>
+                        </div>
+                        <!-- Product Grid -->
+                        <div class="products mt-32 lg:mt-54">
+                            <div class="product-block flex flex-wrap xl:flex-nowrap gap-32 xl:gap-48" role="list">
+                                <!-- ITEM 1 -->
+                                <div class="listitem w-full sm:w-[calc(50%-16px)] xl:w-[calc(33%-24px)]">
+                                    <div
+                                        href="#"
+                                        class="w-full group flex flex-col gap-16"
+                                        aria-label="Step 1: Take the skin quiz"
+                                        role="link"
+                                    >
+                                        <!-- Product Image -->
+                                        <div class="relative overflow-hidden">
+                                            <img
+                                                 src="./assets/images/testimonial_card1.webp"
+                                                alt="Woman taking an online skin quiz for diagnosis"
+                                                class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover h-auto lg:h-463 aspect-square lg:aspect-auto"
+                                                role="img"
+                                            >
+                                        </div>
+                                        <!-- Product Info -->
+                                        <div class="space-y-16 card-content h-full">
+                                            <div class="flex flex-col gap-10 font-normal text-left">
+                                                <span class="card-title font-medium text-dark text-t_20">My skin feels calmer and more balanced.</span>
+                                                <div class="card-desc text-grey1 *:block space-y-8">
+                                                    <span>I struggled with acne flare-ups and oiliness for years. Using ClearGel™ and CalmGel™ together helped my skin feel cleaner without dryness. Breakouts feel less aggressive now.</span>
+                                                    <span class="italic">— Ananya, 26</span>
+                                                </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ITEM 2 -->
+                                <div class="listitem w-full sm:w-[calc(50%-16px)] xl:w-[calc(33%-24px)]">
+                                    <div
+                                        href="#"
+                                        class="w-full group flex flex-col gap-16"
+                                        aria-label="Step 1: Take the skin quiz"
+                                        role="link"
+                                    >
+                                        <!-- Product Image -->
+                                        <div class="relative overflow-hidden">
+                                            <img
+                                                src="./assets/images/testimonial_img3.webp"
+                                                alt="client image showing results"
+                                                class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover h-auto lg:h-463 aspect-square lg:aspect-auto"
+                                                role="img"
+                                            >
+                                        </div>
+                                        <!-- Product Info -->
+                                        <div class="space-y-16 card-content h-ful">
+                                            <div class="flex flex-col gap-10 font-normal text-left">
+                                                <span class="card-title font-medium text-dark text-t_20">Finally saw improvement in my acne marks.</span>
+                                                <div class="card-desc text-grey1 *:block space-y-8">
+                                                    <span>SpotCorrect™ helped reduce the look of post-acne marks over time. It didn’t irritate my skin, which was my biggest fear with brightening serums.</span>
+                                                    <span class="italic">— Riya, 31</span>
+                                                </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ITEM 3 -->
+                                <div class="listitem w-full sm:w-[calc(50%-16px)] xl:w-[calc(33%-24px)]">
+                                    <div
+                                        href="#"
+                                        class="group flex flex-col gap-16 w-full"
+                                        aria-label="Step 1: Take the skin quiz"
+                                        role="link"
+                                    >
+                                        <!-- Product Image -->
+                                        <div class="relative overflow-hidden">
+                                            <img
+                                                src="./assets/images/testimonialcard3.webp"
+                                                alt="client image showing skin improvement after using the product"
+                                                class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover h-auto lg:h-463 aspect-square lg:aspect-auto"
+                                                role="img"
+                                            >
+                                        </div>
+                                        <!-- Product Info -->
+                                        <div class="space-y-16 card-content h-full">
+                                             <div class="flex flex-col gap-10 font-normal text-left">
+                                                <span class="card-title font-medium text-dark text-t_20">My routine finally makes sense.</span>
+                                                <div class="card-desc text-grey1 *:block space-y-8">
+                                                    <span>I used to switch products constantly. Ellitee™ helped me stick to a simple routine, and my skin feels more stable and less reactive now</span>
+                                                    <span class="italic">— Neha, 29</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-center mt-54">
+                                <a href="#" class="btn-dark" aria-label="Shop sunscreen products">
+                                    Load More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Shop by Category Section -->
+            <!-- Shop by Category Section -->
+            <section class="py-40 md:py-60 xl:py-100 bg-grey_light">
+                <div class="container">
+                    <div class="inner">
+                        <!-- Heading -->
+                        <div class="heading text-center space-y-24">
+                            <h2 id="shop-category-title" class="text-h2 font-light">
+                                <span class="font-bold"> Results From</span>
+                                Real Users
+                            </h2>
+                            <div class="text-grey font-normal">
+                                <p>Captured over time under consistent conditions.</p>
+                            </div>
+                        </div>
+                        <!-- Product Grid -->
+                        <div class="products mt-32 lg:mt-54">
+                            <div class="product-block grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-48" role="list">
+                                <!-- ITEM 1 -->
+                                <div class="listitem">
+                                    <div
+                                        href="#"
+                                        class="group flex flex-col gap-16"
+                                        aria-label="Step 1: Take the skin quiz"
+                                        role="link"
+                                    >
+                                        <!-- Product Image -->
+                                        <div class="relative overflow-hidden">
+                                            <img
+                                                src="./assets/images/testimonial_card1.webp"
+                                                alt="Woman taking an online skin quiz for diagnosis"
+                                                class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover aspect-square"
+                                                role="img"
+                                            >
+                                        </div>
+                                        <!-- Product Info -->
+                                        <div class="space-y-16 card-content h-ful">
+                                            <div class="flex flex-col gap-10 font-normal text-left">
+                                                <span class="card-title font-medium text-dark text-t_20">Ananya, 24 | Concern: Acne, Redness</span>
+                                                <div class="card-desc">
+                                                    <span class="text-grey1">I was skeptical, but the calming serum cleared my redness in three weeks. It healed inflammation and stopped new breakouts.</span>
+                                                </div>
+                                            </div>
+                                            <div class="mx-auto">
+                                                <a href="#" class="btn-dark bg-transparent text-[#4d4d4d] border border-solid border-grey" aria-label="Shop sunscreen products">
+                                                    View Product
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ITEM 2 -->
+                                <div class="listitem">
+                                    <div
+                                        href="#"
+                                        class="group flex flex-col gap-16"
+                                        aria-label="Step 1: Take the skin quiz"
+                                        role="link"
+                                    >
+                                        <!-- Product Image -->
+                                        <div class="relative overflow-hidden">
+                                            <img
+                                                src="./assets/images/testimonialcard2.webp"
+                                                alt="client image showing results"
+                                                class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover aspect-square"
+                                                role="img"
+                                            >
+                                        </div>
+                                        <!-- Product Info -->
+                                        <div class="space-y-16 card-content h-ful">
+                                            <div class="flex flex-col gap-10 font-normal text-left">
+                                                <span class="card-title font-medium text-dark text-t_20">Riya, 29 | Concern: Oily Skin & Excess Shine</span>
+                                                <div class="card-desc">
+                                                    <span class="text-grey1">My skin would get oily by midday, especially around the T-zone. This formula helped regulate oil levels instead of masking the shine.</span>
+                                                </div>
+                                            </div>
+                                            <div class="mx-auto">
+                                                <a href="#" class="btn-dark bg-transparent text-[#4d4d4d] border border-solid border-grey" aria-label="Shop sunscreen products">
+                                                    View Product
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ITEM 3 -->
+                                <div class="listitem">
+                                    <div
+                                        href="#"
+                                        class="group flex flex-col gap-16"
+                                        aria-label="Step 1: Take the skin quiz"
+                                        role="link"
+                                    >
+                                        <!-- Product Image -->
+                                        <div class="relative overflow-hidden">
+                                            <img
+                                                src="./assets/images/testimonialcard3.webp"
+                                                alt="client image showing skin improvement after using the product"
+                                                class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover aspect-square"
+                                                role="img"
+                                            >
+                                        </div>
+                                        <!-- Product Info -->
+                                        <div class="space-y-16 card-content h-full">
+                                            <div class="flex flex-col gap-10 font-normal text-left">
+                                                <span class="card-title font-medium text-dark text-t_20">Jiya, 26 | Concern: Uneven Skin Tone</span>
+                                                <div class="card-desc">
+                                                    <span class="text-grey1">I used to rely on heavy coverage to even out my complexion. This routine focused on improving skin tone consistency instead of covering it up.</span>
+                                                </div>
+                                            </div>
+                                            <div class="mx-auto">
+                                                <a href="#" class="btn-dark bg-transparent text-[#4d4d4d] border border-solid border-grey" aria-label="Shop sunscreen products">
+                                                    View Product
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-center mt-54">
+                                <a href="#" class="btn-dark" aria-label="Shop sunscreen products">
+                                    Start Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Shop by Category Section  -->
+            <!-- video Section -->
+            <section class="py-40 md:py-60 xl:py-100">
+                <div class="container">
+                    <div class="inner flex flex-col lg:flex-row gap-20 lg:gap-40 xl:gap-74 xxl:justify-center xxl:items-center">
+                        <!-- LEFT (VIDEO) -->
+                        <div class="w-full lg:w-1/2">
+                            <div class="video-section lg:sticky lg:top-40">
+                                <div class="video-block1 relative">
+                                    <video
+                                        controls
+                                        playsinline
+                                        poster="./assets/images/video-image.webp"
+                                        class="w-full overflow-hidden"
+                                    >
+                                        <source src="./assets/images/video.mp4" type="video/mp4">
+                                        <track
+                                            kind="captions"
+                                            srclang="en"
+                                            label="English captions"
+                                            default
+                                        >
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- RIGHT (CONTENT) -->
+                        <div class="w-full lg:w-1/2">
+                            <div class="content space-y-24">
+                                <h2 class="text-h2 font-light">
+                                    What These
+                                    <span class="font-bold">Results Mean</span>
+                                </h2>
+                                <div class="space-y-20 text-grey1 font-normal leading-relaxed">
+                                    <p>
+                                        Skin responds differently based on concern depth, consistency, and environment.
+                                    </p>
+                                    <p>
+                                        The experiences shared here reflect gradual improvement with regular use as part of a balanced routine. Individual results may vary, and skincare works best when paired with patience and consistency.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- video Section End -->
+            <!-- Result Section starts -->
+            <section class="py-40 md:py-60 xl:py-100 bg-grey_light">
+                <div class="container">
+                    <div class="inner">
+                        <!-- Heading -->
+                        <div class="heading text-center space-y-24">
+                            <h2 id="shop-category-title" class="text-h2 font-light">
+                                Results
+                                <span class="font-bold">Come From Routines,</span>
+                                Not Single Products
+                            </h2>
+                            <div class="text-grey font-normal space-y-20">
+                                <p>Most people featured here used Ellitee™ products together as part of a consistent routine — cleansing, treatment, and hydration.</p>
+                                <p>That’s where clarity and balance start.</p>
+                            </div>
+                            <div class="w-full flex justify-center mt-24 lg:mt-54">
+                                <a href="#" class="btn-dark" aria-label="Build Your Routine">
+                                    Build Your Routine
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Result Section ends -->
+            <!-- Customer Review Section (section-5) -->
+            <section class="py-40 md:py-60 xl:py-100 bg-white">
+                <div class="container">
+                    <h2 class="text-center text-h2 font-light mb-40">
+                        <span class="font-bold"> Real People,</span>
+                        Real Results
+                    </h2>
+                    <div class="swiper customerSwiper">
+                        <div class="swiper-wrapper  pb-60 xl:pb-0">
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide">
+                                <div class="overflow-hidden shadow group aspect-3/4">
+                                    <video
+                                        src="./assets/images/customer-video1.mp4"
+                                        muted
+                                        playsinline
+                                        class="w-full h-full object-cover"
+                                        aria-label="Customer testimonial video 1"
+                                        onmouseenter="this.play()"
+                                        onmouseleave="this.pause(); this.currentTime=0;"
+                                    ></video>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide">
+                                <div class="overflow-hidden shadow group aspect-3/4">
+                                    <video
+                                        src="./assets/images/customer-video2.mp4"
+                                        muted
+                                        playsinline
+                                        class="w-full h-full object-cover"
+                                        aria-label="Customer testimonial video 2"
+                                        onmouseenter="this.play()"
+                                        onmouseleave="this.pause(); this.currentTime=0;"
+                                    ></video>
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide">
+                                <div class="overflow-hidden shadow group aspect-3/4">
+                                    <video
+                                        src="./assets/images/customer-video3.mp4"
+                                        muted
+                                        playsinline
+                                        class="w-full h-full object-cover"
+                                        aria-label="Customer testimonial video 3"
+                                        onmouseenter="this.play()"
+                                        onmouseleave="this.pause(); this.currentTime=0;"
+                                    ></video>
+                                </div>
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="swiper-slide">
+                                <div class="overflow-hidden shadow group aspect-3/4">
+                                    <video
+                                        src="./assets/images/customer-video4.mp4"
+                                        muted
+                                        playsinline
+                                        class="w-full h-full object-cover object-left"
+                                        aria-label="Customer testimonial video 4"
+                                        onmouseenter="this.play()"
+                                        onmouseleave="this.pause(); this.currentTime=0;"
+                                    ></video>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Swiper Pagination -->
+                        <div class="swiper-pagination mt-20"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- Customer Review Section End (section-5) -->
+            <!-- Message Section Starts -->
+            <section class="py-40 md:py-60 xl:py-100 bg-grey_light">
+                <div class="container">
+                    <div class="inner">
+                        <!-- Heading -->
+                        <div class="heading text-center space-y-24">
+                            <h2 id="shop-category-title" class="text-h2 font-light">
+                                Share Your 
+                                <span class="font-bold">Skin Story</span>
+                            </h2>
+                            <div class="text-grey font-normal space-y-20">
+                                <p>Your experience can help someone else make better skincare decisions.</p>
+                                <p>If you’ve been using Ellitee™, we’d love to hear how your skin feels over time.</p>
+                            </div>
+                            <div class="mt-24 flex flex-col justify-center items-center gap-24 lg:gap-40">
+                                 <textarea
+                                    rows="5" 
+                                    placeholder="Write your review here..."
+                                    class="w-full lg:w-1/2 resize-none rounded-md shadow-message border border-[#D5D7DA] px-16 py-16  text-grey1 focus:outline-none focus:ring-1 focus:ring-black bg-white"
+                                ></textarea>
+
+                                <button class="btn-dark">
+                                    Submit Your Review
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Message Section Ends -->
+        </main>
+        <!-- Footer Starts -->
+         <footer class="border-t border-t-solid border-t-[#0000001A]">
+                    <div class="container">
+                        <div class="foot-top py-74 border-b border-b-solid border-b-[#0000001A]">
+                            <div class="flex justify-between gap-20 md:gap-40 xl:gap-58 flex-wrap">
+                                <div class="foot-block flex flex-col gap-32 w-full md:w-[calc(50%-20px)] xl:w-[calc(30%-58px)]">
+                                    <!-- Logo -->
+                                    <a href="/index.html" aria-label="Go to homepage" class="relative z-10">
+                                        <img src="./assets/images/company-logo.svg" alt="Ellitee logo">
+                                    </a>
+                                    <div class="space-y-16">
+                                        <span class="inline-block text-sm">
+                                            Find out your skin or hair concerns and
+                              what a dermatologist advises for them, for free.
+                                        </span>
+                                        <div class="flex gap-16 justify-start items-center">
+                                            <a href="#" aria-label="Go to instagram" class="relative z-10">
+                                                <img src="./assets/images/instagram.svg" alt="Instagram logo">
+                                            </a>
+                                            <a href="#" aria-label="Go to linkedin" class="relative z-10">
+                                                <img src="./assets/images/linkedin.svg" alt="linkedin logo">
+                                            </a>
+                                            <a href="#" aria-label="Go to facebook" class="relative z-10">
+                                                <img src="./assets/images/facebook.svg" alt="Facebook logo">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(20%-58px)]">
+                                    <span class="inline-block text-body font-semibold">Links</span>
+                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal">
+                                        <li>
+                                              <a href="/index.html" aria-current="page">
+                                            Home
+                                        </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" role="link">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" role="link">Our Expertise</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" role="link">Testimonials</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" role="link">FAQs</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" role="link">Contact us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--  -->
+                                <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(20%-58px)]">
+                                    <span class="inline-block text-body font-semibold">Our Policy</span>
+                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal">
+                                        <li>
+                                            <a href="#" role="link">Terms of Use</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" role="link">Privacy Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" role="link">Grievance Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" role="link">Refunds & Cancellations Policy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--  -->
+                               
+                                <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(30%-58px)]">
+                                    <span class="inline-block text-body font-semibold">Other Skin Problems</span>
+                                    <ul class="address space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li]:text-sm [&_li>a]:font-normal [&_li]:font-normal [&_li]:flex [&_li]:justify-start [&_li]:items-start [&_li]:gap-10">
+                                         <li>
+                                            <img src="./assets/images/phone.svg" alt="icon of phone for calling" role="img">
+                                            <a href="tel:+919510514689" role="link" aria-label="Call 9510514689">9510514689</a>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/images/mail.svg" alt="icon of mail for email address" role="img">
+                                            <a href="mailto:contact@ellitee.com" role="link" aria-label="Send email to contact@ellitee.com">contact@ellitee.com</a>
+                                        </li>
+                                        <li>
+                                            <img src="./assets/images/map-pin.svg" alt="icon of map for location" role="img">
+                                            <span aria-label="Company address">
+                                                Ellitee LLP, #656, 3rd floor, 27th Main, 13th Cross Rd, 
+            opp. PWD Quarters, 1st Sector, HSR Layout, Bengaluru, 
+            Karnataka 560102
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copyright font-normal text-sm text-center py-16 text-dark1">
+                            <p> &copy; 2025-Ellitee™. All Rights Reserved</p>
+                        </div>
+                    </div>
+                </footer>
+        <!-- Footer End -->
+        <script src="./assets/js/swiper-bundle.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+        <script>
+document.addEventListener("DOMContentLoaded", equalizeCardText);
+window.addEventListener("resize", equalizeCardText);
+
+function equalizeCardText() {
+  const titles = document.querySelectorAll(".card-title");
+  const descs  = document.querySelectorAll(".card-desc");
+
+  // reset heights first
+  titles.forEach(el => el.style.height = "auto");
+  descs.forEach(el => el.style.height = "auto");
+
+  let maxTitleHeight = 0;
+  let maxDescHeight  = 0;
+
+  // get max heights
+  titles.forEach(el => {
+    maxTitleHeight = Math.max(maxTitleHeight, el.offsetHeight);
+  });
+
+  descs.forEach(el => {
+    maxDescHeight = Math.max(maxDescHeight, el.offsetHeight);
+  });
+
+  // apply max heights
+  titles.forEach(el => el.style.height = maxTitleHeight + "px");
+  descs.forEach(el => el.style.height = maxDescHeight + "px");
+}
+        </script>
+    </body>
+</html>

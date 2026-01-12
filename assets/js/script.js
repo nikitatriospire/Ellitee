@@ -206,3 +206,91 @@ sizeButtons.forEach(btn => {
   });
 });
 
+// 3 step change js (safe version)
+
+const stepsContainer = document.getElementById("allSteps");
+const nextBtn = document.getElementById("nextBtn");
+const prevBtn = document.getElementById("prevBtn");
+
+if (stepsContainer && nextBtn && prevBtn) {
+
+    const steps = Array.from(
+        document.querySelectorAll("#allSteps .step")
+    ).map(step => ({
+        title: step.querySelector(".step-title")?.textContent || "",
+        text: step.querySelector(".step-text")?.innerHTML || "",
+        image: step.dataset.image || ""
+    }));
+
+    let current = 0;
+
+    const titleEl = document.getElementById("stepTitle");
+    const textEl  = document.getElementById("stepText");
+    const imgEl   = document.getElementById("stepImage");
+
+    const indicators = [
+        document.getElementById("s1"),
+        document.getElementById("s2"),
+        document.getElementById("s3")
+    ].filter(Boolean); // remove nulls
+
+    function updateButtons() {
+        if (current === 0) {
+            prevBtn.disabled = true;
+            prevBtn.classList.remove("bg-black", "text-white");
+            prevBtn.classList.add("border", "border-grey", "text-[#4D4D4D]");
+        } else {
+            prevBtn.disabled = false;
+            prevBtn.classList.add("bg-black", "text-white");
+        }
+
+        if (current === steps.length - 1) {
+            nextBtn.disabled = true;
+            nextBtn.classList.remove("bg-black", "text-white");
+            nextBtn.classList.add("border", "border-grey", "text-[#4D4D4D]");
+        } else {
+            nextBtn.disabled = false;
+            nextBtn.classList.add("bg-black", "text-white");
+        }
+    }
+
+    function updateStep(index) {
+        if (!steps[index]) return;
+
+        if (titleEl) titleEl.textContent = steps[index].title;
+        if (textEl) textEl.innerHTML = steps[index].text;
+        if (imgEl) imgEl.src = steps[index].image;
+
+        indicators.forEach((el, i) => {
+            const span = el.querySelector("span");
+            if (!span) return;
+
+            if (i === index) {
+                span.classList.add("bg-black", "text-white");
+                span.classList.remove("bg-white", "text-black");
+            } else {
+                span.classList.remove("bg-black", "text-white");
+                span.classList.add("bg-white", "text-black");
+            }
+        });
+
+        updateButtons();
+    }
+
+    nextBtn.addEventListener("click", () => {
+        if (current < steps.length - 1) {
+            current++;
+            updateStep(current);
+        }
+    });
+
+    prevBtn.addEventListener("click", () => {
+        if (current > 0) {
+            current--;
+            updateStep(current);
+        }
+    });
+
+    updateStep(0);
+}
+
