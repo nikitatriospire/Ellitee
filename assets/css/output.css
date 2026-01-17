@@ -3310,7 +3310,7 @@
   transform: translateY(-25%) translateX(34%);
   width: 100%;
   height: 65px;
-  background-image: url("/assets/images/arrow-vector.svg");
+  background-image: url("../images/arrow-vector.svg");
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -1;
@@ -3323,7 +3323,7 @@
   transform: translateY(-25%) translateX(34%);
   width: 100%;
   height: 112px;
-  background-image: url("/assets/images/arrow-vectore-2.svg");
+  background-image: url("../images/arrow-vectore-2.svg");
   background-repeat: no-repeat;
   background-size: contain;
   z-index: -1;
