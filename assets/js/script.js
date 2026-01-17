@@ -1,51 +1,51 @@
 // --------------Mobile Menu--------------
-const menuBtn = document.getElementById("menuBtn");
-const menu = document.getElementById("menu");
-const menuList = document.getElementById("menuList");
-const bars = menuBtn.querySelectorAll(".bar");
-let menuOpen = false;
+// const menuBtn = document.getElementById("menuBtn");
+// const menu = document.getElementById("menu");
+// const menuList = document.getElementById("menuList");
+// const bars = menuBtn.querySelectorAll(".bar");
+// let menuOpen = false;
 
-// match the CSS transition duration (ms)
-const TRANSITION_MS = 300;
+// // match the CSS transition duration (ms)
+// const TRANSITION_MS = 300;
 
-menuBtn.addEventListener("click", () => {
-  menuOpen = !menuOpen;
-  menuBtn.setAttribute("aria-expanded", menuOpen);
+// menuBtn.addEventListener("click", () => {
+//   menuOpen = !menuOpen;
+//   menuBtn.setAttribute("aria-expanded", menuOpen);
 
-  // BAR (hamburger -> cross) animation (non-destructive, toggles only the needed classes)
-  bars[0].classList.toggle("rotate-45", menuOpen);
-  bars[0].classList.toggle("translate-y-[8px]", menuOpen);
-  bars[1].classList.toggle("opacity-0", menuOpen);
-  bars[2].classList.toggle("-rotate-45", menuOpen);
-  bars[2].classList.toggle("-translate-y-[8px]", menuOpen);
+//   // BAR (hamburger -> cross) animation (non-destructive, toggles only the needed classes)
+//   bars[0].classList.toggle("rotate-45", menuOpen);
+//   bars[0].classList.toggle("translate-y-[8px]", menuOpen);
+//   bars[1].classList.toggle("opacity-0", menuOpen);
+//   bars[2].classList.toggle("-rotate-45", menuOpen);
+//   bars[2].classList.toggle("-translate-y-[8px]", menuOpen);
 
-  if (menuOpen) {
-    document.body.style.overflow = "hidden";
+//   if (menuOpen) {
+//     document.body.style.overflow = "hidden";
 
-    menu.classList.remove("h-0");
-    menu.classList.add("h-screen");
+//     menu.classList.remove("h-0");
+//     menu.classList.add("h-screen");
 
-    // Force a reflow so the UL transition always runs (optional but reliable)
-    void menuList.offsetWidth;
+//     // Force a reflow so the UL transition always runs (optional but reliable)
+//     void menuList.offsetWidth;
 
-    // Show UL (fade + translate to 0) and enable pointer events
-    menuList.classList.remove("opacity-0", "-translate-y-2", "pointer-events-none");
-    menuList.classList.add("opacity-100", "translate-y-0", "pointer-events-auto");
-  } else {
-    // 🔓 Enable page scroll again
-    document.body.style.overflow = "";
+//     // Show UL (fade + translate to 0) and enable pointer events
+//     menuList.classList.remove("opacity-0", "-translate-y-2", "pointer-events-none");
+//     menuList.classList.add("opacity-100", "translate-y-0", "pointer-events-auto");
+//   } else {
+//     // 🔓 Enable page scroll again
+//     document.body.style.overflow = "";
 
-    // Close menu: first hide UL (fade out + translate), disable pointer events immediately
-    menuList.classList.remove("opacity-100", "translate-y-0", "pointer-events-auto");
-    menuList.classList.add("opacity-0", "-translate-y-2", "pointer-events-none");
+//     // Close menu: first hide UL (fade out + translate), disable pointer events immediately
+//     menuList.classList.remove("opacity-100", "translate-y-0", "pointer-events-auto");
+//     menuList.classList.add("opacity-0", "-translate-y-2", "pointer-events-none");
 
-    // After UL transition finishes, collapse the NAV so no flash
-    setTimeout(() => {
-      menu.classList.remove("h-screen");
-      menu.classList.add("h-0");
-    }, TRANSITION_MS);
-  }
-});
+//     // After UL transition finishes, collapse the NAV so no flash
+//     setTimeout(() => {
+//       menu.classList.remove("h-screen");
+//       menu.classList.add("h-0");
+//     }, TRANSITION_MS);
+//   }
+// });
 
 /*-----------------------HOMEPAGE-------------------*/
 
@@ -195,12 +195,12 @@ sizeButtons.forEach(btn => {
     // reset all buttons
     sizeButtons.forEach(b => {
       b.classList.remove("bg-black", "text-button-text");
-      b.classList.add("bg-white", "text-black");
+      b.classList.add("bg-white", "text-grey");
     });
 
     // activate clicked one
     btn.classList.add("bg-black", "text-button-text");
-    btn.classList.remove("bg-white", "text-black");
+    btn.classList.remove("bg-white", "text-grey");
 
     console.log("Selected Size:", btn.dataset.size);
   });
@@ -214,6 +214,7 @@ const prevBtn = document.getElementById("prevBtn");
 
 if (stepsContainer && nextBtn && prevBtn) {
 
+    // Collect step data safely
     const steps = Array.from(
         document.querySelectorAll("#allSteps .step")
     ).map(step => ({
@@ -232,34 +233,45 @@ if (stepsContainer && nextBtn && prevBtn) {
         document.getElementById("s1"),
         document.getElementById("s2"),
         document.getElementById("s3")
-    ].filter(Boolean); // remove nulls
+    ].filter(Boolean);
 
+    // ---------------------------
+    // BUTTON STATE HANDLER
+    // ---------------------------
     function updateButtons() {
+
+        // PREVIOUS BUTTON
         if (current === 0) {
             prevBtn.disabled = true;
             prevBtn.classList.remove("bg-black", "text-white");
             prevBtn.classList.add("border", "border-grey", "text-[#4D4D4D]");
         } else {
             prevBtn.disabled = false;
+            prevBtn.classList.remove("border", "border-grey", "text-[#4D4D4D]");
             prevBtn.classList.add("bg-black", "text-white");
         }
 
+        // NEXT BUTTON
         if (current === steps.length - 1) {
             nextBtn.disabled = true;
             nextBtn.classList.remove("bg-black", "text-white");
             nextBtn.classList.add("border", "border-grey", "text-[#4D4D4D]");
         } else {
             nextBtn.disabled = false;
+            nextBtn.classList.remove("border", "border-grey", "text-[#4D4D4D]");
             nextBtn.classList.add("bg-black", "text-white");
         }
     }
 
+    // ---------------------------
+    // STEP UPDATE HANDLER
+    // ---------------------------
     function updateStep(index) {
         if (!steps[index]) return;
 
         if (titleEl) titleEl.textContent = steps[index].title;
-        if (textEl) textEl.innerHTML = steps[index].text;
-        if (imgEl) imgEl.src = steps[index].image;
+        if (textEl)  textEl.innerHTML = steps[index].text;
+        if (imgEl)   imgEl.src = steps[index].image;
 
         indicators.forEach((el, i) => {
             const span = el.querySelector("span");
@@ -277,6 +289,9 @@ if (stepsContainer && nextBtn && prevBtn) {
         updateButtons();
     }
 
+    // ---------------------------
+    // EVENTS
+    // ---------------------------
     nextBtn.addEventListener("click", () => {
         if (current < steps.length - 1) {
             current++;
@@ -291,6 +306,27 @@ if (stepsContainer && nextBtn && prevBtn) {
         }
     });
 
+    // ---------------------------
+    // INIT
+    // ---------------------------
     updateStep(0);
+}
+
+// Footer Address 3line
+const addressEl = document.getElementById("companyAddress");
+
+if (addressEl) {
+    const text = addressEl.textContent.trim();
+
+    // Define logical split points
+    const parts = [
+        "Ellitee LLP",
+        "SH-403 Shiven Shoppers, Adajan DN, Surat –",
+        "395009, Gujarat, India"
+    ];
+
+    addressEl.innerHTML = parts
+        .map(part => `<span class="block">${part}</span>`)
+        .join("");
 }
 

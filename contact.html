@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Ellitee - AI Skin Insights: Personalized Analysis & 3-Step Diagnosis</title>
+        <!-- SEO Meta -->
+        <meta name="description" content="Experience scientifically tested skincare solutions that protect and rejuvenate your skin with proven, safe, and effective ingredients.">
+        <meta name="keywords" content="skincare, scientifically tested, beauty, rejuvenation, ellitee, safe ingredients">
+        <meta name="author" content="Ellitee">
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="./assets/css/output.css">
+        <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="sticky top-0 left-0 w-full bg-white border-y border-gray-200 py-24 z-100">
+            <div class="container">
+                <div class="flex items-center justify-between py-4 gap-4">
+                    <!-- Logo -->
+                    <a href="#" aria-label="Go to homepage" class="relative z-100">
+                        <img src="./assets/images/company-logo.svg" alt="Ellitee logo">
+                    </a>
+                    <!-- Navigation -->
+                    <nav id="menu" class="flex-1 flex justify-start lg:justify-center items-start lg:items-center fixed lg:static top-0 left-0 w-full lg:w-auto h-0 lg:h-auto bg-white lg:bg-transparent transition-all duration-300 z-40 overflow-hidden lg:overflow-visible" aria-label="Main navigation">
+                        <ul id="menuList" class="w-full lg:w-auto pt-180 lg:pt-0 flex flex-col lg:flex-row gap-24 lg:gap-32 xl:gap-54 justify-center items-center
+             opacity-0 -translate-y-2 pointer-events-none lg:opacity-100 lg:pointer-events-auto lg:translate-y-0
+             transition-all duration-300">
+                            <li>
+                                <a href="/index.html" aria-current="page">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/category.html" aria-current="page">
+                                    Our Products
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/skin_insight.html" aria-current="page">
+                                    Skin Insights
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/Aboutus.html" aria-label="Learn about us">About us</a>
+                            </li>
+                            <li>
+                                <a href="/Testimonial.html" aria-label="Read client testimonials">Testimonials</a>
+                            </li>
+                            <li>
+                                <a href="/FAQ.html" aria-label="Frequently asked questions">FAQ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="flex justify-center items-center gap-8">
+                        <!-- Contact Desktop Button -->
+                        <a href="tel:+919510514689" class="hidden sm:block btn-dark relative z-100" aria-label="Contact Ellitee team">
+                            <span>Build Your Routine</span>
+                        </a>
+                        <!-- Contact Mobile Button -->
+                        <a href="tel:+919510514689" class="btn-dark relative z-100 p-12 h-52 sm:hidden flex justify-center items-center" aria-label="Contact Ellitee team">
+                            <img src="./assets/images/call-white.svg" alt=" call icon" class="w-24 h-24">
+                        </a>
+                        <!-- Mobile Hamburger -->
+                        <button
+                            id="menuBtn"
+                            class="lg:hidden flex flex-col gap-6 focus:outline-none w-48 h-48 justify-center items-center relative z-100"
+                            aria-label="Toggle mobile menu"
+                            aria-expanded="false"
+                            aria-controls="menu"
+                        >
+                            <span class="bar w-32 h-2 bg-black rounded transition-all duration-300"></span>
+                            <span class="bar w-32 h-2 bg-black rounded transition-all duration-300"></span>
+                            <span class="bar w-32 h-2 bg-black rounded transition-all duration-300"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="main_content">
+            <!-- hero2 Start -->
+            <section class="relative overflow-x-hidden gradient overflow-hidden">
+                <div class="container">
+                    <div class="flex flex-col-reverse lg:flex-row gap-20 lg:gap-40 xxl:gap-86 min-h-600">
+                        <!-- Left Content -->
+                        <div class="w-full lg:w-[50%] xl:w-[55%] xxl:w-[45%] flex flex-col justify-center px-16 md:px-0 pb-40 lg:pb-80 xxl:pb-104 pt-10 sm:pt-20 lg:pt-80 xxl:pt-104 space-y-34 relative z-10">
+                            <div class="flex flex-col justify-center space-y-24">
+                                <h1 class="text-h2.64 font-light text-button-bg">
+                                    <span class="font-bold">
+                                        Contact
+                                    </span>
+                                    Us
+                                </h1>
+                                <div class="text-grey space-y-16 md:space-y-24 font-normal">
+                                    <p>
+                                        Have a question about our products, routines, or your skin?
+We’re here to help you with clear, thoughtful guidance.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Hero Image -->
+                        <div class="lg:absolute w-full top-0 right-0 flex lg:justify-end lg:items-end h-full z-0">
+                            <img
+                                src="./assets/images/contact-page-hero.webp"
+                                alt="hero image for contact page"
+                                class="w-full lg:w-[50%] h-270 sm:h-full lg:h-[70%] xl:h-[80%] 1xl:h-full object-cover object-center xxl:object-right"
+                                fetchpriority="high"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- hero2 end -->
+            <!-- contact-form -->
+            <section class="py-20 sm:py-40 md:py-60 xl:py-100">
+                <div class="container">
+                    <div class="inner flex justify-center gap-32 lg:gap-48 1xl:gap-80 flex-col lg:flex-row">
+                        <div class="contact-left lg:w-1/2">
+                            <div class="bg-grey_light p-32 lg:p-64 space-y-48">
+                                <h2 class="text-[clamp(24px,2.5vw,32px)] font-medium">Get in touch with us</h2>
+                                <form class="flex flex-col gap-24">
+                                    <!-- Full Name -->
+                                    <div class="flex flex-col gap-12">
+                                        <label for="fullName" class="font-medium text-dark_grey">
+                                            Full Name
+                                        </label>
+                                        <input
+                                            id="fullName"
+                                            name="fullName"
+                                            type="text"
+                                            placeholder="Full Name"
+                                            autocomplete="given-name"
+                                            class="w-full border border-[#0E0E0E33] px-16 py-12 focus:outline-none focus:border-black transition text-[#727272] text-base"
+                                        >
+                                    </div>
+                                    <!-- Email -->
+                                    <div class="flex flex-col gap-12">
+                                        <label for="email" class="font-medium text-dark_grey">
+                                            Email address
+                                        </label>
+                                        <input
+                                            id="email"
+                                            name="email"
+                                            type="email"
+                                            autocomplete="off"
+                                            placeholder="Enter your email address"
+                                            class="w-full border border-[#0E0E0E33] px-16 py-12 text-base focus:outline-none focus:border-black transition text-[#727272]"
+                                        >
+                                    </div>
+                                    <!-- Message -->
+                                    <div class="flex flex-col gap-12">
+                                        <label for="message" class="font-medium text-dark_grey">
+                                            About your inquiry
+                                        </label>
+                                        <textarea
+                                            id="message"
+                                            name="message"
+                                            autocomplete="off"
+                                            rows="4"
+                                            placeholder="Enter your message..."
+                                            class="w-full border border-[#0E0E0E33] px-16 py-12 text-base resize-none focus:outline-none focus:border-black transition text-[#727272]"
+                                        ></textarea>
+                                    </div>
+                                    <!-- Button -->
+                                    <button type="submit" class="btn-dark1 w-fit mt-24">
+                                        Submit Inquiry
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="contact-right lg:w-1/2">
+                            <div class="h-full flex flex-col justify-between gap-32">
+                                <div class="flex flex-col gap-32 lg:gap-48">
+                                    <div class="heading space-y-24">
+                                        <h3 class="text-h2 font-light text-button-bg">
+                                            <span class="font-bold">
+                                                Contact
+                                            </span>
+                                            Us
+                                        </h3>
+                                        <div>
+                                            <p>Fill out the form below and our team will respond within 24–48 business hours.</p>
+                                        </div>
+                                    </div>
+                                    <div class="contack-block">
+                                        <div class="border border-solid border-[#0E0E0E33] p-24 rounded-sm flex flex-col gap-24">
+                                            <div class="icon w-48 h-48 bg-grey_light rounded-xl flex justify-center items-center">
+                                                <svg
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M9 16H6.5C4.567 16 3 14.433 3 12.5V6.5C3 4.567 4.567 3 6.5 3H16.5C18.433 3 20 4.567 20 6.5V9"
+                                                        stroke="#323232"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M6.5 7.25L10.7046 9.08327C11.2124 9.30467 11.7893 9.30554 12.2978 9.08568L16.5 7.26861"
+                                                        stroke="#1E1E1E"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M15 16.9998L14.4145 16.4143C14.1493 16.149 13.7895 16 13.4144 16C13.0393 16 12.6795 16.149 12.4143 16.4143V16.4143C11.9376 16.891 11.8636 17.6379 12.2375 18.1988L14.1775 21.1093C14.5485 21.6658 15.173 22 15.8418 22H19.6378C20.6465 22 21.4973 21.2489 21.6224 20.248L21.9843 17.3512C22.1177 16.284 21.3831 15.3024 20.3217 15.1293L18 14.7507V12.5C18 11.6716 17.3284 11 16.5 11V11C15.6715 11 15 11.6716 15 12.5V16.9998Z"
+                                                        stroke="#1E1E1E"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <div class="content space-y-4">
+                                                <span class="block text-button-bg font-medium">Email</span>
+                                                <a href="mailto:contact@ellitee.com" role="link" class="block text-grey">contact@ellitee.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="social-media flex justify-between gap-24 items-center py-16 border-t-[#0E0E0E33] border-t">
+                                    <span>
+                                        Social Media
+                                    </span>
+                                    <div class="flex gap-16 items-center">
+                                        <a href="#" role="link">
+                                            <img src="/assets/images/instagram.svg" alt="instagram icon" role="img">
+                                        </a>
+                                        <a href="#" role="link">
+                                            <img src="/assets/images/linkedin.svg" alt="linkedin icon" role="img">
+                                        </a>
+                                        <a href="#" role="link">
+                                            <img src="/assets/images/facebook.svg" alt="facebook icon" role="img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FAQ Section (section-9) -->
+            <section class="py-40 md:py-60 xl:py-100">
+                <div class="container">
+                    <div class="inner">
+                        <div class="heading text-center space-y-24 mb-32 lg:mb-54 xl:mb-80 1xl:mb-100">
+                            <h2 class="text-h2 font-light">
+                                <span class="font-bold"> Frequently</span>
+                                asked questions
+                            </h2>
+                        </div>
+                        <!--  -->
+                        <div class="flex gap-32 xl:gap-54 flex-col lg:flex-row">
+                            <div class="block-left w-full max-w-1140 mx-auto">
+                                <div class="w-full max-w-2xl mx-auto space-y-34 flex flex-col justify-start xl:justify-between">
+                                    <!-- Accordion Item 1-->
+                                    <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
+                                        <button class="accordion-btn1 w-full flex justify-between items-center text-left">
+                                            <span class="text-body font-medium text-button-bg">Is Ellitee Skin Insights a medical diagnosis?</span>
+                                            <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                <!-- Plus Icon -->
+                                                <svg
+                                                    class="icon-plus hidden"
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-width="2"
+                                                >
+                                                    <path d="M12 5v14M5 12h14"></path>
+                                                </svg>
+                                                <!-- Minus Icon -->
+                                                <svg
+                                                    class="icon-minus"
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-width="2"
+                                                >
+                                                    <path d="M5 12h14"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <div class="accordion-content1 overflow-hidden transition-all duration-300">
+                                            <div class="mt-16 text-grey font-normal w-full xl:[90%]">
+                                                <p>
+                                                    No. Ellitee Skin Insights is designed to guide skincare routines based on visible skin patterns. It does not diagnose medical conditions or replace professional advice.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion Item 2 -->
+                                    <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
+                                        <button class="accordion-btn1 w-full flex justify-between items-center text-left">
+                                            <span class="text-body font-medium text-button-bg">Do I need Skin Insights to use Ellitee products?</span>
+                                            <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                <svg
+                                                    class="icon-plus hidden"
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-width="2"
+                                                >
+                                                    <path d="M12 5v14M5 12h14"></path>
+                                                </svg>
+                                                <svg
+                                                    class="icon-minus"
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-width="2"
+                                                >
+                                                    <path d="M5 12h14"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <div class="accordion-content1 overflow-hidden transition-all duration-300">
+                                            <div class="mt-16 text-grey font-normal w-full xl:[90%]">
+                                                <p>
+                                                    Not at all. Ellitee products can be used independently. Skin Insights simply helps align products more accurately with your skin’s needs.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion Item 3 -->
+                                    <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
+                                        <button class="accordion-btn1 w-full flex justify-between items-center text-left">
+                                            <span class="text-body font-medium text-button-bg">How is my data handled?</span>
+                                            <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                <svg
+                                                    class="icon-plus"
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-width="2"
+                                                >
+                                                    <path d="M12 5v14M5 12h14"></path>
+                                                </svg>
+                                                <svg
+                                                    class="icon-minus hidden"
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-width="2"
+                                                >
+                                                    <path d="M5 12h14"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
+                                            <div class="mt-16 text-grey font-normal w-full xl:[90%]">
+                                                <p>
+                                                    Your information is used only to generate insights and improve your experience. Data privacy and responsible handling are core to Ellitee’s approach.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion Item 4 -->
+                                    <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
+                                        <button class="accordion-btn1 w-full flex justify-between items-center text-left">
+                                            <span class="text-body font-medium text-button-bg">How often should I reassess my skin?</span>
+                                            <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                <svg
+                                                    class="icon-plus"
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-width="2"
+                                                >
+                                                    <path d="M12 5v14M5 12h14"></path>
+                                                </svg>
+                                                <svg
+                                                    class="icon-minus hidden"
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-width="2"
+                                                >
+                                                    <path d="M5 12h14"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
+                                            <div class="mt-16 text-grey font-normal w-full xl:[90%]">
+                                                <p>
+                                                    Skin changes with seasons, lifestyle, and routines. Reassessing every few weeks can help keep your routine
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FAQ Section (section-9)  Ends-->
+          
+        </main>
+        <!-- Footer Starts -->
+        <footer class="border-t border-t-solid border-t-[#0000001A]">
+            <div class="container">
+                <div class="foot-top py-74 border-b border-b-solid border-b-[#0000001A]">
+                    <div class="flex justify-between gap-20 md:gap-40 xl:gap-58 flex-wrap">
+                        <div class="foot-block flex flex-col gap-32 w-full md:w-[calc(50%-20px)] xl:w-[calc(30%-58px)]">
+                            <!-- Logo -->
+                            <a href="/index.html" aria-label="Go to homepage" class="relative z-10">
+                                <img src="./assets/images/company-logo.svg" alt="Ellitee logo">
+                            </a>
+                            <div class="space-y-16">
+                                <span class="inline-block text-sm text-button-bg">
+                                    Find out your skin or hair concerns and
+                              what a dermatologist advises for them, for free.
+                                </span>
+                                <div class="flex gap-16 justify-start items-center">
+                                    <a href="#" aria-label="Go to instagram" class="relative z-10">
+                                        <img src="./assets/images/instagram.svg" alt="Instagram logo">
+                                    </a>
+                                    <a href="#" aria-label="Go to linkedin" class="relative z-10">
+                                        <img src="./assets/images/linkedin.svg" alt="linkedin logo">
+                                    </a>
+                                    <a href="#" aria-label="Go to facebook" class="relative z-10">
+                                        <img src="./assets/images/facebook.svg" alt="Facebook logo">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(20%-58px)]">
+                            <span class="inline-block text-body font-medium text-button-bg">Links</span>
+                            <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal [&_li>a]:text-button-bg">
+                                <li>
+                                    <a href="/index.html" aria-current="page">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/category.html" aria-current="page">
+                                        Our Products
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/skin_insight.html" aria-current="page">
+                                        Skin Insights
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/Aboutus.html" aria-label="Learn about us">About us</a>
+                                </li>
+                                <li>
+                                    <a href="/Testimonial.html" aria-label="Read client testimonials">Testimonials</a>
+                                </li>
+                                <li>
+                                    <a href="/FAQ.html" aria-label="Frequently asked questions">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--  -->
+                        <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(20%-58px)]">
+                            <span class="inline-block text-body font-medium text-button-bg">Our Policy</span>
+                            <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal [&_li>a]:text-button-bg">
+                                <li>
+                                    <a href="/termsofuse.html" role="link">Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a href="/Privacy_policy.html" role="link">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="/Grievance_policy.html" role="link">Grievance Policy</a>
+                                </li>
+                                <li>
+                                    <a href="/refund_policy.html" role="link">Refunds & Cancellations Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--  -->
+                        <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(30%-58px)]">
+                            <span class="inline-block text-body font-medium text-button-bg">Other Skin Problems</span>
+                            <ul class="address space-y-16 [&_li>a]:inline-block [&_li>a]:text-sm [&_li]:text-sm [&_li>a]:font-normal [&_li]:font-normal [&_li]:flex [&_li]:justify-start [&_li]:items-start [&_li]:gap-10 *:text-button-bg">
+                                <li>
+                                    <img src="./assets/images/phone.svg" alt="icon of phone for calling" role="img">
+                                    <a href="tel:+919510514689" role="link" aria-label="Call 9510514689">9510514689</a>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/mail.svg" alt="icon of mail for email address" role="img">
+                                    <a href="mailto:contact@ellitee.com" role="link" aria-label="Send email to contact@ellitee.com">contact@ellitee.com</a>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/map-pin.svg" alt="icon of map for location" role="img">
+                                    <span id="companyAddress" aria-label="Company address" class="block leading-relaxed">
+                                        Ellitee LLP
+SH-403 Shiven Shoppers, Adajan DN, Surat – 
+395009, Gujarat, India
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright font-normal text-sm text-center py-16 text-button-bg">
+                    <p> &copy; 2025-Ellitee™. All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+        <script src="./assets/js/swiper-bundle.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+        <!-- FAQ -->
+        <script>
+            const items = document.querySelectorAll(".accordion-item1");
+                items.forEach((item) => {
+                    const btn = item.querySelector(".accordion-btn1");
+                    const content = item.querySelector(".accordion-content1");
+                    const plusIcon = item.querySelector(".icon-plus");
+                    const minusIcon = item.querySelector(".icon-minus");
+
+                    /* ===============================
+                    ALL ACCORDIONS OPEN BY DEFAULT
+                    =============================== */
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    plusIcon.classList.add("hidden");
+                    minusIcon.classList.remove("hidden");
+
+                    btn.addEventListener("click", () => {
+                        const isOpen = content.style.maxHeight !== "0px";
+
+                        if (isOpen) {
+                            // close self
+                            content.style.maxHeight = "0px";
+                            plusIcon.classList.remove("hidden");
+                            minusIcon.classList.add("hidden");
+                        } else {
+                            // open self
+                            content.style.maxHeight = content.scrollHeight + "px";
+                            plusIcon.classList.add("hidden");
+                            minusIcon.classList.remove("hidden");
+                        }
+                    });
+                });
+
+
+                window.addEventListener("resize", () => {
+                    items.forEach(item => {
+                        const content = item.querySelector(".accordion-content1");
+                        if (content.style.maxHeight !== "0px") {
+                            content.style.maxHeight = content.scrollHeight + "px";
+                        }
+                    });
+                });
+        </script>
+    </body>
+</html>

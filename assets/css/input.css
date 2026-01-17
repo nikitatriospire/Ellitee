@@ -106,6 +106,7 @@
   --color-bg_white: #ffffff;
   --color-bg_light: #fff0eb;
   --color-dark: #000000;
+  --color-dark_grey: #4B4B4B;
   --color-dark1: #06060c;
   --color-grey: #6a6a6a;
   --color-grey1: #3f434a;
@@ -131,7 +132,7 @@
     @apply mx-auto px-16;
   }
   body {
-    @apply font-poppins text-[16px] md:text-body font-medium;
+    @apply font-poppins text-[16px] md:text-body font-normal text-grey;
   }
   h1, h2, h3{
     @apply text-button-bg
@@ -141,26 +142,81 @@
     @apply cursor-pointer;
   }
   nav ul li a {
-    @apply relative block text-dark capitalize text-h3 lg:text-[16px] font-medium
+    @apply relative block text-button-bg capitalize text-h3 lg:text-[16px] font-medium
   before:content-[''] before:w-0 before:h-0.5 before:bg-button-bg before:absolute before:left-0 before:-bottom-4 before:opacity-0 before:invisible before:transition-all before:duration-500 before:ease-in-out
   hover:before:w-full hover:before:visible hover:before:opacity-100
   focus:outline-none focus:before:w-full focus:before:visible focus:before:opacity-100 focus:ring-0
   active:text-button-bg active:before:w-full active:before:opacity-100;
   }
-.btn-fill{
-  @apply relative overflow-hidden px-32 py-14 border-2 border-[#1e1e1e] text-[#1e1e1e] 
-         transition-colors duration-300
-         before:content-[''] before:absolute before:inset-0
-         before:bg-[#1e1e1e]
-         before:scale-x-0
-         before:origin-left
-         before:transition-transform before:duration-[450ms] before:ease-in-out
-         hover:before:scale-x-100
-         hover:before:origin-left
-         not-hover:before:origin-right
-         hover:text-white
+
+/* ===============================
+   BASE BUTTONS
+================================ */
+.btn-dark {
+  @apply flex justify-center items-center relative overflow-hidden px-32 py-14 border-2 border-dark
+         bg-transparent text-white transition-all duration-450 ease-linear w-max;
 }
-  .btn-dark {
+
+
+
+.btn-dark span {
+  @apply relative z-10 block;
+}
+
+.btn-dark img{
+  @apply relative z-30;
+}
+
+/* ===============================
+   FILL LAYER
+================================ */
+.btn-dark::before {
+  content: "";
+  @apply absolute inset-0 bg-dark
+         scale-x-100 origin-left
+         transition-transform duration-450 ease-linear;
+  z-index: 0;
+}
+
+/* ===============================
+   HOVER / FOCUS / ACTIVE
+================================ */
+.btn-dark:hover::before,
+.btn-dark:focus-visible::before,
+.btn-dark:active::before {
+  @apply scale-x-0 -right-1;
+  transform-origin: right;
+}
+
+.btn-dark:hover img,
+.btn-dark:focus-visible img,
+.btn-dark:active img {
+  @apply invert-100;
+}
+
+.btn-dark:hover span,
+.btn-dark:focus-visible span,
+.btn-dark:active span {
+  @apply text-dark transition-all duration-450 ease-linear;
+}
+
+/* ===============================
+   RESET ORIGIN WHEN NOT ACTIVE
+================================ */
+.btn-dark:not(:hover):not(:focus-visible):not(:active)::before{
+  transform-origin: left;
+}
+
+/* ===============================
+   OPTIONAL: REMOVE DEFAULT OUTLINE
+   (use only if you provide a visual focus)
+================================ */
+.btn-dark:focus-visible {
+  outline: none;
+}
+
+
+  .btn-dark1 {
     @apply relative inline-block overflow-hidden bg-button-bg text-button-text py-12 px-24 font-medium transition-colors duration-500 hover:bg-dark;
 
     @apply before:content-[''] before:absolute before:inset-0 before:bg-linear-to-r before:from-white/30 before:to-transparent;
@@ -206,9 +262,12 @@
     @apply  relative
   }
 .tablinks{
-  @apply text-grey1
+  @apply text-grey
 }
 
+}
+.accordion-item1:last-child {
+    border-bottom: none;
 }
 .gradient{
   background: linear-gradient(95.58deg, rgba(255, 151, 125, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
@@ -324,6 +383,15 @@ input[type="range"]:focus {
 .tabs::-webkit-scrollbar {
 	width: 5px;
 	background-color: #F5F5F5;
+}
+#mobileTabSelect {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('/assets/images/dropdown-icon.png');
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.2rem;
 }
 
 /*------ ICON ANIMATION  --------------*/
@@ -619,16 +687,349 @@ input[type="range"]:focus {
     
     }
       .analysis-card:nth-of-type(1){
-          top:160px;
+          top:15%;
       z-index:0;
       }
        .analysis-card:nth-of-type(2){
-          top:120px;
+          top:15%;
       z-index:1;
       }
         .analysis-card:nth-of-type(3){
-          top:140px;
+          top:20%;
       z-index:2;
       }
      
     }
+
+
+/* ===================== ANIMATIONS ===================== */
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+
+
+
+/* ===================== HEADER ===================== */
+
+.megamenu-column-4{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+}
+.darkmode .header {
+  background-color: hsl(217, 27%, 12%);
+}
+
+.brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: hsl(333, 71%, 50%);
+  text-transform: uppercase;
+}
+
+.darkmode .brand {
+  color: hsl(329, 86%, 70%);
+}
+
+/* ===================== NAVBAR ===================== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  gap: 1.5rem;
+}
+
+/* ===================== MENU ===================== */
+
+.menu-item {
+  display: inline-block;
+  padding-right: 1.25rem;
+}
+
+.menu-link {
+  font-weight: 500;
+  color: hsl(210, 21%, 6%);
+  transition: 0.25s;
+}
+
+.darkmode .menu-link {
+  color: hsl(206, 5%, 100%);
+}
+
+/* ===================== SUBMENU ===================== */
+
+.submenu {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  background-color: hsl(206, 5%, 100%);
+  border-top: 2px solid hsl(330, 81%, 60%);
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+  transition: 0.25s;
+  width: 100%;
+  padding:24px;
+}
+.submenu-inner {
+      flex: 0 0 25%;
+      padding: 0 1rem;
+   }
+    .submenu-title {
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: 500;
+      line-height: 1;
+      padding: 0.75rem 0;
+      color: var(--pink-500);
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+   }
+ .submenu-item {
+      display: block;
+      line-height: 1;
+      margin: 0 auto;
+   }
+
+   .submenu-link {
+      display: inline-block;
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: 500;
+      line-height: inherit;
+      padding: 0.75rem 0;
+      white-space: nowrap;
+      text-transform: capitalize;
+      color: var(--black-300);
+      transition: all 0.25s ease-in-out;
+
+      
+   }
+
+   .submenu-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-block: 0.5rem;
+      object-fit: cover;
+   }
+
+
+.menu-dropdown:hover > .submenu {
+  opacity: 1;
+  visibility: visible;
+  margin-top:1rem;
+}
+
+/* ===================== BURGER ===================== */
+/* menu header */
+.menu-header {
+      display: none;
+      box-shadow: var(--shadow-medium);
+   }
+
+   .menu-item {
+      display: inline-block;
+      line-height: 1.5;
+      padding-right: 1.25rem;
+   }
+
+  .menu-link {
+      font-weight: 500;
+      line-height: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--black-300);
+      text-transform: capitalize;
+      transition: all 0.25s ease;
+    
+   }
+   
+
+  .menu-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 6px;
+      font-size: 1.45rem;
+      color: var(--black-300);
+      transition: all 0.25s ease;
+
+   }
+   
+
+   @media only screen and (max-width: 1024px) {
+     .menu{
+    position: fixed;
+          top: 0;
+          left: 0;
+          width: 75%;
+          height: 100%;
+          z-index: 100;
+          overflow: hidden;
+          transform: translate(-100%);
+          background-color: var(--white-100);
+          transition: all 0.4s ease-in-out;
+        
+     }
+     
+
+      .menu.is-active {
+         transform: translate(0%);
+         background-color: #ffffff;
+         z-index:9999;
+      }
+
+   
+}
+   @media only screen and (max-width: 1024px) {
+      .menu-header {
+         position:absolute;
+         top: 0;
+         display: flex;
+         align-items: center;
+         justify-content: flex-start;
+         height: 4rem;
+         z-index: 110;
+         visibility: hidden;
+         background: transparent;
+
+      }
+
+         .menu-header.is-active{
+            visibility: visible;
+            background-color: white;
+            width:100%;
+
+         }
+           .menu-header.is-active > .menu-arrow {
+               display: block;
+            }
+     .menu-arrow {
+         display: none;
+         cursor: pointer;
+         width: 3rem;
+         height: 4rem;
+         text-align: center;
+         }
+
+      .menu-item {
+         display: block;
+         line-height: 1;
+         padding-inline: 0;
+      }
+
+     
+
+    }
+
+/* ===================== MEGAMENU ===================== */
+
+.megamenu {
+  left: 50%;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  transform: translateX(-50%);
+}
+
+.megamenu-column-1 {
+  left: 65%;
+  max-width: 15rem;
+  width: 100%;
+  height: auto;
+}
+
+.megamenu-column-4 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 62rem;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .megamenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    min-width: auto;
+    margin: 0;
+    padding: 1rem;
+    padding-top: 4rem;
+    opacity: 0;
+    overflow-y: auto;
+    visibility: visible;
+    transform: translateX(0%);
+    box-shadow: none;
+  }
+    .submenu.is-active {
+    opacity: 1;
+    visibility: visible;
+    z-index:99;
+  }
+}
+
+
+/* ===================== OVERLAY ===================== */
+
+.overlay {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.45s ease-in-out;
+}
+
+@media only screen and (max-width: 1024px) {
+  .overlay.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+
+
+
+
+
+

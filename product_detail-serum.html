@@ -13,8 +13,8 @@
         <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     </head>
     <body>
-        <!-- Header -->
-        <header class="sticky top-0 left-0 w-full bg-white border-y border-gray-200 py-34 z-100">
+          <!-- Header -->
+        <header class="sticky top-0 left-0 w-full bg-white border-y border-gray-200 py-24 z-100">
             <div class="container">
                 <div class="flex items-center justify-between py-4 gap-4">
                     <!-- Logo -->
@@ -31,24 +31,32 @@
                                     Home
                                 </a>
                             </li>
-                            <li>
-                                <a href="#" aria-label="Learn about us">About us</a>
+                             <li>
+                                <a href="/category.html" aria-current="page">
+                                    Our Products
+                                </a>
                             </li>
                             <li>
-                                <a href="#" aria-label="Explore our areas of expertise">Our Expertise</a>
+                                <a href="/skin_insight.html" aria-current="page">
+                                    Skin Insights
+                                </a>
                             </li>
                             <li>
-                                <a href="#" aria-label="Read client testimonials">Testimonials</a>
+                                <a href="/Aboutus.html" aria-label="Learn about us">About us</a>
+                            </li>
+                         
+                            <li>
+                                <a href="/Testimonial.html" aria-label="Read client testimonials">Testimonials</a>
                             </li>
                             <li>
-                                <a href="#" aria-label="Frequently asked questions">FAQ</a>
+                                <a href="/FAQ.html" aria-label="Frequently asked questions">FAQ</a>
                             </li>
                         </ul>
                     </nav>
                     <div class="flex justify-center items-center gap-8">
                         <!-- Contact Desktop Button -->
                         <a href="tel:+919510514689" class="hidden sm:block btn-dark relative z-100" aria-label="Contact Ellitee team">
-                            Contact Us
+                           <span>Build Your Routine</span> 
                         </a>
                         <!-- Contact Mobile Button -->
                         <a href="tel:+919510514689" class="btn-dark relative z-100 p-12 h-52 sm:hidden flex justify-center items-center" aria-label="Contact Ellitee team">
@@ -135,7 +143,7 @@
                         <!-- RIGHT SIDE — DETAILS -->
                         <div class="right-side">
                             <div class="space-y-24">
-                                <div>
+                                <div class="text-button-bg">
                                     <h1 class="text-h2.64 font-light leading-tight mb-20">
                                         <span class="font-bold">SpotCorrect™</span>
                                         Advanced Brightening Serum
@@ -157,7 +165,7 @@
                                         <span class="text-[#1C1B1F]">(210 Reviews)</span>
                                     </div>
                                     <p>Pigmentation isn’t just a surface concern. It’s often the result of inflammation, barrier imbalance, and repeated skin stress. SpotCorrect™ is designed t    o address visible pigmentation and post-acne marks gently while keeping the skin calm, balanced, and supported.</p>
-                                    <div class="text-sm [&_ul>li]:flex [&_ul>li]:justify-start [&_ul>li]:items-center [&_ul>li]:gap-4  [&_ul]:flex [&_ul]:flex-wrap [&_ul]:justify-start [&_ul]:items-center [&_ul]:gap-12">
+                                    <div class="text-base [&_ul>li]:flex [&_ul>li]:justify-start [&_ul>li]:items-center [&_ul>li]:gap-4  [&_ul]:flex [&_ul]:flex-wrap [&_ul]:justify-start [&_ul]:items-center [&_ul]:gap-12">
                                         <ul>
                                             <li>
                                                 <img src="./assets/images/Right.svg" alt="tick icon" role="img">
@@ -176,22 +184,22 @@
                                 </div>
                                 <!-- select-size -->
                                 <div class="mb-24">
-                                    <span class="inline-block text-body mb-12 font-medium">Select Size:</span>
+                                    <span class="inline-block text-body mb-12 font-medium text-button-bg">Select Size:</span>
                                     <div class="flex gap-16" id="sizeOptions">
-                                        <button class="size-btn py-12 px-24 border  font-medium bg-white text-black" data-size="30ml">
+                                        <button class="size-btn py-12 px-24 border  font-medium bg-white" data-size="30ml">
                                             30ml
                                         </button>
                                     </div>
                                 </div>
                                 <!-- Price -->
                                 <div class="mb-36">
-                                    <span class="inline-block mb-12 font-medium">Price:</span>
+                                    <span class="inline-block mb-12 font-medium text-button-bg">Price:</span>
                                     <div class="flex justify-start items-center gap-16">
-                                        <p class="font-medium text-[clamp(18px,2vw,20px)]">
+                                        <p class="font-medium text-[clamp(18px,2vw,20px)] text-button-bg">
                                             <span class="text-grey text-base line-through">₹650.00</span>
                                             ₹599.00
                                         </p>
-                                        <span class="inline-block btn-dark">17% OFF</span>
+                                        <span class="inline-block bg-button-bg text-white p-8 text-base">17% OFF</span>
                                     </div>
                                     <span class="text-sm text-grey font-normal">Inclusive of all taxes</span>
                                 </div>
@@ -221,16 +229,16 @@
                                         >
                                             <g>
                                                 <path
-                                                    fill="#4d4d4d"
+                                                    fill="#0E0E0E"
                                                     d="M21 12.6H3c-.3 0-.6-.3-.6-.6s.3-.6.6-.6h18c.3 0 .6.3.6.6s-.3.6-.6.6z"
                                                     opacity="1"
-                                                    data-original="#333333"
+                                                    data-original="#0E0E0E"
                                                     class=""
                                                 ></path>
                                             </g>
                                         </svg>
                                     </button>
-                                    <span id="quantity" class="px-4 py-2 text-32">1</span>
+                                    <span id="quantity" class="px-4 py-2 text-32 text-button-bg">1</span>
                                     <button
                                         type="button"
                                         id="plusBtn"
@@ -253,17 +261,17 @@
                                             <g>
                                                 <path
                                                     d="M492 236H276V20c0-11.046-8.954-20-20-20s-20 8.954-20 20v216H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h216v216c0 11.046 8.954 20 20 20s20-8.954 20-20V276h216c11.046 0 20-8.954 20-20s-8.954-20-20-20z"
-                                                    fill="#4d4d4d"
+                                                    fill="#0E0E0E"
                                                     opacity="1"
-                                                    data-original="#000000"
+                                                    data-original="#0E0E0E"
                                                     class=""
                                                 ></path>
                                             </g>
                                         </svg>
                                     </button>
                                 </div>
-                                <button class="btn-dark flex gap-4 justify-center items-center">
-                                    Add to Cart
+                                <button class="btn-dark1 flex gap-4 justify-center items-center">
+                                    <span>Add to Cart</span> 
                                     <img src="./assets/images/cartIcon.svg" alt="cart icon" role="img">
                                 </button>
                             </div>
@@ -271,8 +279,8 @@
                             <!-- testing -->
                             <div class="flex gap-24 flex-wrap">
                                 <div class="left-box flex-1 basis-0 min-w-280 border border-solid border-[#0E0E0E33] p-20 space-y-24">
-                                    <span class="block text-[clamp(18px,2vw,20px)] font-semibold">Who It’s Best For</span>
-                                    <div class="[&_ul]:space-y-16 [&_ul>li]:flex [&_ul]:flex [&_ul]:flex-col [&_ul>li]:gap-12 [&_ul>li]:justify-start [&_ul>li]:items-start">
+                                    <span class="block text-[clamp(18px,2vw,20px)] font-semibold text-button-bg">Who It’s Best For</span>
+                                    <div class="[&_ul]:space-y-16 [&_ul>li]:flex [&_ul]:flex [&_ul]:flex-col [&_ul>li]:gap-12 [&_ul>li]:justify-start [&_ul>li]:items-start [&_li]:text-button-bg">
                                         <ul>
                                             <li>
                                                 <img
@@ -305,8 +313,8 @@
                                     </div>
                                 </div>
                                 <div class="left-box flex-1 basis-0 min-w-280 border border-solid border-[#0E0E0E33] p-20 space-y-24">
-                                    <span class="block text-[clamp(18px,2vw,20px)] font-semibold">Safety & Care</span>
-                                    <div class="[&_ul]:space-y-16 [&_ul>li]:flex [&_ul]:flex [&_ul]:flex-col [&_ul>li]:gap-12 [&_ul>li]:justify-start [&_ul>li]:items-start">
+                                    <span class="block text-[clamp(18px,2vw,20px)] font-semibold text-button-bg">Safety & Care</span>
+                                    <div class="[&_ul]:space-y-16 [&_ul>li]:flex [&_ul]:flex [&_ul]:flex-col [&_ul>li]:gap-12 [&_ul>li]:justify-start [&_ul>li]:items-start [&_li]:text-button-bg">
                                         <ul>
                                             <li>
                                                 <img
@@ -354,16 +362,16 @@
                     <div class="tab-main w-full mt-32 lg:mt-64 xl:mt-100 hidden md:block">
                         <!-- Tabs -->
                         <div class="flex gap-16 xl:gap-64 overflow-x-auto whitespace-nowrap no-scrollbar pb-2">
-                            <button class="tab-btn px-4 py-2 text-h4 xl:text-h3 font-medium border-b-2 border-black text-button-bg" data-tab="special">
-                                What Makes It Special
+                            <button class="tab-btn px-4 py-2 text-t_20 xl:text-h3 font-medium border-b-2 border-black text-button-bg" data-tab="special">
+                                What SpotCorrect™ Does
                             </button>
-                            <button class="tab-btn px-4 py-2 text-h4 xl:text-h3 font-medium border-b-2 border-transparent text-grey" data-tab="how">
+                            <button class="tab-btn px-4 py-2 text-t_20 xl:text-h3 font-medium border-b-2 border-transparent text-grey" data-tab="how">
                                 How to Use
                             </button>
-                            <button class="tab-btn px-4 py-2 text-h4 xl:text-h3 font-medium border-b-2 border-transparent text-grey" data-tab="ingredients">
+                            <button class="tab-btn px-4 py-2 text-t_20 xl:text-h3 font-medium border-b-2 border-transparent text-grey" data-tab="ingredients">
                                 Ingredients
                             </button>
-                            <button class="tab-btn px-4 py-2 text-h4 xl:text-h3 font-medium border-b-2 border-transparent text-grey" data-tab="who">
+                            <button class="tab-btn px-4 py-2 text-t_20 xl:text-h3 font-medium border-b-2 border-transparent text-grey" data-tab="who">
                                 Who Can Use
                             </button>
                         </div>
@@ -402,9 +410,9 @@
                                             role="img"
                                             class="mx-auto"
                                         >
-                                        <div class="w-full text-center space-y-12">
-                                            <span class="block text-[clamp(18px,2vw,20px)] font-medium">Niacinamide 10%</span>
-                                            <span class="block text-grey1 text-sm">Helps refine pores, strengthen the skin barrier, and visibly improve uneven tone and marks while balancing oil.</span>
+                                        <div class="w-full text-center space-y-12 flex flex-col flex-1">
+                                            <span class="block text-[clamp(18px,2vw,20px)] font-medium text-button-bg flex-1">Niacinamide 10%</span>
+                                            <span class="block text-grey text-sm flex-1">Helps refine pores, strengthen the skin barrier, and visibly improve uneven tone and marks while balancing oil.</span>
                                         </div>
                                     </div>
                                     <div class="flex flex-col w-full lg:w-[calc(50%-15px)] xl:w-[calc(25%-15px)] justify-start items-start p-24 space-y-32 xxl:space-y-48">
@@ -414,9 +422,9 @@
                                             role="img"
                                             class="mx-auto"
                                         >
-                                        <div class="w-full text-center space-y-12">
-                                            <span class="block text-[clamp(18px,2vw,20px)] font-medium">Clair Blanche™ 1%</span>
-                                            <span class="block text-grey1 text-sm">A patented multi-pathway brightening complex designed to target visible pigmentation patterns and support tone uniformity.</span>
+                                        <div class="w-full text-center space-y-12 flex flex-col flex-1">
+                                            <span class="block text-[clamp(18px,2vw,20px)] font-medium text-button-bg flex-1">Clair Blanche™ 1%</span>
+                                            <span class="block text-grey text-sm flex-1">A patented multi-pathway brightening complex designed to target visible pigmentation patterns and support tone uniformity.</span>
                                         </div>
                                     </div>
                                     <div class="flex flex-col w-full lg:w-[calc(50%-15px)] xl:w-[calc(25%-15px)] justify-start items-start p-24 space-y-32 xxl:space-y-48">
@@ -426,18 +434,18 @@
                                             role="img"
                                             class="mx-auto"
                                         >
-                                        <div class="w-full text-center space-y-12">
-                                            <span class="block text-[clamp(18px,2vw,20px)] font-medium">Zinc PCA 1%</span>
-                                            <span class="block text-grey1 text-sm">Helps regulate excess oil and calm visible redness, reducing the chance of future marks.</span>
+                                        <div class="w-full text-center space-y-12 flex flex-col flex-1">
+                                            <span class="block text-[clamp(18px,2vw,20px)] font-medium text-button-bg flex-1">Zinc PCA 1%</span>
+                                            <span class="block text-grey text-sm flex-1">Helps regulate excess oil and calm visible redness, reducing the chance of future marks.</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-content hidden" id="ingredients">
-                                <p class="text-gray-700">Argan Oil, Coconut Oil, Aloe Vera, Tea Tree Extract, Vitamin E.</p>
+                                <p class="text-grey">Argan Oil, Coconut Oil, Aloe Vera, Tea Tree Extract, Vitamin E.</p>
                             </div>
                             <div class="tab-content hidden" id="who">
-                                <p class="text-gray-700">Suitable for all hair types including oily, dry, curly, and treated hair.</p>
+                                <p class="text-grey">Suitable for all hair types including oily, dry, curly, and treated hair.</p>
                             </div>
                         </div>
                     </div>
@@ -445,7 +453,7 @@
                     <div class="accordion-main block md:hidden mt-32 space-y-16">
                         <!-- Item 1 -->
                         <div class="border-b border-grey/30">
-                            <button class="accordion-btn w-full flex items-center justify-between pb-16 text-left text-h4 xl:text-h3 font-medium text-button-bg" aria-expanded="true" data-target="special">
+                            <button class="accordion-btn w-full flex items-center justify-between pb-16 text-left text-h3 font-medium text-button-bg" aria-expanded="true" data-target="special">
                                 What Makes It Special
                                 <span class="transition-transform duration-300 rotate-180">&#9662;</span>
                             </button>
@@ -478,12 +486,12 @@
                         </div>
                         <!-- Item 2 -->
                         <div class="border-b border-grey/30">
-                            <button class="accordion-btn w-full flex items-center justify-between pb-16 text-left text-h4 xl:text-h3 font-medium text-grey" aria-expanded="false" data-target="how">
+                            <button class="accordion-btn w-full flex items-center justify-between pb-16 text-left text-h3 font-medium text-grey" aria-expanded="false" data-target="how">
                                 How to Use
                                 <span class="transition-transform duration-300">&#9662;</span>
                             </button>
                             <div class="accordion-content" id="how">
-                                <div class="pb-16 text-gray-700">
+                                <div class="pb-16 text-grey">
                                     <div class="flex flex-wrap gap-20">
                                         <div class="flex flex-col w-full lg:w-[calc(50%-15px)] xl:w-[calc(25%-15px)] justify-start items-start p-24 space-y-32 xxl:space-y-48">
                                             <img
@@ -493,8 +501,8 @@
                                                 class="mx-auto"
                                             >
                                             <div class="w-full text-center space-y-12">
-                                                <span class="block text-[clamp(18px,2vw,20px)] font-medium">Niacinamide 10%</span>
-                                                <span class="block text-grey1 text-sm">Helps refine pores, strengthen the skin barrier, and visibly improve uneven tone and marks while balancing oil.</span>
+                                                <span class="block text-[clamp(18px,2vw,20px)] font-medium text-button-bg">Niacinamide 10%</span>
+                                                <span class="block text-grey text-sm">Helps refine pores, strengthen the skin barrier, and visibly improve uneven tone and marks while balancing oil.</span>
                                             </div>
                                         </div>
                                         <div class="flex flex-col w-full lg:w-[calc(50%-15px)] xl:w-[calc(25%-15px)] justify-start items-start p-24 space-y-32 xxl:space-y-48">
@@ -505,8 +513,8 @@
                                                 class="mx-auto"
                                             >
                                             <div class="w-full text-center space-y-12">
-                                                <span class="block text-[clamp(18px,2vw,20px)] font-medium">Clair Blanche™ 1%</span>
-                                                <span class="block text-grey1 text-sm">A patented multi-pathway brightening complex designed to target visible pigmentation patterns and support tone uniformity.</span>
+                                                <span class="block text-[clamp(18px,2vw,20px)] font-medium text-button-bg">Clair Blanche™ 1%</span>
+                                                <span class="block text-grey text-sm">A patented multi-pathway brightening complex designed to target visible pigmentation patterns and support tone uniformity.</span>
                                             </div>
                                         </div>
                                         <div class="flex flex-col w-full lg:w-[calc(50%-15px)] xl:w-[calc(25%-15px)] justify-start items-start p-24 space-y-32 xxl:space-y-48">
@@ -517,8 +525,8 @@
                                                 class="mx-auto"
                                             >
                                             <div class="w-full text-center space-y-12">
-                                                <span class="block text-[clamp(18px,2vw,20px)] font-medium">Zinc PCA 1%</span>
-                                                <span class="block text-grey1 text-sm">Helps regulate excess oil and calm visible redness, reducing the chance of future marks.</span>
+                                                <span class="block text-[clamp(18px,2vw,20px)] font-medium text-button-bg">Zinc PCA 1%</span>
+                                                <span class="block text-grey text-sm">Helps regulate excess oil and calm visible redness, reducing the chance of future marks.</span>
                                             </div>
                                         </div>
                                     </div>
@@ -527,12 +535,12 @@
                         </div>
                         <!-- Item 3 -->
                         <div class="border-b border-grey/30">
-                            <button class="accordion-btn w-full flex items-center justify-between pb-16 text-left text-h4 xl:text-h3 font-medium text-grey" aria-expanded="false" data-target="ingredients">
+                            <button class="accordion-btn w-full flex items-center justify-between pb-16 text-left text-h3 font-medium text-grey" aria-expanded="false" data-target="ingredients">
                                 Ingredients
                                 <span class="transition-transform duration-300">&#9662;</span>
                             </button>
                             <div class="accordion-content" id="ingredients">
-                                <div class="pb-16 text-gray-700">
+                                <div class="pb-16 text-grey">
                                     <p>
                                         Argan Oil, Coconut Oil, Aloe Vera, Tea Tree Extract, Vitamin E.
                                     </p>
@@ -541,12 +549,12 @@
                         </div>
                         <!-- Item 4 -->
                         <div class="border-b border-grey/30">
-                            <button class="accordion-btn w-full flex items-center justify-between pb-16 text-left text-h4 xl:text-h3 font-medium text-grey" aria-expanded="false" data-target="who">
+                            <button class="accordion-btn w-full flex items-center justify-between pb-16 text-left text-h3 font-medium text-grey" aria-expanded="false" data-target="who">
                                 Who Can Use
                                 <span class="transition-transform duration-300">&#9662;</span>
                             </button>
                             <div class="accordion-content" id="who">
-                                <div class="pb-16 text-gray-700">
+                                <div class="pb-16 text-grey">
                                     <p>
                                         Suitable for all hair types including oily, dry, curly, and treated hair.
                                     </p>
@@ -634,7 +642,7 @@
                         </div>
                         <!--  -->
                         <div class="flex justify-center">
-                            <a href="#" role="link" class="btn-dark">Shop This Routine</a>
+                            <a href="#" role="link" class="btn-dark"><span>Shop This Routine</span> </a>
                         </div>
                     </div>
                 </div>
@@ -741,8 +749,8 @@
                                                 <img src="./assets/images/mockup1.png" alt="CalmGel™ Anti-Acne Gel Moisturizer" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
                                                 <!-- Action Buttons -->
                                                 <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark flex justify-center items-center gap-12">
-                                                        Add To Cart
+                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark1 flex justify-center items-center gap-12">
+                                                        <span>Add To Cart</span>
                                                         <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                     </button>
                                                     <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
@@ -751,9 +759,9 @@
                                                 </div>
                                             </div>
                                             <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-dark text-left">
+                                            <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
                                                 <span class="text-body">Rs 799.00</span>
-                                                <span class="text-t_20">CalmGel™ Anti-Acne Gel Moisturizer</span>
+                                                <span class="text-t_20 font-semibold">CalmGel™ Anti-Acne Gel Moisturizer</span>
                                                 <div class="text-grey text-body">
                                                     <ul>
                                                         <li>Acne-prone • Combination • Sensitive</li>
@@ -775,8 +783,8 @@
                                                 <img src="./assets/images/mockup2.png" alt="ClearGel™ Anti-Acne Facewash" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
                                                 <!-- Action Buttons -->
                                                 <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add ClearGel™ Anti-Acne Facewash to cart" class="btn-dark flex justify-center items-center gap-12">
-                                                        Add To Cart
+                                                    <button aria-label="Add ClearGel™ Anti-Acne Facewash to cart" class="btn-dark1 flex justify-center items-center gap-12">
+                                                         <span>Add To Cart</span>
                                                         <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                     </button>
                                                     <button aria-label="Add ClearGel™ Anti-Acne Facewash to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
@@ -785,9 +793,9 @@
                                                 </div>
                                             </div>
                                             <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-dark text-left">
+                                            <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
                                                 <span class="text-body">Rs 1099.00</span>
-                                                <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
+                                                <span class="text-t_20 font-semibold">SpotCorrect™ – Advanced Brightening Serum</span>
                                                 <div class="text-grey text-body">
                                                     <ul>
                                                         <li>Acne-prone • Combination • Sensitive</li>
@@ -809,8 +817,8 @@
                                                 <img src="./assets/images/mockup3.png" alt="Duo combo facewash-moisturizer" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
                                                 <!-- Action Buttons -->
                                                 <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add ClearGel™ Anti-Acne Facewash to cart" class="btn-dark flex justify-center items-center gap-12">
-                                                        Add To Cart
+                                                    <button aria-label="Add ClearGel™ Anti-Acne Facewash to cart" class="btn-dark1 flex justify-center items-center gap-12">
+                                                         <span>Add To Cart</span>
                                                         <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                     </button>
                                                     <button aria-label="Add ClearGel™ Anti-Acne Facewash to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
@@ -819,9 +827,9 @@
                                                 </div>
                                             </div>
                                             <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-dark text-left">
+                                            <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
                                                 <span class="text-body">Rs 799.00</span>
-                                                <span class="text-t_20">ClearGel™ Anti-Acne Facewash</span>
+                                                <span class="text-t_20 font-semibold">ClearGel™ Anti-Acne Facewash</span>
                                                 <div class="text-grey text-body">
                                                     <ul>
                                                         <li>Acne-prone • Combination • Sensitive</li>
@@ -844,8 +852,8 @@
                                                     <img src="./assets/images/mockup4.png" alt="ClearGel™ Anti-Acne Facewash" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
                                                     <!-- Action Buttons -->
                                                     <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                        <button aria-label="Add ClearGel™ Anti-Acne Facewash to cart" class="btn-dark flex justify-center items-center gap-12">
-                                                            Add To Cart
+                                                        <button aria-label="Add ClearGel™ Anti-Acne Facewash to cart" class="btn-dark1 flex justify-center items-center gap-12">
+                                                             <span>Add To Cart</span>
                                                             <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                         </button>
                                                         <button aria-label="Add ClearGel™ Anti-Acne Facewash to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
@@ -854,9 +862,9 @@
                                                     </div>
                                                 </div>
                                                 <!-- Product Info -->
-                                                <div class="flex flex-col gap-4 font-normal text-dark text-left">
+                                                <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
                                                     <span class="text-body">Rs 599.00</span>
-                                                    <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
+                                                    <span class="text-t_20 font-semibold">SpotCorrect™ – Advanced Brightening Serum</span>
                                                     <div class="text-grey text-body">
                                                         <ul>
                                                             <li>Acne-prone • Combination • Sensitive</li>
@@ -880,8 +888,8 @@
                                                     <img src="./assets/images/cleargel-facewash.png" alt="ClearGel™ Anti-Acne Facewash" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
                                                     <!-- Action Buttons -->
                                                     <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                        <button aria-label="Add ClearGel™ Anti-Acne Facewash to cart" class="btn-dark flex justify-center items-center gap-12">
-                                                            Add To Cart
+                                                        <button aria-label="Add ClearGel™ Anti-Acne Facewash to cart" class="btn-dark1 flex justify-center items-center gap-12">
+                                                             <span>Add To Cart</span>
                                                             <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                         </button>
                                                         <button aria-label="Add ClearGel™ Anti-Acne Facewash to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
@@ -890,9 +898,9 @@
                                                     </div>
                                                 </div>
                                                 <!-- Product Info -->
-                                                <div class="flex flex-col gap-4 font-normal text-dark text-left">
+                                                <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
                                                     <span class="text-body">Rs 399.00</span>
-                                                    <span class="text-t_20">ClearGel™ Anti-Acne Facewash</span>
+                                                    <span class="text-t_20 font-semibold">ClearGel™ Anti-Acne Facewash</span>
                                                     <div class="text-grey text-body">
                                                         <ul>
                                                             <li>Acne-prone • Combination • Sensitive</li>
@@ -923,7 +931,7 @@
                                 <!-- Rating Bars + Summary -->
                                 <div class="flex gap-32 xl:gap-10 items-start flex-col xl:flex-row">
                                     <!-- Rating Bars -->
-                                    <div class="space-y-4 w-full md:w-2/5">
+                                    <div class="space-y-4 w-full md:w-2/5 text-button-bg">
                                         <!-- Bar row -->
                                         <div class="flex items-center gap-12">
                                             <span class="w-120">Excellent</span>
@@ -933,7 +941,7 @@
                                         </div>
                                         <div class="flex items-center gap-12">
                                             <span class="w-120">Very Good</span>
-                                            <div class="flex-1 bbg-[#E9E9E9] h-9 rounded overflow-hidden">
+                                            <div class="flex-1 bg-[#E9E9E9] h-9 rounded overflow-hidden">
                                                 <div class="animate-bar bg-black h-full w-[70%]"></div>
                                             </div>
                                         </div>
@@ -959,19 +967,19 @@
                                     <!-- Summary -->
                                     <div class="text-center space-y-6 flex justify-between items-center w-full lg:w-3/5 pl-0 xl:pl-100 gap-20 md:gap-40 flex-col sm:flex-row">
                                         <div class="space-y-12">
-                                            <h3 class="text-[clamp(20px,1.5vw,28px)] font-medium">Total Reviews</h3>
-                                            <span class="text-[#4D4D4D] text-t_20">5k+ Reviews</span>
+                                            <h3 class="text-[clamp(20px,1.5vw,28px)] font-medium text-button-bg">Total Reviews</h3>
+                                            <span class="text-[#0E0E0E] text-t_20">5k+ Reviews</span>
                                         </div>
                                         <div class="space-y-12">
                                             <h3 class="text-[clamp(20px,1.5vw,28px)] font-medium">Average Rating</h3>
                                             <div class="flex items-center justify-center gap-2">
-                                                <span class="text-[#4D4D4D] text-t_20">4.5</span>
+                                                <span class="text-button-bg text-t_20">4.5</span>
                                                 <span class="text-yellow-500 text-xl">★★★★☆</span>
                                             </div>
                                         </div>
-                                        <button class="text-[#4D4D4D] font-medium py-12 px-25 border border-solid border-grey flex justify-center items-center gap-4">
-                                            <img src="./assets/images/Edit.svg" alt="edit pen icon">
-                                            Write Review
+                                        <button class="btn-dark flex justify-center items-center gap-4">
+                                            <span>Write Review</span>
+                                            <img src="./assets/images/white_pen.svg" alt="edit pen icon">
                                         </button>
                                     </div>
                                 </div>
@@ -981,21 +989,18 @@
                                         <div class="swiper-wrapper pb-80">
                                             <!-- CARD 1 -->
                                             <div class="swiper-slide p-16 bg-white h-auto!">
-                                                <div class="flex items-center gap-20 mb-16">
-                                                    <img
-                                                        src="./assets/images/cameron.png"
-                                                        class="w-60 h-60 rounded-full"
-                                                        role="img"
-                                                        alt="User profile avatar placeholder"
-                                                    >
+                                                <div class="flex items-center justify-between gap-20 mb-16">
+                                                    <div>
+                                                         <span class="font-medium review-title text-button-bg text-t_20">Riya Shah</span>
+                                                    </div>
                                                     <div class="flex flex-col justify-start">
-                                                        <span class="font-medium review-title">Cameron Williamson</span>
-                                                        <span class="text-yellow-500">★★★★☆</span>
+                                                       
+                                                        <span class="text-yellow-500">★ <span class="text-button-bg">4.2</span></span>
                                                     </div>
                                                 </div>
                                                 <div class="text-sm py-12 mb-4 review-text">
                                                     <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.
+                                                        I’ve been using this cream for almost a month now, and honestly it has worked really well for my sensitive skin. The texture is lightweight, absorbs quickly, and doesn’t feel sticky at all.
                                                     </p>
                                                 </div>
                                                 <div class="border-t border-t-solid border-t-grey flex justify-start items-center pt-12 flex-wrap gap-10">
@@ -1004,21 +1009,18 @@
                                             </div>
                                             <!-- CARD 2 -->
                                             <div class="swiper-slide p-16 bg-white  h-auto!">
-                                                <div class="flex items-center gap-20 mb-16">
-                                                    <img
-                                                        src="./assets/images/darell.png"
-                                                        class="w-60 h-60 rounded-full"
-                                                        role="img"
-                                                        alt="User profile avatar placeholder"
-                                                    >
+                                                <div class="flex items-center justify-between gap-20 mb-16">
+                                                   <div>
+                                                         <span class="font-medium review-title text-button-bg text-t_20">Amit Verma</span>
+                                                    </div>
                                                     <div class="flex flex-col justify-start">
-                                                        <span class="font-medium review-title">Darrell Steward</span>
-                                                        <span class="text-yellow-500">★★★☆☆</span>
+                                                        
+                                                       <span class="text-yellow-500">★ <span class="text-button-bg">4.5</span></span>
                                                     </div>
                                                 </div>
                                                 <div class="text-sm py-12 mb-4 review-text">
                                                     <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.
+                                                        I usually don’t write reviews, but this one deserves it. The product feels gentle yet effective. My skin feels smoother and less irritated after regular use.
                                                     </p>
                                                 </div>
                                                 <div class="border-t border-t-solid border-t-grey flex justify-start items-center pt-12 flex-wrap gap-10">
@@ -1033,21 +1035,18 @@
                                             </div>
                                             <!-- CARD 3 -->
                                             <div class="swiper-slide p-16 bg-white  h-auto!">
-                                                <div class="flex items-center gap-20 mb-16">
-                                                    <img
-                                                        src="./assets/images/jenny.jpg"
-                                                        class="w-60 h-60 rounded-full"
-                                                        role="img"
-                                                        alt="User profile avatar placeholder"
-                                                    >
+                                                <div class="flex items-center justify-between gap-20 mb-16">
+                                                     <div>
+                                                         <span class="font-medium review-title text-button-bg text-t_20">Neha Kulkarni</span>
+                                                    </div>
                                                     <div class="flex flex-col justify-start">
-                                                        <h4 class="font-medium review-title">Jenny Wilson</h4>
-                                                        <span class="text-yellow-500">★★★★★</span>
+                                                        
+                                                       <span class="text-yellow-500">★ <span class="text-button-bg">4</span></span>
                                                     </div>
                                                 </div>
                                                 <div class="text-sm py-12 mb-4 review-text">
                                                     <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.
+                                                        Very impressed with this moisturizer. I have combination skin and finding something that doesn’t clog pores is difficult. This one keeps my skin hydrated without feeling heavy.
                                                     </p>
                                                 </div>
                                                 <div class="border-t border-t-solid border-t-grey flex justify-start items-center pt-12 flex-wrap gap-10">
@@ -1056,21 +1055,18 @@
                                             </div>
                                             <!-- CARD 4 -->
                                             <div class="swiper-slide p-16 bg-white  h-auto!">
-                                                <div class="flex items-center gap-20 mb-16">
-                                                    <img
-                                                        src="./assets/images/brooklyn.jpg"
-                                                        class="w-60 h-60 rounded-full"
-                                                        role="img"
-                                                        alt="User profile avatar placeholder"
-                                                    >
+                                                <div class="flex items-center justify-between gap-20 mb-16">
+                                                    <div>
+                                                         <span class="font-medium review-title text-button-bg text-t_20">Amit Verma</span>
+                                                    </div>
                                                     <div class="flex flex-col justify-start">
-                                                        <h4 class="font-semibold review-title">Brooklyn Simmons</h4>
-                                                        <span class="text-yellow-500">★★★★☆</span>
+                                                        
+                                                       <span class="text-yellow-500">★ <span class="text-button-bg">4.5</span></span>
                                                     </div>
                                                 </div>
                                                 <div class="text-sm py-12 mb-4 review-text">
                                                     <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.
+                                                        I usually don’t write reviews, but this one deserves it. The product feels gentle yet effective. My skin feels smoother and less irritated after regular use.
                                                     </p>
                                                 </div>
                                                 <div class="border-t border-t-solid border-t-grey flex justify-start items-center pt-12 flex-wrap gap-10">
@@ -1079,25 +1075,28 @@
                                             </div>
                                             <!-- CARD 3 -->
                                             <div class="swiper-slide p-16 bg-white  h-auto!">
-                                                <div class="flex items-center gap-20 mb-16">
-                                                    <img
-                                                        src="./assets/images/jenny1.png"
-                                                        class="w-60 h-60 rounded-full"
-                                                        role="img"
-                                                        alt="User profile avatar placeholder"
-                                                    >
+                                                <div class="flex items-center justify-between gap-20 mb-16">
+                                                   <div>
+                                                         <span class="font-medium review-title text-button-bg text-t_20">Amit Verma</span>
+                                                    </div>
                                                     <div class="flex flex-col justify-start">
-                                                        <h4 class="font-medium review-title">Jenny Wilson</h4>
-                                                        <span class="text-yellow-500">★★★★★</span>
+                                                        
+                                                       <span class="text-yellow-500">★ <span class="text-button-bg">4.5</span></span>
                                                     </div>
                                                 </div>
                                                 <div class="text-sm py-12 mb-4 review-text">
                                                     <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.
+                                                        I usually don’t write reviews, but this one deserves it. The product feels gentle yet effective. My skin feels smoother and less irritated after regular use.
                                                     </p>
                                                 </div>
                                                 <div class="border-t border-t-solid border-t-grey flex justify-start items-center pt-12 flex-wrap gap-10">
-                                                    <span class="text-sm text-[#4D4D4D]">9 day ago</span>
+                                                    <span class="text-sm text-[#4D4D4D]">2 days ago</span>
+                                                    <div class="flex gap-5">
+                                                        <img src="./assets/images/review_product.png" alt="product image" role="link">
+                                                        <img src="./assets/images/review_product.png" alt="product image" role="link">
+                                                        <img src="./assets/images/review_product.png" alt="product image" role="link">
+                                                        <img src="./assets/images/review_product.png" alt="product image" role="link">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1126,13 +1125,13 @@
                                             <!-- Accordion Item 1 -->
                                             <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                                 <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                    <span class="text-body font-medium">Is SpotCorrect™ suitable for daily use?</span>
+                                                    <span class="text-body font-medium text-button-bg">Is SpotCorrect™ suitable for daily use?</span>
                                                     <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
                                                         <!-- Plus Icon -->
                                                         <svg
                                                             class="icon-plus hidden"
-                                                            width="20"
-                                                            height="20"
+                                                            width="24"
+                                                            height="24"
                                                             viewBox="0 0 24 24"
                                                             fill="none"
                                                             stroke="currentColor"
@@ -1143,8 +1142,8 @@
                                                         <!-- Minus Icon -->
                                                         <svg
                                                             class="icon-minus"
-                                                            width="20"
-                                                            height="20"
+                                                            width="24"
+                                                            height="24"
                                                             viewBox="0 0 24 24"
                                                             fill="none"
                                                             stroke="currentColor"
@@ -1155,7 +1154,7 @@
                                                     </span>
                                                 </button>
                                                 <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                                    <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                    <div class="mt-16 text-grey font-normal w-full xl:w-[90%]">
                                                         <p>
                                                             Yes. SpotCorrect™ is designed for regular daily use when applied as directed and followed with sunscreen during the day.
                                                         </p>
@@ -1165,12 +1164,12 @@
                                             <!-- Accordion Item 2 -->
                                             <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                                 <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                    <span class="text-body font-medium">Can SpotCorrect™ be used on acne-prone skin?</span>
+                                                    <span class="text-body font-medium text-button-bg">Can SpotCorrect™ be used on acne-prone skin?</span>
                                                     <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
                                                         <svg
                                                             class="icon-plus hidden"
-                                                            width="20"
-                                                            height="20"
+                                                            width="24"
+                                                            height="24"
                                                             viewBox="0 0 24 24"
                                                             fill="none"
                                                             stroke="currentColor"
@@ -1180,8 +1179,8 @@
                                                         </svg>
                                                         <svg
                                                             class="icon-minus"
-                                                            width="20"
-                                                            height="20"
+                                                            width="24"
+                                                            height="24"
                                                             viewBox="0 0 24 24"
                                                             fill="none"
                                                             stroke="currentColor"
@@ -1192,7 +1191,7 @@
                                                     </span>
                                                 </button>
                                                 <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                                    <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                    <div class="mt-16 text-grey font-normal w-full xl:w-[90%]">
                                                         <p>
                                                             Yes. The formula includes Zinc PCA to help balance oil and calm redness, making it suitable for acne-prone skin.
                                                         </p>
@@ -1202,12 +1201,12 @@
                                             <!-- Accordion Item 3 -->
                                             <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                                 <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                    <span class="text-body font-medium">Will SpotCorrect™ lighten my overall skin tone?</span>
+                                                    <span class="text-body font-medium text-button-bg">Will SpotCorrect™ lighten my overall skin tone?</span>
                                                     <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
                                                         <svg
                                                             class="icon-plus"
-                                                            width="20"
-                                                            height="20"
+                                                            width="24"
+                                                            height="24"
                                                             viewBox="0 0 24 24"
                                                             fill="none"
                                                             stroke="currentColor"
@@ -1217,8 +1216,8 @@
                                                         </svg>
                                                         <svg
                                                             class="icon-minus hidden"
-                                                            width="20"
-                                                            height="20"
+                                                            width="24"
+                                                            height="24"
                                                             viewBox="0 0 24 24"
                                                             fill="none"
                                                             stroke="currentColor"
@@ -1229,7 +1228,7 @@
                                                     </span>
                                                 </button>
                                                 <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                                    <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                    <div class="mt-16 text-grey font-normal w-full xl:w-[90%]">
                                                         <p>
                                                             SpotCorrect™ focuses on improving uneven tone and dark spots. It does not bleach or artificially change natural skin tone.
                                                         </p>
@@ -1239,12 +1238,12 @@
                                             <!-- Accordion Item 4 -->
                                             <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                                 <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                    <span class="text-body font-medium">How long does it take to see pigmentation improvement?</span>
+                                                    <span class="text-body font-medium text-button-bg">How long does it take to see pigmentation improvement?</span>
                                                     <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
                                                         <svg
                                                             class="icon-plus"
-                                                            width="20"
-                                                            height="20"
+                                                            width="24"
+                                                            height="24"
                                                             viewBox="0 0 24 24"
                                                             fill="none"
                                                             stroke="currentColor"
@@ -1254,8 +1253,8 @@
                                                         </svg>
                                                         <svg
                                                             class="icon-minus hidden"
-                                                            width="20"
-                                                            height="20"
+                                                            width="24"
+                                                            height="24"
                                                             viewBox="0 0 24 24"
                                                             fill="none"
                                                             stroke="currentColor"
@@ -1266,7 +1265,7 @@
                                                     </span>
                                                 </button>
                                                 <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                                    <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                    <div class="mt-16 text-grey font-normal w-full xl:w-[90%]">
                                                         <p>
                                                             Visible improvement typically appears over a few weeks with consistent use. Results depend on skin type, concern depth, and routine consistency.
                                                         </p>
@@ -1276,12 +1275,12 @@
                                             <!-- Accordion Item 5 -->
                                             <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                                 <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                    <span class="text-body font-medium">Do I need sunscreen while using SpotCorrect™?</span>
+                                                    <span class="text-body font-medium text-button-bg">Do I need sunscreen while using SpotCorrect™?</span>
                                                     <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
                                                         <svg
                                                             class="icon-plus"
-                                                            width="20"
-                                                            height="20"
+                                                            width="24"
+                                                            height="24"
                                                             viewBox="0 0 24 24"
                                                             fill="none"
                                                             stroke="currentColor"
@@ -1291,8 +1290,8 @@
                                                         </svg>
                                                         <svg
                                                             class="icon-minus hidden"
-                                                            width="20"
-                                                            height="20"
+                                                            width="24"
+                                                            height="24"
                                                             viewBox="0 0 24 24"
                                                             fill="none"
                                                             stroke="currentColor"
@@ -1303,7 +1302,7 @@
                                                     </span>
                                                 </button>
                                                 <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                                    <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                    <div class="mt-16 text-grey font-normal w-full xl:w-[90%]">
                                                         <p>
                                                             Yes. Daily sunscreen use is essential when addressing pigmentation to help prevent new marks and protect results.
                                                         </p>
@@ -1324,8 +1323,8 @@
                 </div>
             </div>
                 </main>
-                <!-- Footer Starts -->
-                <footer class="border-t border-t-solid border-t-[#0000001A]">
+             <!-- Footer Starts -->
+         <footer class="border-t border-t-solid border-t-[#0000001A]">
                     <div class="container">
                         <div class="foot-top py-74 border-b border-b-solid border-b-[#0000001A]">
                             <div class="flex justify-between gap-20 md:gap-40 xl:gap-58 flex-wrap">
@@ -1335,7 +1334,7 @@
                                         <img src="./assets/images/company-logo.svg" alt="Ellitee logo">
                                     </a>
                                     <div class="space-y-16">
-                                        <span class="inline-block text-sm">
+                                        <span class="inline-block text-sm text-button-bg">
                                             Find out your skin or hair concerns and
                               what a dermatologist advises for them, for free.
                                         </span>
@@ -1354,53 +1353,58 @@
                                 </div>
                                 <!--  -->
                                 <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(20%-58px)]">
-                                    <span class="inline-block text-body font-semibold">Links</span>
-                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal">
+                                    <span class="inline-block text-body font-medium text-button-bg">Links</span>
+                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal [&_li>a]:text-button-bg">
                                         <li>
-                                              <a href="/index.html" aria-current="page">
-                                            Home
-                                        </a>
+                                            <a href="/index.html" aria-current="page">
+                                                Home
+                                            </a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">About Us</a>
+                                            <a href="/category.html" aria-current="page">
+                                                Our Products
+                                            </a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">Our Expertise</a>
+                                            <a href="/skin_insight.html" aria-current="page">
+                                                Skin Insights
+                                            </a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">Testimonials</a>
+                                            <a href="/Aboutus.html" aria-label="Learn about us">About us</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/Testimonial.html" aria-label="Read client testimonials">Testimonials</a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">FAQs</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" role="link">Contact us</a>
+                                            <a href="/FAQ.html" aria-label="Frequently asked questions">FAQ</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <!--  -->
                                 <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(20%-58px)]">
-                                    <span class="inline-block text-body font-semibold">Our Policy</span>
-                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal">
+                                    <span class="inline-block text-body font-medium text-button-bg">Our Policy</span>
+                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal [&_li>a]:text-button-bg">
                                         <li>
-                                            <a href="#" role="link">Terms of Use</a>
+                                            <a href="/termsofuse.html" role="link">Terms of Use</a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">Privacy Policy</a>
+                                            <a href="/Privacy_policy.html" role="link">Privacy Policy</a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">Grievance Policy</a>
+                                            <a href="/Grievance_policy.html" role="link">Grievance Policy</a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">Refunds & Cancellations Policy</a>
+                                            <a href="/refund_policy.html" role="link">Refunds & Cancellations Policy</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <!--  -->
                                
                                 <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(30%-58px)]">
-                                    <span class="inline-block text-body font-semibold">Other Skin Problems</span>
-                                    <ul class="address space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li]:text-sm [&_li>a]:font-normal [&_li]:font-normal [&_li]:flex [&_li]:justify-start [&_li]:items-start [&_li]:gap-10">
+                                    <span class="inline-block text-body font-medium text-button-bg">Other Skin Problems</span>
+                                    <ul class="address space-y-16 [&_li>a]:inline-block [&_li>a]:text-sm [&_li]:text-sm [&_li>a]:font-normal [&_li]:font-normal [&_li]:flex [&_li]:justify-start [&_li]:items-start [&_li]:gap-10 *:text-button-bg">
                                          <li>
                                             <img src="./assets/images/phone.svg" alt="icon of phone for calling" role="img">
                                             <a href="tel:+919510514689" role="link" aria-label="Call 9510514689">9510514689</a>
@@ -1411,22 +1415,22 @@
                                         </li>
                                         <li>
                                             <img src="./assets/images/map-pin.svg" alt="icon of map for location" role="img">
-                                            <span aria-label="Company address">
-                                                Ellitee LLP, #656, 3rd floor, 27th Main, 13th Cross Rd, 
-            opp. PWD Quarters, 1st Sector, HSR Layout, Bengaluru, 
-            Karnataka 560102
+                                            <span id="companyAddress" aria-label="Company address" class="block leading-relaxed">
+                                               Ellitee LLP
+SH-403 Shiven Shoppers, Adajan DN, Surat – 
+395009, Gujarat, India
                                             </span>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="copyright font-normal text-sm text-center py-16 text-dark1">
+                        <div class="copyright font-normal text-sm text-center py-16 text-button-bg">
                             <p> &copy; 2025-Ellitee™. All Rights Reserved</p>
                         </div>
                     </div>
-                </footer>
-                <!-- Footer End -->
+        </footer>
+        <!-- Footer End -->
                 <script src="./assets/js/swiper-bundle.min.js"></script>
                 <script src="./assets/js/script.js"></script>
                 <!-- Hero Section -->

@@ -13,12 +13,13 @@
         <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     </head>
     <body>
-        <!-- Header -->
-        <header class="sticky top-0 left-0 w-full bg-white border-y border-gray-200 py-34 z-100">
+
+         <!-- Header -->
+        <header class="sticky top-0 left-0 w-full bg-white border-y border-gray-200 py-24 z-100">
             <div class="container">
                 <div class="flex items-center justify-between py-4 gap-4">
                     <!-- Logo -->
-                    <a href="/index.html" aria-label="Go to homepage" class="relative z-100">
+                    <a href="#" aria-label="Go to homepage" class="relative z-100">
                         <img src="./assets/images/company-logo.svg" alt="Ellitee logo">
                     </a>
                     <!-- Navigation -->
@@ -27,28 +28,36 @@
              opacity-0 -translate-y-2 pointer-events-none lg:opacity-100 lg:pointer-events-auto lg:translate-y-0
              transition-all duration-300">
                             <li>
-                                <a href="#" aria-current="page">
+                                <a href="/index.html" aria-current="page">
                                     Home
                                 </a>
                             </li>
-                            <li>
-                                <a href="#" aria-label="Learn about us">About us</a>
+                             <li>
+                                <a href="/category.html" aria-current="page">
+                                    Our Products
+                                </a>
                             </li>
                             <li>
-                                <a href="#" aria-label="Explore our areas of expertise">Our Expertise</a>
+                                <a href="/skin_insight.html" aria-current="page">
+                                    Skin Insights
+                                </a>
                             </li>
                             <li>
-                                <a href="#" aria-label="Read client testimonials">Testimonials</a>
+                                <a href="/Aboutus.html" aria-label="Learn about us">About us</a>
+                            </li>
+                         
+                            <li>
+                                <a href="/Testimonial.html" aria-label="Read client testimonials">Testimonials</a>
                             </li>
                             <li>
-                                <a href="#" aria-label="Frequently asked questions">FAQ</a>
+                                <a href="/FAQ.html" aria-label="Frequently asked questions">FAQ</a>
                             </li>
                         </ul>
                     </nav>
                     <div class="flex justify-center items-center gap-8">
                         <!-- Contact Desktop Button -->
                         <a href="tel:+919510514689" class="hidden sm:block btn-dark relative z-100" aria-label="Contact Ellitee team">
-                            Contact Us
+                           <span>Build Your Routine</span> 
                         </a>
                         <!-- Contact Mobile Button -->
                         <a href="tel:+919510514689" class="btn-dark relative z-100 p-12 h-52 sm:hidden flex justify-center items-center" aria-label="Contact Ellitee team">
@@ -79,13 +88,13 @@
                         <!-- Left Content -->
                         <div class="w-full lg:w-[50%] xl:w-[60%] xxl:w-[45%] flex flex-col justify-center px-16 md:px-0 pb-40 lg:pb-80 xxl:pb-104 pt-20 sm:pt-40 lg:pt-80 xxl:pt-104 space-y-34 relative z-10">
                             <div class="flex flex-col justify-center space-y-24">
-                                <h1 class="text-h2.64 font-light text-dark">
+                                <h1 class="text-h2.64 font-light text-button-bg">
                                     <span class="font-bold">Understand Your Skin 
                                         <br>
                                     </span>
                                     Before You Treat It
                                 </h1>
-                                <div class="text-grey space-y-16 md:space-y-24">
+                                <div class="text-grey space-y-16 md:space-y-24 font-normal">
                                     <p>
                                         Ellitee Skin Insights helps you identify visible skin concerns and patterns so your routine supports long-term skin health, not short-term fixes.
                                     </p>
@@ -94,7 +103,7 @@
                             </div>
                             <div>
                                 <a href="#" class="btn-dark" aria-label="Shop sunscreen products">
-                                    Begin Skin Assessment
+                                    <span>Shop Skincare</span>
                                 </a>
                             </div>
                         </div>
@@ -145,7 +154,7 @@
                                     
                                     Why <span class="font-bold">Skin Understanding</span> Matters
                                 </h2>
-                                <div class="space-y-24 text-grey1 font-normal leading-relaxed">
+                                <div class="space-y-24 text-grey font-normal leading-relaxed">
                                     <p>
                                         Skin issues rarely exist in isolation. Acne, pigmentation, redness, or dehydration are often connected to environment, habits, and barrier health.
                                     </p>
@@ -162,20 +171,20 @@
             </section>
             <!-- video Section End (section-2) -->
             <!-- skin transformation Tab Section (section-2) -->
-            <section class="pt-40 md:pt-60 xl:pt-100">
+            <section class="py-40 md:py-60 xl:py-100">
                 <div class="container">
                     <div class="inner">
                         <div class="heading text-center space-y-24">
                             <h2 class="text-h2 font-light">
-                                <span class="font-bold">AI-Powered</span>
-                                Skin Transformation
+                                <span class="font-bold">Skin Concerns</span> We Help You Navigate
+                      
                             </h2>
                             <div class="text-grey font-normal">
-                                <p>Track visible improvements across multiple skin concerns with intelligent before-and-after analysis.</p>
+                                <p>Every skin concern behaves differently. Understanding the pattern is the first step toward improvement.</p>
                             </div>
                         </div>
                         <!-- tab area -->
-                        <div class="mt-32 xl:mt-54 space-x-16 xl:space-x-54 flex justify-center items-center">
+                        <div class="mt-32 xl:mt-48 space-x-16 xl:space-x-54 flex justify-center items-center">
                             <!-- Tabs -->
                             <!-- Prev Arrow -->
                             <button id="tabPrevMobile" aria-label="Scroll tabs left" class="p-2 border rounded-full bg-white shadow active:scale-90 lg:hidden flex justify-center w-32 h-32">
@@ -199,7 +208,7 @@
                             </button>
                         </div>
                         <!-- Tab Contents -->
-                        <div id="tabContentWrapper" class="mt-54">
+                        <div id="tabContentWrapper" class="mt-32 xl:mt-48">
                             <!-- Item 1 -->
                             <div class="tab-content block" data-index="0">
                                 <div class="grid grid-flow-dense lg:grid-cols-2 gap-32 xl:gap-60">
@@ -324,7 +333,7 @@
                             </div>
                          
                             <!-- Navigation buttons -->
-                            <div class="flex justify-between gap-32 xl:gap-100 pt-32 lg:-mt-80 lg:w-1/2">
+                            <div class="flex justify-between gap-32 xl:gap-100 pt-32 lg:-mt-80 lg:w-[45%]">
                                 <button id="prevBtn1" class="border border-grey px-24 py-12 text-base flex items-center gap-4 text-[#4D4D4D]">
                                     <span>
                                        <svg
@@ -335,7 +344,7 @@
                                                 >
                                                     <path
                                                         d="M6 8L2 12M2 12L6 16M2 12H22"
-                                                        stroke="#6A6A6A"
+                                                        stroke="currentColor"
                                                         stroke-width="1.5"
                                                         stroke-linecap="round"
                                                         stroke-linejoin="round"
@@ -348,7 +357,7 @@
                                 <button id="nextBtn1" class="border border-grey text-white px-24 py-12 text-base flex items-center gap-4">
                                     Next
                                     <span>
-                                  <svg
+                                 <svg
                                                     width="24"
                                                     height="24"
                                                     viewBox="0 0 24 24"
@@ -356,7 +365,7 @@
                                                 >
                                                     <path
                                                         d="M18 8L22 12M22 12L18 16M22 12H2"
-                                                        stroke="#6A6A6A"
+                                                        stroke="currentColor"
                                                         stroke-width="1.5"
                                                         stroke-linecap="round"
                                                         stroke-linejoin="round"
@@ -412,7 +421,7 @@
                                         <span class="block py-6 px-16 bg-button-bg text-button-text text-sm w-fit">
                                             Step 1
                                         </span>
-                                        <span class="font-medium text-dark text-t_20">Share Your Skin Context</span>
+                                        <span class="font-medium text-button-bg text-t_20">Share Your Skin Context</span>
                                         <span class="text-grey1 text-sm">Answer a short set of questions about your skin concerns, routine habits, and environment. This helps place visible skin patterns into real-life context.</span>
                                     </div>
                                 </a>
@@ -438,7 +447,7 @@
                                         <span class="block py-6 px-16 bg-button-bg text-button-text text-sm w-fit">
                                             Step 2
                                         </span>
-                                        <span class="font-medium text-dark text-t_20">Observe Visible Skin Indicators</span>
+                                        <span class="font-medium text-button-bg text-t_20">Observe Visible Skin Indicators</span>
                                         <span class="text-grey1 text-sm">Upload a clear photo to assess visible characteristics such as tone consistency, texture, and concern distribution.</span>
                                     </div>
                                 </a>
@@ -464,7 +473,7 @@
                                         <span class="block py-6 px-16 bg-button-bg text-button-text text-sm w-fit">
                                             Step 3
                                         </span>
-                                        <span class="font-medium text-dark text-t_20">Build a Supportive Routine</span>
+                                        <span class="font-medium text-button-bg text-t_20">Build a Supportive Routine</span>
                                         <span class="text-grey1 text-sm">Receive a routine designed to support balance, barrier health, and gradual improvement not instant results.</span>
                                     </div>
                                 </a>
@@ -476,7 +485,7 @@
         </section>
         <!-- Shop by Category Section (section-3) -->
         <!-- Skin Journey Section (section-4) -->
-        <section class="py-40 md:py-60 xl:py-100">
+        <section class="py-40 md:py-60 xl:py-100 bg-grey_light">
             <div class="container">
                 <div class="inner flex gap-32 flex-col lg:flex-row">
                     <div class="w-full lg:w-[43%]">
@@ -494,7 +503,7 @@
                             </div>
                         </div>
                         <!-- key benefits -->
-                         <div class="space-y-24 [&_ul]:space-y-20 [&_ul>li]:text-grey">
+                         <div class="space-y-24 [&_ul]:space-y-20  text-button-bg">
                             <span class="block text-[clamp(28px,3vw,32px)]">Key Benefits</span>
                             <ul>
                                 <li>✔ Insight-led routine guidance</li>
@@ -511,7 +520,7 @@
                                 aria-label="Start AI-powered skin scan"
                                 role="button"
                             >
-                                Start Skin Assessment
+                                <span>Start Skin Assessment</span>
                             </a>
                         </div>
                     </div>
@@ -520,21 +529,19 @@
         </section>
         <!-- Skin Journey Section End (section-4) -->
         <!-- Guidelines Section (section-5) -->
-        <section class="pt-40 md:pt-60 xl:pt-100">
+        <section class="py-40 md:py-60 xl:py-100">
             <div class="container">
                 <div>
                     <div class="heading text-center space-y-24 mb-32 lg:mb-54 xl:mb-80 1xl:mb-131">
                         <h2 class="text-h2 font-light">
                            How to Take  <span class="font-bold">Your Skin Photo</span>
                         </h2>
-                        <div class="text-grey font-normal">
-                            <p>Follow these simple steps to ensure accurate results</p>
-                        </div>
+                      
                     </div>
                     <!-- analysis -->
                     <div class="flex  flex-wrap lg:flex-nowrap gap-24 md:gap-68">
                         <!-- item-1 -->
-                        <div class="analysis-card w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] shadow-lg md:shadow-none border border-grey md:border-transparent border-solid p-20 md:p-0">
+                        <div class="analysis-card w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] shadow-lg md:shadow-none p-20 md:p-0">
                             <div class="space-y-24 lg:space-y-40 flex flex-col justify-center items-center">
                                 <div class="w-180 xl:w-230 h-180 xl:h-230 rounded-full overflow-hidden shadow-(--shadow-box)">
                                     <img src="/assets/images/analysis_img1.webp" alt="Person facing the camera directly with head upright for accurate facial capture" role="img">
@@ -546,7 +553,7 @@
                             </div>
                         </div>
                          <!-- item-2 -->
-                        <div class="analysis-card w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] shadow-lg md:shadow-none border border-grey md:border-transparent border-solid p-20 md:p-0">
+                        <div class="analysis-card w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] shadow-lg md:shadow-none p-20 md:p-0">
                             <div class="space-y-24 lg:space-y-40 flex flex-col justify-center items-center">
                                 <div class="w-180 xl:w-230 h-180 xl:h-230 rounded-full overflow-hidden shadow-(--shadow-box)">
                                     <img src="/assets/images/analysis_img2.webp" alt="Person looking straight ahead with a neutral facial expression and no visible makeup." role="img">
@@ -558,7 +565,7 @@
                             </div>
                         </div>
                          <!-- item-3 -->
-                        <div class="analysis-card w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] border-grey shadow-lg md:shadow-none border md:border-transparent border-solid p-20 md:p-0">
+                        <div class="analysis-card w-full md:w-[calc(50%-40px)] lg:w-[calc(33%-40px)] shadow-lg md:shadow-none  p-20 md:p-0">
                             <div class="space-y-24 lg:space-y-40 flex flex-col justify-center items-center">
                                 <div class="w-180 xl:w-230 h-180 xl:h-230 rounded-full overflow-hidden shadow-(--shadow-box)">
                                     <img src="/assets/images/analysis_img2.webp" alt="Person’s face fully visible under even lighting with no shadows or obstructions" role="img">
@@ -592,20 +599,20 @@
                                 <!-- Accordion Item -->
                                 <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                     <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                        <span class="text-body font-medium">Why doesn’t pigmentation fade easily?</span>
-                                        <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                        <span class="text-body font-medium text-button-bg">Why doesn’t pigmentation fade easily?</span>
+                                        <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
                                             <!-- Plus Icon -->
-                                            <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <svg class="icon-plus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                 <path d="M12 5v14M5 12h14"></path>
                                             </svg>
                                             <!-- Minus Icon -->
-                                            <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <svg class="icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                 <path d="M5 12h14"></path>
                                             </svg>
                                         </span>
                                     </button>
                                     <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                        <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                        <div class="mt-16 text-grey font-normal w-full xl:w-[90%]">
                                             <p>
                                                 Because pigmentation is often a response to repeated inflammation or sun exposure. Without supporting the skin barrier, aggressive treatments may worsen discoloration instead of resolving it.
                                             </p>
@@ -615,18 +622,18 @@
                                 <!-- Duplicate this block for 2nd + 3rd accordion -->
                                 <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                     <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                        <span class="text-body font-medium">Is guessing skincare routines harmful?</span>
-                                        <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                            <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <span class="text-body font-medium text-button-bg">Is guessing skincare routines harmful?</span>
+                                        <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                            <svg class="icon-plus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                 <path d="M12 5v14M5 12h14"></path>
                                             </svg>
-                                            <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <svg class="icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                 <path d="M5 12h14"></path>
                                             </svg>
                                         </span>
                                     </button>
                                     <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                        <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                        <div class="mt-16 text-grey font-normal w-full xl:w-[90%]">
                                             <p>
                                                 Yes. Repeated trial-and-error can disrupt the skin barrier, leading to sensitivity, breakouts, or uneven tone. Understanding your skin first helps reduce this cycle.
                                             </p>
@@ -636,18 +643,18 @@
                                 <!-- THIRD -->
                                 <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                     <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                        <span class="text-body font-medium">Why does aggressive skincare cause more problems?</span>
-                                        <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                            <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <span class="text-body font-medium text-button-bg">Why does aggressive skincare cause more problems?</span>
+                                        <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                            <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                 <path d="M12 5v14M5 12h14"></path>
                                             </svg>
-                                            <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                 <path d="M5 12h14"></path>
                                             </svg>
                                         </span>
                                     </button>
                                     <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                        <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                        <div class="mt-16 text-grey font-normal w-full xl:w-[90%]">
                                             <p>
                                                Overuse of strong actives can weaken the skin barrier, making concerns like acne and pigmentation more persistent over time.
                                             </p>
@@ -657,18 +664,18 @@
                                 <!-- fourth -->
                                 <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                     <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                        <span class="text-body font-medium">Can skin improve with fewer products?</span>
-                                        <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                            <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <span class="text-body font-medium text-button-bg">Can skin improve with fewer products?</span>
+                                        <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                            <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                 <path d="M12 5v14M5 12h14"></path>
                                             </svg>
-                                            <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                 <path d="M5 12h14"></path>
                                             </svg>
                                         </span>
                                     </button>
                                     <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                        <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                        <div class="mt-16 text-grey font-normal w-full xl:w-[90%]">
                                             <p>
                                                 Often, yes. Skin responds better to balanced routines than multiple overlapping actives that compete or irritate.
                                             </p>
@@ -678,18 +685,18 @@
                                <!-- fifth -->
                                 <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                     <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                        <span class="text-body font-medium">Who is Ellitee Skin Insights designed for?</span>
-                                        <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                            <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <span class="text-body font-medium text-button-bg">Who is Ellitee Skin Insights designed for?</span>
+                                        <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                            <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                 <path d="M12 5v14M5 12h14"></path>
                                             </svg>
-                                            <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                 <path d="M5 12h14"></path>
                                             </svg>
                                         </span>
                                     </button>
                                     <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                        <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                        <div class="mt-16 text-grey font-normal w-full xl:w-[90%]">
                                             <p>
                                                 Ellitee Skin Insights is designed for people who want clarity, consistency, and long-term skin balance — especially in Indian climates.
                                             </p>
@@ -699,18 +706,18 @@
                                 <!-- fifth -->
                                 <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                     <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                        <span class="text-body font-medium">Is this system meant to replace a dermatologist?</span>
-                                        <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                            <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <span class="text-body font-medium text-button-bg">Is this system meant to replace a dermatologist?</span>
+                                        <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                            <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                 <path d="M12 5v14M5 12h14"></path>
                                             </svg>
-                                            <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                 <path d="M5 12h14"></path>
                                             </svg>
                                         </span>
                                     </button>
                                     <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                        <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                        <div class="mt-16 text-grey font-normal w-full xl:w-[90%]">
                                             <p>
                                                 No. Skin Insights supports everyday skincare decisions but does not diagnose or replace professional medical care.
                                             </p>
@@ -743,20 +750,20 @@
                                 <!-- Accordion Item -->
                                 <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                     <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                        <span class="text-body font-medium">Is Ellitee Skin Insights a medical diagnosis?</span>
-                                        <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                        <span class="text-body font-medium text-button-bg">Is Ellitee Skin Insights a medical diagnosis?</span>
+                                        <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
                                             <!-- Plus Icon -->
-                                            <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <svg class="icon-plus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                 <path d="M12 5v14M5 12h14"></path>
                                             </svg>
                                             <!-- Minus Icon -->
-                                            <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <svg class="icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                 <path d="M5 12h14"></path>
                                             </svg>
                                         </span>
                                     </button>
                                     <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                        <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                        <div class="mt-16 text-grey font-normal w-full xl:w-[90%]">
                                             <p>
                                                 No. Ellitee Skin Insights is designed to guide skincare routines based on visible skin patterns. It does not diagnose medical conditions or replace professional advice.
                                             </p>
@@ -766,18 +773,18 @@
                                 <!-- Duplicate this block for 2nd + 3rd accordion -->
                                 <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                     <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                        <span class="text-body font-medium">Do I need Skin Insights to use Ellitee products?</span>
-                                        <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                            <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <span class="text-body font-medium text-button-bg">Do I need Skin Insights to use Ellitee products?</span>
+                                        <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                            <svg class="icon-plus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                 <path d="M12 5v14M5 12h14"></path>
                                             </svg>
-                                            <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <svg class="icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                 <path d="M5 12h14"></path>
                                             </svg>
                                         </span>
                                     </button>
                                     <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                        <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                        <div class="mt-16 text-grey font-normal w-full xl:w-[90%]">
                                             <p>
                                                 Not at all. Ellitee products can be used independently. Skin Insights simply helps align products more accurately with your skin’s needs.
                                             </p>
@@ -787,18 +794,18 @@
                                 <!-- THIRD -->
                                 <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                     <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                        <span class="text-body font-medium">How is my data handled?</span>
-                                        <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                            <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <span class="text-body font-medium text-button-bg">How is my data handled?</span>
+                                        <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                            <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                 <path d="M12 5v14M5 12h14"></path>
                                             </svg>
-                                            <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                 <path d="M5 12h14"></path>
                                             </svg>
                                         </span>
                                     </button>
                                     <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                        <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                        <div class="mt-16 text-grey font-normal w-full xl:w-[90%]">
                                             <p>
                                                Your information is used only to generate insights and improve your experience. Data privacy and responsible handling are core to Ellitee’s approach.
                                             </p>
@@ -808,18 +815,18 @@
                                 <!-- fourth -->
                                 <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                     <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                        <span class="text-body font-medium">How often should I reassess my skin?</span>
-                                        <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                            <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <span class="text-body font-medium text-button-bg">How often should I reassess my skin?</span>
+                                        <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                            <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                 <path d="M12 5v14M5 12h14"></path>
                                             </svg>
-                                            <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                 <path d="M5 12h14"></path>
                                             </svg>
                                         </span>
                                     </button>
                                     <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                        <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                        <div class="mt-16 text-grey font-normal w-full xl:w-[90%]">
                                             <p>
                                                 Skin changes with seasons, lifestyle, and routines. Reassessing every few weeks can help keep your routine
                                             </p>
@@ -837,8 +844,8 @@
         </section>
         <!-- FAQ Section (section-7)  Ends-->
     </main>
-    <!-- Footer Starts -->
-    <footer class="border-t border-t-solid border-t-[#0000001A]">
+        <!-- Footer Starts -->
+         <footer class="border-t border-t-solid border-t-[#0000001A]">
                     <div class="container">
                         <div class="foot-top py-74 border-b border-b-solid border-b-[#0000001A]">
                             <div class="flex justify-between gap-20 md:gap-40 xl:gap-58 flex-wrap">
@@ -848,7 +855,7 @@
                                         <img src="./assets/images/company-logo.svg" alt="Ellitee logo">
                                     </a>
                                     <div class="space-y-16">
-                                        <span class="inline-block text-sm">
+                                        <span class="inline-block text-sm text-button-bg">
                                             Find out your skin or hair concerns and
                               what a dermatologist advises for them, for free.
                                         </span>
@@ -867,53 +874,58 @@
                                 </div>
                                 <!--  -->
                                 <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(20%-58px)]">
-                                    <span class="inline-block text-body font-semibold">Links</span>
-                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal">
+                                    <span class="inline-block text-body font-medium text-button-bg">Links</span>
+                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal [&_li>a]:text-button-bg">
                                         <li>
-                                              <a href="/index.html" aria-current="page">
-                                            Home
-                                        </a>
+                                            <a href="/index.html" aria-current="page">
+                                                Home
+                                            </a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">About Us</a>
+                                            <a href="/category.html" aria-current="page">
+                                                Our Products
+                                            </a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">Our Expertise</a>
+                                            <a href="/skin_insight.html" aria-current="page">
+                                                Skin Insights
+                                            </a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">Testimonials</a>
+                                            <a href="/Aboutus.html" aria-label="Learn about us">About us</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/Testimonial.html" aria-label="Read client testimonials">Testimonials</a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">FAQs</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" role="link">Contact us</a>
+                                            <a href="/FAQ.html" aria-label="Frequently asked questions">FAQ</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <!--  -->
                                 <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(20%-58px)]">
-                                    <span class="inline-block text-body font-semibold">Our Policy</span>
-                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal">
+                                    <span class="inline-block text-body font-medium text-button-bg">Our Policy</span>
+                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal [&_li>a]:text-button-bg">
                                         <li>
-                                            <a href="#" role="link">Terms of Use</a>
+                                            <a href="/termsofuse.html" role="link">Terms of Use</a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">Privacy Policy</a>
+                                            <a href="/Privacy_policy.html" role="link">Privacy Policy</a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">Grievance Policy</a>
+                                            <a href="/Grievance_policy.html" role="link">Grievance Policy</a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">Refunds & Cancellations Policy</a>
+                                            <a href="/refund_policy.html" role="link">Refunds & Cancellations Policy</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <!--  -->
                                
                                 <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(30%-58px)]">
-                                    <span class="inline-block text-body font-semibold">Other Skin Problems</span>
-                                    <ul class="address space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li]:text-sm [&_li>a]:font-normal [&_li]:font-normal [&_li]:flex [&_li]:justify-start [&_li]:items-start [&_li]:gap-10">
+                                    <span class="inline-block text-body font-medium text-button-bg">Other Skin Problems</span>
+                                    <ul class="address space-y-16 [&_li>a]:inline-block [&_li>a]:text-sm [&_li]:text-sm [&_li>a]:font-normal [&_li]:font-normal [&_li]:flex [&_li]:justify-start [&_li]:items-start [&_li]:gap-10 *:text-button-bg">
                                          <li>
                                             <img src="./assets/images/phone.svg" alt="icon of phone for calling" role="img">
                                             <a href="tel:+919510514689" role="link" aria-label="Call 9510514689">9510514689</a>
@@ -924,22 +936,22 @@
                                         </li>
                                         <li>
                                             <img src="./assets/images/map-pin.svg" alt="icon of map for location" role="img">
-                                            <span aria-label="Company address">
-                                                Ellitee LLP, #656, 3rd floor, 27th Main, 13th Cross Rd, 
-            opp. PWD Quarters, 1st Sector, HSR Layout, Bengaluru, 
-            Karnataka 560102
+                                            <span id="companyAddress" aria-label="Company address" class="block leading-relaxed">
+                                               Ellitee LLP
+SH-403 Shiven Shoppers, Adajan DN, Surat – 
+395009, Gujarat, India
                                             </span>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="copyright font-normal text-sm text-center py-16 text-dark1">
+                        <div class="copyright font-normal text-sm text-center py-16 text-button-bg">
                             <p> &copy; 2025-Ellitee™. All Rights Reserved</p>
                         </div>
                     </div>
                 </footer>
-    <!-- Footer End -->
+            <!-- Footer End -->
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <!-- Accordion 1 -->
@@ -1158,10 +1170,10 @@ showTab(0);
 function updateTabTextColors() {
     tabs.forEach(btn => {
         if (btn.classList.contains("active")) {
-            btn.classList.add("text-dark");
+            btn.classList.add("text-button-bg");
             btn.classList.remove("text-grey");
         } else {
-            btn.classList.remove("text-dark");
+            btn.classList.remove("text-button-bg");
             btn.classList.add("text-grey");
         }
     });

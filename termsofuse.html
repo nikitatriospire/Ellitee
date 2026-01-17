@@ -14,41 +14,129 @@
     </head>
     <body>
        <!-- Header -->
-        <header class="sticky top-0 left-0 w-full bg-white border-y border-gray-200 py-34 z-100">
+        <header id="header" class="header sticky top-0 left-0 w-full bg-white border-y border-gray-200 py-24 z-100">
             <div class="container">
                 <div class="flex items-center justify-between py-4 gap-4">
-                    <!-- Logo -->
+                    <div class="navbar-left">
+                          <!-- Logo -->
                     <a href="#" aria-label="Go to homepage" class="relative z-100">
                         <img src="./assets/images/company-logo.svg" alt="Ellitee logo">
                     </a>
-                    <!-- Navigation -->
-                    <nav id="menu" class="flex-1 flex justify-start lg:justify-center items-start lg:items-center fixed lg:static top-0 left-0 w-full lg:w-auto h-0 lg:h-auto bg-white lg:bg-transparent transition-all duration-300 z-40 overflow-hidden lg:overflow-visible" aria-label="Main navigation">
-                        <ul id="menuList" class="w-full lg:w-auto pt-180 lg:pt-0 flex flex-col lg:flex-row gap-24 lg:gap-32 xl:gap-54 justify-center items-center
-             opacity-0 -translate-y-2 pointer-events-none lg:opacity-100 lg:pointer-events-auto lg:translate-y-0
-             transition-all duration-300">
-                            <li>
-                                <a href="/index.html" aria-current="page">
+                    </div>
+                  
+                    <div class="navbar-center">
+                            <span class="overlay"></span>
+                            <!-- Navigation -->
+                    <nav id="menu" class="menu flex-1 flex justify-center lg:items-center fixed lg:static w-auto h-auto py-56 lg:py-0 px-24 lg:px-0" aria-label="Main navigation">
+                        <div class="menu-header">
+                        <span class="menu-arrow"><i class="bx bx-chevron-left"></i></span>
+                        <span class="menu-title"></span>
+                        </div>
+                        <ul id="menuList" class="menu-inner w-full flex justify-center lg:justify-between items-start lg:items-center gap-24 xl:gap-54 text-button-bg flex-col lg:flex-row">
+                            <li class="menu-item">
+                                <a class="menu-link" href="/index.html" aria-current="page">
                                     Home
                                 </a>
                             </li>
-                            <li>
-                                <a href="#" aria-label="Learn about us">About us</a>
+                            <li class="menu-item menu-dropdown">
+                                <a class="menu-link" href="" aria-current="page">
+                                    Our Products
+                                </a>
+                                 <div class="submenu megamenu megamenu-column-4">
+                                        <div class="submenu-inner">
+                                            <h4 class="submenu-title">Men</h4>
+                                            <ul class="submenu-list">
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Product Name</a></li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Product Name</a></li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Product Name</a></li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Product Name</a></li>
+                                            </ul>
+                                            <h4 class="submenu-title">Kids</h4>
+                                            <ul class="submenu-list">
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Product Name</a></li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Product Name</a></li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Product Name</a></li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Product Name</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="submenu-inner">
+                                            <h4 class="submenu-title">Women</h4>
+                                            <ul class="submenu-list">
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Product Name</a></li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Product Name</a></li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Product Name</a></li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Product Name</a></li>
+                                            </ul>
+                                            <h4 class="submenu-title">Beauty</h4>
+                                            <ul class="submenu-list">
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Product Name</a></li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Product Name</a></li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Product Name</a></li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Product Name</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="submenu-inner">
+                                            <h4 class="submenu-title">Sport</h4>
+                                            <ul class="submenu-list">
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Product Name</a></li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Product Name</a></li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Product Name</a></li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Product Name</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="submenu-inner">
+                                            <img src="https://i.ibb.co/3Bj3gbS/Product-1.jpg" class="submenu-image" alt="Product">
+                                        </div>
+                                    </div>
+                            </li>
+                            <li class="menu-item menu-dropdown">
+                                <a class="menu-link" href="" aria-current="page">
+                                    Skin Insights
+                                </a>
+                                 <div class="submenu megamenu megamenu-column-4">
+                                    <div class="submenu-inner">
+                                        <a href="#" class="submenu-link">
+                                        <img src="https://i.ibb.co/kgNX8ks/Product-2.jpg" class="submenu-image" alt="Product">
+                                        <span class="submenu-title">Product Name</span>
+                                        </a>
+                                    </div>
+                                    <div class="submenu-inner">
+                                        <a href="#" class="submenu-link">
+                                        <img src="https://i.ibb.co/ZTD2wF6/Product-3.jpg" class="submenu-image" alt="Product">
+                                        <span class="submenu-title">Product Name</span>
+                                        </a>
+                                    </div>
+                                    <div class="submenu-inner">
+                                        <a href="#" class="submenu-link">
+                                        <img src="https://i.ibb.co/prb0Vz9/Product-4.jpg" class="submenu-image" alt="Product">
+                                        <span class="submenu-title">Product Name</span>
+                                        </a>
+                                    </div>
+                                    <div class="submenu-inner">
+                                        <a href="#" class="submenu-link">
+                                        <img src="https://i.ibb.co/zPJm9jy/Product-5.jpg" class="submenu-image" alt="Product">
+                                        <span class="submenu-title">Product Name</span>
+                                        </a>
+                                    </div>
+                                </div>
                             </li>
                             <li>
-                                <a href="#" aria-label="Explore our areas of expertise">Our Expertise</a>
+                                <a href="/Aboutus.html" aria-label="Learn about us">About us</a>
                             </li>
                             <li>
-                                <a href="#" aria-label="Read client testimonials">Testimonials</a>
+                                <a href="/Testimonial.html" aria-label="Read client testimonials">Testimonials</a>
                             </li>
                             <li>
-                                <a href="#" aria-label="Frequently asked questions">FAQ</a>
+                                <a href="/FAQ.html" aria-label="Frequently asked questions">FAQ</a>
                             </li>
                         </ul>
                     </nav>
+                    </div>
+                    
                     <div class="flex justify-center items-center gap-8">
                         <!-- Contact Desktop Button -->
                         <a href="tel:+919510514689" class="hidden sm:block btn-dark relative z-100" aria-label="Contact Ellitee team">
-                            Contact Us
+                            <span>Build Your Routine</span>
                         </a>
                         <!-- Contact Mobile Button -->
                         <a href="tel:+919510514689" class="btn-dark relative z-100 p-12 h-52 sm:hidden flex justify-center items-center" aria-label="Contact Ellitee team">
@@ -57,7 +145,7 @@
                         <!-- Mobile Hamburger -->
                         <button
                             id="menuBtn"
-                            class="lg:hidden flex flex-col gap-6 focus:outline-none w-48 h-48 justify-center items-center relative z-100"
+                            class="burger lg:hidden flex flex-col gap-6 focus:outline-none w-48 h-48 justify-center items-center relative z-100"
                             aria-label="Toggle mobile menu"
                             aria-expanded="false"
                             aria-controls="menu"
@@ -72,13 +160,13 @@
         </header>
         <main id="main_content">
             <!-- Hero Setion -->
-            <section class="relative overflow-x-hidden flex justify-center items-center min-h-400 bg-grey_light">
+            <section class="relative overflow-x-hidden flex justify-center items-center lg:min-h-400 bg-grey_light">
                 <div class="container">
                     <div class="flex flex-col-reverse lg:flex-row gap-20 lg:gap-40 xxl:gap-86 h-full">
                         <!-- Left Content -->
-                        <div class="w-full xxl:w-[90%] flex flex-col justify-center px-16 md:px-0 pb-0 lg:pb-100 pt-0 lg:pt-100 space-y-34">
+                        <div class="w-full xxl:w-[90%] flex flex-col justify-center px-16 md:px-0 pb-100 pt-100 space-y-34">
                             <div class="flex flex-col justify-center space-y-24">
-                                <h1 class="text-h2.64 font-light text-dark">
+                                <h1 class="text-h2.64 font-light text-button-bg">
                                     <span class="font-bold">Terms</span>
                                        of Use
                                 </h1>
@@ -100,23 +188,23 @@
 
                         <section id="introduction" class="space-y-18 sm:space-y-48 lg:space-y-64">
                             <div class="space-y-16 md:space-y-24">
-                               <span class="text-h3 font-normal block">Last Updated, January 20, 2026</span>
+                               <span class="text-h3 font-normal block text-button-bg">Last Updated, January 20, 2026</span>
                                 <div class="para text-body text-grey space-y-24">
-                                    <p>Welcome to <a href="#">ellitee.com</a>.  This website is owned and operated by <span class="font-bold text-dark">ELLITEE SKINCARE LLP</span> (“Ellitee”, “we”, “our”, “us”). By accessing or using our website, services, or purchasing our products, you agree to be bound by these Terms of Use.</p>
+                                    <p>Welcome to <a href="#">ellitee.com</a>.  This website is owned and operated by <span class="font-bold text-button-bg">ELLITEE SKINCARE LLP</span> (“Ellitee”, “we”, “our”, “us”). By accessing or using our website, services, or purchasing our products, you agree to be bound by these Terms of Use.</p>
                                    
                                 </div>
                             </div>
                              <div class="space-y-16 md:space-y-24">
-                                 <h3 class="text-[clamp(30px,4vw,40px)] font-light text-dark">
+                                 <h3 class="text-[clamp(30px,4vw,40px)] font-light text-button-bg">
                                     <span class="font-bold">Eligibility </span>
                                 </h3>
                                 <div class="para text-body text-grey space-y-24">
-                                    <p>You must be at least <span class="font-bold text-dark">18 years of age</span> to use this website or place an order.</p>
+                                    <p>You must be at least <span class="font-bold text-button-bg">18 years of age</span> to use this website or place an order.</p>
                                    
                                 </div>
                             </div>
                             <div class="space-y-16 md:space-y-24">
-                                 <h3 class="text-[clamp(30px,4vw,40px)] font-light text-dark">
+                                 <h3 class="text-[clamp(30px,4vw,40px)] font-light text-button-bg">
                                     <span class="font-bold">Use of </span>
                                        Website
                                 </h3>
@@ -132,7 +220,7 @@
                                 </div>
                             </div>
                             <div class="space-y-16 md:space-y-24">
-                                 <h3 class="text-[clamp(30px,4vw,40px)] font-light text-dark">
+                                 <h3 class="text-[clamp(30px,4vw,40px)] font-light text-button-bg">
                                     <span class="font-bold">Product </span>
                                      Information
                                 </h3>
@@ -142,26 +230,26 @@
                                 </div>
                             </div>
                             <div class="space-y-16 md:space-y-24">
-                                 <h3 class="text-[clamp(30px,4vw,40px)] font-light text-dark">
+                                 <h3 class="text-[clamp(30px,4vw,40px)] font-light text-button-bg">
                                     <span class="font-bold">Cosmetic</span>
                                        Disclaimer
                                 </h3>
                                 <div class="para text-body text-grey space-y-24">
-                                    <p>Our products are <span class="font-bold text-dark">cosmetic products only</span> and are not intended to diagnose, treat, cure, or prevent any medical condition. Results may vary from person to person.</p>
+                                    <p>Our products are <span class="font-bold text-button-bg">cosmetic products only</span> and are not intended to diagnose, treat, cure, or prevent any medical condition. Results may vary from person to person.</p>
                                 </div>
                             </div>
                             <div class="space-y-24">
-                                 <h3 class="text-[clamp(30px,4vw,40px)] font-light text-dark">
+                                 <h3 class="text-[clamp(30px,4vw,40px)] font-light text-button-bg">
                                     <span class="font-bold">Intellectual</span>
                                        Property
                                 </h3>
                                 <div class="para text-body text-grey space-y-24">
                                   
-                                    <p>All content on this website, including logos, brand names, text, graphics, and designs, is the property of <span class="font-bold text-dark">ELLITEE SKINCARE LLP</span> and protected under applicable intellectual property laws.</p>
+                                    <p>All content on this website, including logos, brand names, text, graphics, and designs, is the property of <span class="font-bold text-button-bg">ELLITEE SKINCARE LLP</span> and protected under applicable intellectual property laws.</p>
                                 </div>
                             </div>
                             <div class="space-y-24">
-                            <h3 class="text-[clamp(30px,4vw,40px)] font-light text-dark">
+                            <h3 class="text-[clamp(30px,4vw,40px)] font-light text-button-bg">
                                     <span class="font-bold"> Limitation</span>
                                         of Liability
                                 </h3>
@@ -171,12 +259,12 @@
                                 </div>
                             </div>
                                <div class="space-y-24">
-                                <h3 class="text-[clamp(30px,4vw,40px)] font-light text-dark">
+                                <h3 class="text-[clamp(30px,4vw,40px)] font-light text-button-bg">
                                     <span class="font-bold"> Governing</span>
                                         Law
                                 </h3>
                                 <div class="para text-body text-grey space-y-24">
-                                    <p>These Terms shall be governed by and construed in accordance with the laws of <span class="text-dark font-bold"> India</span>, with exclusive jurisdiction in <span class="text-dark font-bold">Surat, Gujarat.</span></p>
+                                    <p>These Terms shall be governed by and construed in accordance with the laws of <span class="text-button-bg font-bold"> India</span>, with exclusive jurisdiction in <span class="text-button-bg font-bold">Surat, Gujarat.</span></p>
                                    
                                 </div>
                             </div>
@@ -193,8 +281,8 @@
      
     
     </main>
-    <!-- Footer Starts -->
-   <footer class="border-t border-t-solid border-t-[#0000001A]">
+ <!-- Footer Starts -->
+         <footer class="border-t border-t-solid border-t-[#0000001A]">
                     <div class="container">
                         <div class="foot-top py-74 border-b border-b-solid border-b-[#0000001A]">
                             <div class="flex justify-between gap-20 md:gap-40 xl:gap-58 flex-wrap">
@@ -204,7 +292,7 @@
                                         <img src="./assets/images/company-logo.svg" alt="Ellitee logo">
                                     </a>
                                     <div class="space-y-16">
-                                        <span class="inline-block text-sm">
+                                        <span class="inline-block text-sm text-button-bg">
                                             Find out your skin or hair concerns and
                               what a dermatologist advises for them, for free.
                                         </span>
@@ -223,53 +311,58 @@
                                 </div>
                                 <!--  -->
                                 <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(20%-58px)]">
-                                    <span class="inline-block text-body font-semibold">Links</span>
-                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal">
+                                    <span class="inline-block text-body font-medium text-button-bg">Links</span>
+                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal [&_li>a]:text-button-bg">
                                         <li>
-                                              <a href="/index.html" aria-current="page">
-                                            Home
-                                        </a>
+                                            <a href="/index.html" aria-current="page">
+                                                Home
+                                            </a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">About Us</a>
+                                            <a href="/category.html" aria-current="page">
+                                                Our Products
+                                            </a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">Our Expertise</a>
+                                            <a href="/skin_insight.html" aria-current="page">
+                                                Skin Insights
+                                            </a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">Testimonials</a>
+                                            <a href="/Aboutus.html" aria-label="Learn about us">About us</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/Testimonial.html" aria-label="Read client testimonials">Testimonials</a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">FAQs</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" role="link">Contact us</a>
+                                            <a href="/FAQ.html" aria-label="Frequently asked questions">FAQ</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <!--  -->
                                 <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(20%-58px)]">
-                                    <span class="inline-block text-body font-semibold">Our Policy</span>
-                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal">
+                                    <span class="inline-block text-body font-medium text-button-bg">Our Policy</span>
+                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal [&_li>a]:text-button-bg">
                                         <li>
-                                            <a href="#" role="link">Terms of Use</a>
+                                            <a href="/termsofuse.html" role="link">Terms of Use</a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">Privacy Policy</a>
+                                            <a href="/Privacy_policy.html" role="link">Privacy Policy</a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">Grievance Policy</a>
+                                            <a href="/Grievance_policy.html" role="link">Grievance Policy</a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">Refunds & Cancellations Policy</a>
+                                            <a href="/refund_policy.html" role="link">Refunds & Cancellations Policy</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <!--  -->
                                
                                 <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(30%-58px)]">
-                                    <span class="inline-block text-body font-semibold">Other Skin Problems</span>
-                                    <ul class="address space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li]:text-sm [&_li>a]:font-normal [&_li]:font-normal [&_li]:flex [&_li]:justify-start [&_li]:items-start [&_li]:gap-10">
+                                    <span class="inline-block text-body font-medium text-button-bg">Other Skin Problems</span>
+                                    <ul class="address space-y-16 [&_li>a]:inline-block [&_li>a]:text-sm [&_li]:text-sm [&_li>a]:font-normal [&_li]:font-normal [&_li]:flex [&_li]:justify-start [&_li]:items-start [&_li]:gap-10 *:text-button-bg">
                                          <li>
                                             <img src="./assets/images/phone.svg" alt="icon of phone for calling" role="img">
                                             <a href="tel:+919510514689" role="link" aria-label="Call 9510514689">9510514689</a>
@@ -280,24 +373,110 @@
                                         </li>
                                         <li>
                                             <img src="./assets/images/map-pin.svg" alt="icon of map for location" role="img">
-                                            <span aria-label="Company address">
-                                                Ellitee LLP, #656, 3rd floor, 27th Main, 13th Cross Rd, 
-            opp. PWD Quarters, 1st Sector, HSR Layout, Bengaluru, 
-            Karnataka 560102
+                                            <span id="companyAddress" aria-label="Company address" class="block leading-relaxed">
+                                               Ellitee LLP
+SH-403 Shiven Shoppers, Adajan DN, Surat – 
+395009, Gujarat, India
                                             </span>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="copyright font-normal text-sm text-center py-16 text-dark1">
+                        <div class="copyright font-normal text-sm text-center py-16 text-button-bg">
                             <p> &copy; 2025-Ellitee™. All Rights Reserved</p>
                         </div>
                     </div>
-                </footer>
-    <!-- Footer End -->
+        </footer>
+        <!-- Footer End -->
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
+
+
+<script>
+const menu = document.querySelector(".menu");
+const menuInner = menu.querySelector(".menu-inner");
+const menuArrow = menu.querySelector(".menu-arrow");
+const burger = document.querySelector(".burger");
+const overlay = document.querySelector(".overlay");
+
+let subMenu = null;
+
+/* =====================
+   TOGGLE MAIN MENU
+===================== */
+function toggleMenu() {
+  menu.classList.toggle("is-active");
+  overlay.classList.toggle("is-active");
+}
+
+/* =====================
+   SHOW SUBMENU (MOBILE)
+===================== */
+function showSubMenu(parent) {
+  subMenu = parent.querySelector(".submenu");
+
+  if (!subMenu) return;
+
+  subMenu.style.display = "block";
+  subMenu.classList.add("is-active");
+  subMenu.style.animation = "slideLeft 0.35s ease forwards";
+
+  const title = parent.querySelector(".menu-link").textContent.trim();
+  menu.querySelector(".menu-title").textContent = title;
+  menu.querySelector(".menu-header").classList.add("is-active");
+}
+
+/* =====================
+   HIDE SUBMENU (MOBILE)
+===================== */
+function hideSubMenu() {
+  if (!subMenu) return;
+
+  subMenu.style.animation = "slideRight 0.35s ease forwards";
+
+  setTimeout(() => {
+    subMenu.classList.remove("is-active");
+    subMenu.style.display = "none";
+    subMenu = null;
+  }, 300);
+
+  menu.querySelector(".menu-title").textContent = "";
+  menu.querySelector(".menu-header").classList.remove("is-active");
+}
+
+/* =====================
+   SUBMENU CLICK HANDLER
+===================== */
+function toggleSubMenu(e) {
+  if (window.innerWidth >= 1024) return;
+
+  const dropdown = e.target.closest(".menu-dropdown");
+  if (!dropdown) return;
+
+  e.preventDefault();
+  showSubMenu(dropdown);
+}
+
+/* =====================
+   RESET ON DESKTOP
+===================== */
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 1024 && menu.classList.contains("is-active")) {
+    toggleMenu();
+    hideSubMenu();
+  }
+});
+
+/* =====================
+   EVENT LISTENERS
+===================== */
+burger.addEventListener("click", toggleMenu);
+overlay.addEventListener("click", toggleMenu);
+menuArrow.addEventListener("click", hideSubMenu);
+menuInner.addEventListener("click", toggleSubMenu);
+</script>
+
 
 
 </body>

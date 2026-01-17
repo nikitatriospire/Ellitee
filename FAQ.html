@@ -13,12 +13,12 @@
         <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     </head>
     <body>
-        <!-- Header -->
-        <header class="sticky top-0 left-0 w-full bg-white border-y border-gray-200 py-34 z-100">
+       <!-- Header -->
+        <header class="sticky top-0 left-0 w-full bg-white border-y border-gray-200 py-24 z-100">
             <div class="container">
                 <div class="flex items-center justify-between py-4 gap-4">
                     <!-- Logo -->
-                    <a href="/index.html" aria-label="Go to homepage" class="relative z-100">
+                    <a href="#" aria-label="Go to homepage" class="relative z-100">
                         <img src="./assets/images/company-logo.svg" alt="Ellitee logo">
                     </a>
                     <!-- Navigation -->
@@ -27,28 +27,36 @@
              opacity-0 -translate-y-2 pointer-events-none lg:opacity-100 lg:pointer-events-auto lg:translate-y-0
              transition-all duration-300">
                             <li>
-                                <a href="#" aria-current="page">
+                                <a href="/index.html" aria-current="page">
                                     Home
                                 </a>
                             </li>
-                            <li>
-                                <a href="#" aria-label="Learn about us">About us</a>
+                             <li>
+                                <a href="/category.html" aria-current="page">
+                                    Our Products
+                                </a>
                             </li>
                             <li>
-                                <a href="#" aria-label="Explore our areas of expertise">Our Expertise</a>
+                                <a href="/skin_insight.html" aria-current="page">
+                                    Skin Insights
+                                </a>
                             </li>
                             <li>
-                                <a href="#" aria-label="Read client testimonials">Testimonials</a>
+                                <a href="/Aboutus.html" aria-label="Learn about us">About us</a>
+                            </li>
+                         
+                            <li>
+                                <a href="/Testimonial.html" aria-label="Read client testimonials">Testimonials</a>
                             </li>
                             <li>
-                                <a href="#" aria-label="Frequently asked questions">FAQ</a>
+                                <a href="/FAQ.html" aria-label="Frequently asked questions">FAQ</a>
                             </li>
                         </ul>
                     </nav>
                     <div class="flex justify-center items-center gap-8">
                         <!-- Contact Desktop Button -->
                         <a href="tel:+919510514689" class="hidden sm:block btn-dark relative z-100" aria-label="Contact Ellitee team">
-                            Contact Us
+                           <span>Build Your Routine</span> 
                         </a>
                         <!-- Contact Mobile Button -->
                         <a href="tel:+919510514689" class="btn-dark relative z-100 p-12 h-52 sm:hidden flex justify-center items-center" aria-label="Contact Ellitee team">
@@ -72,13 +80,13 @@
         </header>
         <main id="main_content">
           <!-- Hero Setion -->
-            <section class="relative overflow-x-hidden flex  h-[clac(100vh-130px)] xxl:min-h-auto bg-grey_light">
+            <section class="relative overflow-x-hidden flex  xxl:min-h-auto bg-grey_light">
                 <div class="container">
                     <div class="flex flex-col-reverse lg:flex-row gap-20 lg:gap-40 xxl:gap-86 h-full">
                         <!-- Left Content -->
-                        <div class="w-full xxl:w-[90%] flex flex-col justify-center px-16 md:px-0 pb-0 lg:pb-100 pt-0 lg:pt-100 space-y-34">
-                            <div class="flex flex-col justify-center space-y-24 lg:pb-0 pb-30">
-                                <h1 class="text-h2.64 font-light text-dark">
+                        <div class="w-full xxl:w-[90%] flex flex-col justify-center px-16 md:px-0 pb-100 pt-100 space-y-34">
+                            <div class="flex flex-col justify-center space-y-24">
+                                <h1 class="text-h2.64 font-light text-button-bg">
                                     <span class="font-bold"> Frequently</span>
                                       asked questions
                                 </h1>
@@ -95,61 +103,78 @@
              
         
           <!-- About ellitee FAQ -->
-            <section class=" py-20 sm:py-40 md:py-60 xl:py-100">
+            <section class="py-20 sm:py-40 md:py-60 xl:py-100">
                 <div class="container">
                     <!-- new design -->
                     <div class="tab-container flex gap-32 xl:gap-40 xxl:gap-90 flex-col lg:flex-row justify-start items-start">
                         <!-- buttons -->
-                        <div class="lg:sticky lg:top-150 w-full lg:w-[33%]">
+                        <div class="hidden lg:block lg:sticky lg:top-150 w-full lg:w-[35%]">
                             <div class="w-full tabs flex flex-col gap-24 xl:gap-40 justify-start items-start">
-                                <button class="tablinks text-[clamp(20px,2vw,40px)] font-normal text-left px-20 lg:px-0 py-lg:py-0 border border-solid border-dark lg:border-transparent" data-tab="Tab1">
+                                <button class="tablinks text-[clamp(20px,2.5vw,40px)] font-normal text-left px-20 lg:px-0  py-12 lg:py-0 border border-solid border-dark lg:border-transparent" data-tab="Tab1">
                                 <p>About Ellitee™</p>           
                                 </button>
                                   
-                                 <button class="tablinks text-[clamp(20px,2vw,40px)] font-normal text-left px-20 lg:px-0 py-12 lg:py-0 border border-solid border-dark lg:border-transparent"  data-tab="Tab2">
+                                 <button class="tablinks text-[clamp(20px,2.5vw,40px)] font-normal text-left px-20 lg:px-0 py-12 lg:py-0 border border-solid border-dark lg:border-transparent"  data-tab="Tab2">
                                   <p>Products & Formulations</p>
                                 </button>
-                                  <button class="tablinks text-[clamp(20px,2vw,40px)] font-normal text-left px-20 lg:px-0 py-12 lg:py-0 border border-solid border-dark lg:border-transparent"  data-tab="Tab3">
+                                  <button class="tablinks text-[clamp(20px,2.5vw,40px)] font-normal text-left px-20 lg:px-0 py-12 lg:py-0 border border-solid border-dark lg:border-transparent"  data-tab="Tab3">
                                   <p>Ingredients & Actives</p>
                                 </button>
-                                   <button class="tablinks text-[clamp(20px,2vw,40px)] font-normal text-left px-20 lg:px-0 py-12 lg:py-0 border border-solid border-dark lg:border-transparent"  data-tab="Tab4">       
+                                   <button class="tablinks text-[clamp(20px,2.5vw,40px)] font-normal text-left px-20 lg:px-0 py-12 lg:py-0 border border-solid border-dark lg:border-transparent"  data-tab="Tab4">       
                                     <p>Routines & How to Use</p>
                                 </button>
-                                   <button class="tablinks text-[clamp(20px,2vw,40px)] font-normal text-left px-20 lg:px-0 py-12 lg:py-0 border border-solid border-dark lg:border-transparent"  data-tab="Tab5"> 
+                                   <button class="tablinks text-[clamp(20px,2.5vw,40px)] font-normal text-left px-20 lg:px-0 py-12 lg:py-0 border border-solid border-dark lg:border-transparent"  data-tab="Tab5"> 
                                   <p>Skin Insight & Assessment</p>
                                 </button>
-                                <button class="tablinks text-[clamp(20px,2vw,40px)] font-normal text-left px-20 lg:px-0 py-12 lg:py-0 border border-solid border-dark lg:border-transparent"  data-tab="Tab6"> 
+                                <button class="tablinks text-[clamp(20px,2.5vw,40px)] font-normal text-left px-20 lg:px-0 py-12 lg:py-0 border border-solid border-dark lg:border-transparent"  data-tab="Tab6"> 
                                   <p>Results, Expectations & Safety</p>
                                 </button>
-                                <button class="tablinks text-[clamp(20px,2vw,40px)] font-normal text-left px-20 lg:px-0 py-12 lg:py-0 border border-solid border-dark lg:border-transparent"  data-tab="Tab7"> 
+                                <button class="tablinks text-[clamp(20px,2.5vw,40px)] font-normal text-left px-20 lg:px-0 py-12 lg:py-0 border border-solid border-dark lg:border-transparent"  data-tab="Tab7"> 
                                   <p>Orders, Shipping & Returns</p>
                                 </button>
-                                <button class="tablinks text-[clamp(20px,2vw,40px)] font-normal text-left px-20 lg:px-0 py-12 lg:py-0 border border-solid border-dark lg:border-transparent"  data-tab="Tab8"> 
+                                <button class="tablinks text-[clamp(20px,2.5vw,40px)] font-normal text-left px-20 lg:px-0 py-12 lg:py-0 border border-solid border-dark lg:border-transparent"  data-tab="Tab8"> 
                                   <p>Account & Website</p>
                                 </button>
-                                <button class="tablinks text-[clamp(20px,2vw,40px)] font-normal text-left px-20 lg:px-0 py-12 lg:py-0 border border-solid border-dark lg:border-transparent"  data-tab="Tab9"> 
+                                <button class="tablinks text-[clamp(20px,2.5vw,40px)] font-normal text-left px-20 lg:px-0 py-12 lg:py-0 border border-solid border-dark lg:border-transparent"  data-tab="Tab9"> 
                                   <p>Support</p>
                                 </button>
                          </div>
                      
                         </div>
-  
+                        <!-- Mobile Tabs Dropdown -->
+                        <div class="w-full lg:hidden">
+                        <select
+                            id="mobileTabSelect"
+                            class="mobiletab w-full px-20 py-16 border border-dark text-[18px] bg-white"
+                        >
+                            
+                            <option value="Tab1" class="tablinks text-left px-20 lg:px-0  py-12 lg:py-0">About Ellitee™</option>
+                            <option value="Tab2" class="tablinks text-left px-20 lg:px-0  py-12 lg:py-0">Products & Formulations</option>
+                            <option value="Tab3" class="tablinks text-left px-20 lg:px-0  py-12 lg:py-0">Ingredients & Actives</option>
+                            <option value="Tab4" class="tablinks text-left px-20 lg:px-0  py-12 lg:py-0">Routines & How to Use</option>
+                            <option value="Tab5" class="tablinks text-left px-20 lg:px-0  py-12 lg:py-0">Skin Insight & Assessment</option>
+                            <option value="Tab6" class="tablinks text-left px-20 lg:px-0  py-12 lg:py-0">Results, Expectations & Safety</option>
+                            <option value="Tab7" class="tablinks text-left px-20 lg:px-0  py-12 lg:py-0">Orders, Shipping & Returns</option>
+                            <option value="Tab8" class="tablinks text-left px-20 lg:px-0  py-12 lg:py-0">Account & Website</option>
+                            <option value="Tab9" class="tablinks text-left px-20 lg:px-0  py-12 lg:py-0">Support</option>
+                        </select>
+                        </div>
                          <!-- tab content -->
-                            <div class="faq-content w-full lg:w-[66%]  pt-0">
+                            <div class="faq-content w-full lg:w-[65%]  pt-0">
                                 <!-- about ellitee -->
                                <div id="Tab1" class="tabcontent">
                                     <div class="accordion space-y-34">
                                         <!-- Accordion Item 1 -->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">What is Ellitee™?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                <span class="text-body font-medium text-button-bg">What is Ellitee™?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
                                                     <!-- Plus Icon -->
-                                                    <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-plus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
                                                     <!-- Minus Icon -->
-                                                    <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
@@ -165,12 +190,12 @@
                                         <!-- Accordion Item 2 -->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">Is Ellitee™ an Indian or international brand?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                    <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <span class="text-body font-medium text-button-bg">Is Ellitee™ an Indian or international brand?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
-                                                    <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
@@ -186,12 +211,12 @@
                                         <!-- Accordion Item 3 -->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">Is Ellitee™ a medical or dermatology brand?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <span class="text-body font-medium text-button-bg">Is Ellitee™ a medical or dermatology brand?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
-                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
@@ -207,12 +232,12 @@
                                         <!-- Accordion Item 4 -->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">What makes Ellitee™ different from other skincare brands?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <span class="text-body font-medium text-button-bg">What makes Ellitee™ different from other skincare brands?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
-                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
@@ -228,12 +253,12 @@
                                         <!-- Accordion Item 5 -->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">Is Ellitee™ cruelty-free?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <span class="text-body font-medium text-button-bg">Is Ellitee™ cruelty-free?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
-                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
@@ -249,12 +274,12 @@
                                         <!-- Accordion Item 6 -->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">Is Ellitee™ suitable for men?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <span class="text-body font-medium text-button-bg">Is Ellitee™ suitable for men?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
-                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
@@ -270,12 +295,12 @@
                                         <!-- Accordion Item 7 -->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">Is Ellitee™ a clean beauty brand?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <span class="text-body font-medium text-button-bg">Is Ellitee™ a clean beauty brand?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
-                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
@@ -296,20 +321,20 @@
                                          <!-- Accordion Item 1-->
                                     <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                         <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                            <span class="text-body font-medium">Are Ellitee™ products safe for daily use?</span>
-                                            <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                            <span class="text-body font-medium text-button-bg">Are Ellitee™ products safe for daily use?</span>
+                                            <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
                                                 <!-- Plus Icon -->
-                                                <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <svg class="icon-plus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M12 5v14M5 12h14"></path>
                                                 </svg>
                                                 <!-- Minus Icon -->
-                                                <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <svg class="icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M5 12h14"></path>
                                                 </svg>
                                             </span>
                                         </button>
                                         <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                            <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                            <div class="mt-16 text-body text-grey font-normal w-full xl:w-[95%]">
                                                 <p>
                                                     Yes. All Ellitee™ products are designed for regular daily use when used as directed.
                                                 </p>
@@ -319,18 +344,18 @@
                                     <!-- Accordion Item 2 -->
                                     <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                         <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                            <span class="text-body font-medium">Are Ellitee™ products suitable for acne-prone skin?</span>
-                                            <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <span class="text-body font-medium  text-button-bg">Are Ellitee™ products suitable for acne-prone skin?</span>
+                                            <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                <svg class="icon-plus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M12 5v14M5 12h14"></path>
                                                 </svg>
-                                                <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <svg class="icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M5 12h14"></path>
                                                 </svg>
                                             </span>
                                         </button>
                                         <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                            <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                            <div class="mt-16 text-body text-grey font-normal w-full xl:w-[95%]">
                                                 <p>
                                                 Yes. Ellitee™ products are specifically designed to support acne-prone skin through balanced cleansing, treatment, and hydration.
                                                 </p>
@@ -340,18 +365,18 @@
                                     <!-- Accordion Item 3 -->
                                     <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                         <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                            <span class="text-body font-medium">Are Ellitee™ products suitable for sensitive skin?</span>
-                                            <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <span class="text-body font-medium  text-button-bg">Are Ellitee™ products suitable for sensitive skin?</span>
+                                            <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M12 5v14M5 12h14"></path>
                                                 </svg>
-                                                <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M5 12h14"></path>
                                                 </svg>
                                             </span>
                                         </button>
                                         <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                            <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                            <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                 <p>
                                                 Ellitee™ products are designed with tolerance in mind. Sensitive skin users should patch test and introduce products gradually.
                                                 </p>
@@ -361,18 +386,18 @@
                                     <!-- Accordion Item 4 -->
                                     <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                         <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                            <span class="text-body font-medium">Are Ellitee™ products non-comedogenic?</span>
-                                            <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <span class="text-body font-medium  text-button-bg">Are Ellitee™ products non-comedogenic?</span>
+                                            <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M12 5v14M5 12h14"></path>
                                                 </svg>
-                                                <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M5 12h14"></path>
                                                 </svg>
                                             </span>
                                         </button>
                                         <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                            <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                            <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                 <p>
                                                     Ellitee™ formulations are designed to be non-comedogenic when used as directed.
                                                 </p>
@@ -382,18 +407,18 @@
                                 <!-- Accordion Item 5 -->
                                     <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                         <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                            <span class="text-body font-medium">Do Ellitee™ products contain harsh ingredients?</span>
-                                            <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <span class="text-body font-medium  text-button-bg">Do Ellitee™ products contain harsh ingredients?</span>
+                                            <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M12 5v14M5 12h14"></path>
                                                 </svg>
-                                                <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M5 12h14"></path>
                                                 </svg>
                                             </span>
                                         </button>
                                         <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                            <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                            <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                 <p>
                                                     No. We avoid unnecessary fillers, harsh surfactants, and overly aggressive formulations.
                                                 </p>
@@ -403,18 +428,18 @@
                                     <!-- Accordion Item 6 -->
                                     <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                         <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                            <span class="text-body font-medium">Do Ellitee™ products contain fragrance?</span>
-                                            <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <span class="text-body font-medium  text-button-bg">Do Ellitee™ products contain fragrance?</span>
+                                            <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M12 5v14M5 12h14"></path>
                                                 </svg>
-                                                <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M5 12h14"></path>
                                                 </svg>
                                             </span>
                                         </button>
                                         <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                            <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                            <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                 <p>
                                                     Ellitee™ prioritizes skin comfort. Always check ingredient lists if you have sensitivities.
                                                 </p>
@@ -424,18 +449,18 @@
                                     <!-- Accordion Item 7 -->
                                     <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                         <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                            <span class="text-body font-medium">Can teenagers use Ellitee™ products?</span>
-                                            <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <span class="text-body font-medium  text-button-bg">Can teenagers use Ellitee™ products?</span>
+                                            <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M12 5v14M5 12h14"></path>
                                                 </svg>
-                                                <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M5 12h14"></path>
                                                 </svg>
                                             </span>
                                         </button>
                                         <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                            <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                            <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                 <p>
                                                 Teenagers may use Ellitee™ products for acne or oil imbalance with gradual introduction and patch testing.
                                                 </p>
@@ -445,18 +470,18 @@
                                     <!-- Accordion Item 8 -->
                                     <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                         <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                            <span class="text-body font-medium">Can pregnant or breastfeeding women use Ellitee™ products?</span>
-                                            <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <span class="text-body font-medium  text-button-bg">Can pregnant or breastfeeding women use Ellitee™ products?</span>
+                                            <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M12 5v14M5 12h14"></path>
                                                 </svg>
-                                                <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M5 12h14"></path>
                                                 </svg>
                                             </span>
                                         </button>
                                         <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                            <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                            <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                 <p>
                                                 If pregnant or breastfeeding, consult a healthcare professional before introducing new skincare products.
                                                 </p>
@@ -472,8 +497,8 @@
                                              <!-- Accordion Item 1-->
                                     <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                         <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                            <span class="text-body font-medium">Why does Ellitee™ use ingredients like niacinamide and salicylic acid?</span>
-                                            <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                            <span class="text-body font-medium text-button-bg">Why does Ellitee™ use ingredients like niacinamide and salicylic acid?</span>
+                                            <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
                                                 <!-- Plus Icon -->
                                                 <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M12 5v14M5 12h14"></path>
@@ -485,7 +510,7 @@
                                             </span>
                                         </button>
                                         <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                            <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                            <div class="mt-16 text-body text-grey font-normal w-full xl:w-[95%]">
                                                 <p>
                                                     These ingredients are well-studied and effective when formulated correctly to support skin balance.
                                                 </p>
@@ -495,8 +520,8 @@
                                     <!-- Accordion Item 2 -->
                                     <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                         <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                            <span class="text-body font-medium">Are Ellitee™ products beginner-friendly despite active ingredients?</span>
-                                            <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                            <span class="text-body font-medium text-button-bg">Are Ellitee™ products beginner-friendly despite active ingredients?</span>
+                                            <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
                                                 <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M12 5v14M5 12h14"></path>
                                                 </svg>
@@ -506,7 +531,7 @@
                                             </span>
                                         </button>
                                         <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                            <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                            <div class="mt-16 text-body text-grey font-normal w-full xl:w-[95%]">
                                                 <p>
                                                 Yes. Our formulations are designed to be approachable and suitable for beginners.
                                                 </p>
@@ -516,8 +541,8 @@
                                     <!-- Accordion Item 3 -->
                                     <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                         <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                            <span class="text-body font-medium">Can I use multiple active ingredients together?</span>
-                                            <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                            <span class="text-body font-medium text-button-bg">Can I use multiple active ingredients together?</span>
+                                            <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
                                                 <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M12 5v14M5 12h14"></path>
                                                 </svg>
@@ -527,7 +552,7 @@
                                             </span>
                                         </button>
                                         <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                            <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                            <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                 <p>
                                                 You can, but layering too many actives may increase irritation. Balanced routines work best.
                                                 </p>
@@ -537,8 +562,8 @@
                                     <!-- Accordion Item 4 -->
                                     <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                         <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                            <span class="text-body font-medium">Are Ellitee™ products pH balanced?</span>
-                                            <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                            <span class="text-body font-medium text-button-bg">Are Ellitee™ products pH balanced?</span>
+                                            <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
                                                 <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M12 5v14M5 12h14"></path>
                                                 </svg>
@@ -548,7 +573,7 @@
                                             </span>
                                         </button>
                                         <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                            <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                            <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                 <p>
                                                     Yes. Ellitee™ products are formulated within skin-friendly pH ranges appropriate to their function.
                                                 </p>
@@ -558,8 +583,8 @@
                                 <!-- Accordion Item 5 -->
                                     <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                         <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                            <span class="text-body font-medium">Can Ellitee™ products cause purging?</span>
-                                            <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                            <span class="text-body font-medium text-button-bg">Can Ellitee™ products cause purging?</span>
+                                            <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
                                                 <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                     <path d="M12 5v14M5 12h14"></path>
                                                 </svg>
@@ -569,7 +594,7 @@
                                             </span>
                                         </button>
                                         <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                            <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                            <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                 <p>
                                                     Some users may experience a brief adjustment period when introducing actives. This varies by skin type.
                                                 </p>
@@ -585,20 +610,20 @@
                                         <!-- Accordion Item 1-->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">Do I need to use all Ellitee™ products together?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                <span class="text-body font-medium text-button-bg">Do I need to use all Ellitee™ products together?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
                                                     <!-- Plus Icon -->
-                                                    <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-plus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
                                                     <!-- Minus Icon -->
-                                                    <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
                                             </button>
                                             <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                                <div class="mt-16 text-body text-grey font-normal w-full xl:w-[95%]">
                                                     <p>
                                                         No. Each product works on its own, but products perform best when used as part of a routine.
                                                     </p>
@@ -608,18 +633,18 @@
                                         <!-- Accordion Item 2 -->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">Which Ellitee™ product should I start with?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                    <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <span class="text-body font-medium text-button-bg">Which Ellitee™ product should I start with?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
-                                                    <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
                                             </button>
                                             <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                                <div class="mt-16 text-body text-grey font-normal w-full xl:w-[95%]">
                                                     <p>
                                                     Start with the product addressing your primary concern such as acne, pigmentation, or hydration.
                                                     </p>
@@ -629,18 +654,18 @@
                                         <!-- Accordion Item 3 -->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">What is the correct order to use Ellitee™ products?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <span class="text-body font-medium text-button-bg">What is the correct order to use Ellitee™ products?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
-                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
                                             </button>
                                             <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                     <p>
                                                     Cleanser → Treatment Serum → Moisturizer → Sunscreen (daytime).
                                                     </p>
@@ -650,18 +675,18 @@
                                         <!-- Accordion Item 4 -->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">Can I use Ellitee™ products in both morning and night routines?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <span class="text-body font-medium text-button-bg">Can I use Ellitee™ products in both morning and night routines?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
-                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
                                             </button>
                                             <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                     <p>
                                                         Yes. Most products are suitable for AM and PM use. Sunscreen is essential during the day.
                                                     </p>
@@ -671,18 +696,18 @@
                                     <!-- Accordion Item 5 -->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">How long does it take to see results?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <span class="text-body font-medium text-button-bg">How long does it take to see results?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
-                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
                                             </button>
                                             <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                     <p>
                                                         Skin improvement is gradual. Many users notice changes within a few weeks of consistent use.
                                                     </p>
@@ -692,18 +717,18 @@
                                     <!-- Accordion Item 6 -->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">Can Ellitee™ routines be adjusted seasonally? </span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <span class="text-body font-medium text-button-bg">Can Ellitee™ routines be adjusted seasonally? </span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
-                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
                                             </button>
                                             <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                     <p>
                                                         Yes. Skin needs change with weather, and routines can be adapted accordingly.
                                                     </p>
@@ -719,20 +744,20 @@
                                          <!-- Accordion Item 1-->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">What is Ellitee™ Skin Insights?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                <span class="text-body font-medium  text-button-bg">What is Ellitee™ Skin Insights?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
                                                     <!-- Plus Icon -->
-                                                    <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-plus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
                                                     <!-- Minus Icon -->
-                                                    <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
                                             </button>
                                             <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                                <div class="mt-16 text-body text-grey font-normal w-full xl:w-[95%]">
                                                     <p>
                                                         Ellitee™ Skin Insights is a guided skin assessment system designed to help understand visible skin concerns and guide routines.
                                                     </p>
@@ -742,18 +767,18 @@
                                         <!-- Accordion Item 2 -->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">Is Skin Insights a medical diagnosis?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                    <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <span class="text-body font-medium  text-button-bg">Is Skin Insights a medical diagnosis?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
-                                                    <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
                                             </button>
                                             <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                                <div class="mt-16 text-body text-grey font-normal w-full xl:w-[95%]">
                                                     <p>
                                                     No. Skin Insights does not diagnose medical conditions or replace professional advice.
                                                     </p>
@@ -763,18 +788,18 @@
                                         <!-- Accordion Item 3 -->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">Do I need Skin Insights to use Ellitee™ products?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <span class="text-body font-medium  text-button-bg">Do I need Skin Insights to use Ellitee™ products?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
-                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
                                             </button>
                                             <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                     <p>
                                                     No. Skin Insights is optional and helps personalize routine selection.
                                                     </p>
@@ -784,18 +809,18 @@
                                         <!-- Accordion Item 4 -->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">How is my data handled during Skin Insights?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <span class="text-body font-medium  text-button-bg">How is my data handled during Skin Insights?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
-                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
                                             </button>
                                             <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                     <p>
                                                     Data is used only to generate insights and improve your experience, following privacy-first practices.
                                                     </p>
@@ -805,18 +830,18 @@
                                         <!-- Accordion Item 5 -->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">Will Skin Insights change after the AI upgrade launches?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <span class="text-body font-medium  text-button-bg">Will Skin Insights change after the AI upgrade launches?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
-                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
                                             </button>
                                             <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                     <p>
                                                         Skin Insights will evolve over time while existing routines remain valid.
                                                     </p>
@@ -832,20 +857,20 @@
                                          <!-- Accordion Item 1-->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">Does Ellitee™ promise instant results?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                <span class="text-body font-medium text-button-bg">Does Ellitee™ promise instant results?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
                                                     <!-- Plus Icon -->
-                                                    <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-plus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
                                                     <!-- Minus Icon -->
-                                                    <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
                                             </button>
                                             <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                                <div class="mt-16 text-body text-grey font-normal w-full xl:w-[95%]">
                                                     <p>
                                                         No. Ellitee™ focuses on gradual, long-term skin improvement.
                                                     </p>
@@ -855,18 +880,18 @@
                                         <!-- Accordion Item 2 -->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">Will Ellitee™ products change my natural skin tone?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                    <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <span class="text-body font-medium text-button-bg">Will Ellitee™ products change my natural skin tone?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
-                                                    <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
                                             </button>
                                             <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                                <div class="mt-16 text-body text-grey font-normal w-full xl:w-[95%]">
                                                     <p>
                                                     No. Products improve uneven tone and visible concerns without altering natural skin tone.
                                                     </p>
@@ -876,18 +901,18 @@
                                         <!-- Accordion Item 3 -->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">Should I use sunscreen with Ellitee™ products?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <span class="text-body font-medium text-button-bg">Should I use sunscreen with Ellitee™ products?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
-                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
                                             </button>
                                             <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                     <p>
                                                     Yes. Sunscreen is essential during daytime use, especially when addressing pigmentation.
                                                     </p>
@@ -897,18 +922,18 @@
                                         <!-- Accordion Item 4 -->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                <span class="text-body font-medium">Should I stop using products if I don’t see quick results?</span>
-                                                <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                    <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <span class="text-body font-medium text-button-bg">Should I stop using products if I don’t see quick results?</span>
+                                                <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M12 5v14M5 12h14"></path>
                                                     </svg>
-                                                    <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                         <path d="M5 12h14"></path>
                                                     </svg>
                                                 </span>
                                             </button>
                                             <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                                <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                     <p>
                                                         No. Consistency is key. Skin improvement takes time.
                                                     </p>
@@ -924,20 +949,20 @@
                                            <!-- Accordion Item 1-->
                                             <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                                 <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                    <span class="text-body font-medium">Where can I buy Ellitee™ products?</span>
-                                                    <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <span class="text-body font-medium  text-button-bg">Where can I buy Ellitee™ products?</span>
+                                                    <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
                                                         <!-- Plus Icon -->
-                                                        <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <svg class="icon-plus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M12 5v14M5 12h14"></path>
                                                         </svg>
                                                         <!-- Minus Icon -->
-                                                        <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <svg class="icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M5 12h14"></path>
                                                         </svg>
                                                     </span>
                                                 </button>
                                                 <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                                    <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                                    <div class="mt-16 text-body text-grey font-normal w-full xl:w-[95%]">
                                                         <p>
                                                         Ellitee™ products are available on our official website and authorized platforms.
                                                         </p>
@@ -947,18 +972,18 @@
                                             <!-- Accordion Item 2 -->
                                             <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                                 <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                    <span class="text-body font-medium">Do you ship across India?</span>
-                                                    <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                        <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <span class="text-body font-medium  text-button-bg">Do you ship across India?</span>
+                                                    <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                        <svg class="icon-plus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M12 5v14M5 12h14"></path>
                                                         </svg>
-                                                        <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <svg class="icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M5 12h14"></path>
                                                         </svg>
                                                     </span>
                                                 </button>
                                                 <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                                    <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                                    <div class="mt-16 text-body text-grey font-normal w-full xl:w-[95%]">
                                                         <p>
                                                     Yes. Shipping timelines may vary by location.
                                                         </p>
@@ -968,18 +993,18 @@
                                             <!-- Accordion Item 3 -->
                                             <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                                 <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                    <span class="text-body font-medium">What if my product arrives damaged?</span>
-                                                    <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                        <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <span class="text-body font-medium  text-button-bg">What if my product arrives damaged?</span>
+                                                    <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                        <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M12 5v14M5 12h14"></path>
                                                         </svg>
-                                                        <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M5 12h14"></path>
                                                         </svg>
                                                     </span>
                                                 </button>
                                                 <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                                    <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                    <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                         <p>
                                                         Contact care@ellitee.com with order details and images for assistance.
                                                         </p>
@@ -989,18 +1014,18 @@
                                             <!-- Accordion Item 4 -->
                                             <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                                 <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                    <span class="text-body font-medium">Can I return or exchange a product?</span>
-                                                    <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                        <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <span class="text-body font-medium  text-button-bg">Can I return or exchange a product?</span>
+                                                    <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                        <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M12 5v14M5 12h14"></path>
                                                         </svg>
-                                                        <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M5 12h14"></path>
                                                         </svg>
                                                     </span>
                                                 </button>
-                                                <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                                    <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                <div class="accordion-content1 overflow-hidden transition-all duration-300">
+                                                    <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                         <p>
                                                         Please refer to our Returns & Cancellations Policy for full details.
                                                         </p>
@@ -1010,18 +1035,18 @@
                                         <!-- Accordion Item 5 -->
                                             <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                                 <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                    <span class="text-body font-medium">What payment methods are accepted?</span>
-                                                    <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                        <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <span class="text-body font-medium  text-button-bg">What payment methods are accepted?</span>
+                                                    <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                        <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M12 5v14M5 12h14"></path>
                                                         </svg>
-                                                        <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M5 12h14"></path>
                                                         </svg>
                                                     </span>
                                                 </button>
                                                 <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                                    <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                    <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                         <p>
                                                             Common digital payment methods available in India are supported at checkout.
                                                         </p>
@@ -1037,20 +1062,20 @@
                                           <!-- Accordion Item 1-->
                                             <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                                 <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                    <span class="text-body font-medium">Do I need an account to shop?</span>
-                                                    <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <span class="text-body font-medium text-button-bg">Do I need an account to shop?</span>
+                                                    <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
                                                         <!-- Plus Icon -->
-                                                        <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <svg class="icon-plus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M12 5v14M5 12h14"></path>
                                                         </svg>
                                                         <!-- Minus Icon -->
-                                                        <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <svg class="icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M5 12h14"></path>
                                                         </svg>
                                                     </span>
                                                 </button>
                                                 <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                                    <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                                    <div class="mt-16 text-body text-grey font-normal w-full xl:w-[95%]">
                                                         <p>
                                                         No. Creating an account helps track orders and preferences.
                                                         </p>
@@ -1060,18 +1085,18 @@
                                             <!-- Accordion Item 2 -->
                                             <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                                 <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                    <span class="text-body font-medium">Do you ship across India?</span>
-                                                    <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                        <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <span class="text-body font-medium text-button-bg">Do you ship across India?</span>
+                                                    <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                        <svg class="icon-plus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M12 5v14M5 12h14"></path>
                                                         </svg>
-                                                        <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <svg class="icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M5 12h14"></path>
                                                         </svg>
                                                     </span>
                                                 </button>
                                                 <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                                    <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                                    <div class="mt-16 text-body text-grey font-normal w-full xl:w-[95%]">
                                                         <p>
                                                     Use the “Forgot Password” option on the login page.
                                                         </p>
@@ -1081,18 +1106,18 @@
                                             <!-- Accordion Item 3 -->
                                             <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                                 <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                    <span class="text-body font-medium">Is my data secure on Ellitee.com?</span>
-                                                    <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                        <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <span class="text-body font-medium text-button-bg">Is my data secure on Ellitee.com?</span>
+                                                    <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                        <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M12 5v14M5 12h14"></path>
                                                         </svg>
-                                                        <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M5 12h14"></path>
                                                         </svg>
                                                     </span>
                                                 </button>
                                                 <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                                    <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                    <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                         <p>
                                                         Yes. Industry-standard security practices are followed.
                                                         </p>
@@ -1102,18 +1127,18 @@
                                             <!-- Accordion Item 4 -->
                                             <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                                 <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                    <span class="text-body font-medium">Can I delete my account?</span>
-                                                    <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                        <svg class="icon-plus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <span class="text-body font-medium text-button-bg">Can I delete my account?</span>
+                                                    <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                        <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M12 5v14M5 12h14"></path>
                                                         </svg>
-                                                        <svg class="icon-minus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <svg class="icon-minus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M5 12h14"></path>
                                                         </svg>
                                                     </span>
                                                 </button>
                                                 <div class="accordion-content1 overflow-hidden transition-all duration-300" style="max-height: 0px;">
-                                                    <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[90%]">
+                                                    <div class="mt-16 text-body text-grey font-normal w-full xl:w-[90%]">
                                                         <p>
                                                         Yes. You can request deletion by contacting support.
                                                         </p>
@@ -1129,20 +1154,20 @@
                                           <!-- Accordion Item 1-->
                                             <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                                 <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                    <span class="text-body font-medium">How can I contact Ellitee™ support?</span>
-                                                    <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                    <span class="text-body font-medium  text-button-bg">How can I contact Ellitee™ support?</span>
+                                                    <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
                                                         <!-- Plus Icon -->
-                                                        <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <svg class="icon-plus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M12 5v14M5 12h14"></path>
                                                         </svg>
                                                         <!-- Minus Icon -->
-                                                        <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <svg class="icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M5 12h14"></path>
                                                         </svg>
                                                     </span>
                                                 </button>
                                                 <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                                    <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                                    <div class="mt-16 text-body text-grey font-normal w-full xl:w-[95%]">
                                                         <p>
                                                         Email us at <a href="emailto:care@ellitee.com" role="link">care@ellitee.com.</a>
                                                         
@@ -1153,18 +1178,18 @@
                                             <!-- Accordion Item 2 -->
                                             <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                                 <button class="accordion-btn1 w-full flex justify-between items-center text-left">
-                                                    <span class="text-body font-medium">How long does support take to respond?</span>
-                                                    <span class="plus w-24 h-24 flex items-center justify-center transition-transform duration-300">
-                                                        <svg class="icon-plus hidden" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <span class="text-body font-medium  text-button-bg">How long does support take to respond?</span>
+                                                    <span class="w-24 h-24 flex items-center justify-center transition-transform duration-300">
+                                                        <svg class="icon-plus hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M12 5v14M5 12h14"></path>
                                                         </svg>
-                                                        <svg class="icon-minus" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                        <svg class="icon-minus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                                             <path d="M5 12h14"></path>
                                                         </svg>
                                                     </span>
                                                 </button>
                                                 <div class="accordion-content1 overflow-hidden transition-all duration-300">
-                                                    <div class="mt-16 text-[16px] text-grey font-normal w-full xl:w-[95%]">
+                                                    <div class="mt-16 text-body text-grey font-normal w-full xl:w-[95%]">
                                                         <p>
                                                     We aim to respond within 24–48 business hours.
                                                         </p>
@@ -1181,7 +1206,7 @@
 
     </main>
     <!-- Footer Starts -->
-     <footer class="border-t border-t-solid border-t-[#0000001A]">
+         <footer class="border-t border-t-solid border-t-[#0000001A]">
                     <div class="container">
                         <div class="foot-top py-74 border-b border-b-solid border-b-[#0000001A]">
                             <div class="flex justify-between gap-20 md:gap-40 xl:gap-58 flex-wrap">
@@ -1191,7 +1216,7 @@
                                         <img src="./assets/images/company-logo.svg" alt="Ellitee logo">
                                     </a>
                                     <div class="space-y-16">
-                                        <span class="inline-block text-sm">
+                                        <span class="inline-block text-sm text-button-bg">
                                             Find out your skin or hair concerns and
                               what a dermatologist advises for them, for free.
                                         </span>
@@ -1210,53 +1235,58 @@
                                 </div>
                                 <!--  -->
                                 <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(20%-58px)]">
-                                    <span class="inline-block text-body font-semibold">Links</span>
-                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal">
+                                    <span class="inline-block text-body font-medium text-button-bg">Links</span>
+                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal [&_li>a]:text-button-bg">
                                         <li>
-                                              <a href="/index.html" aria-current="page">
-                                            Home
-                                        </a>
+                                            <a href="/index.html" aria-current="page">
+                                                Home
+                                            </a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">About Us</a>
+                                            <a href="/category.html" aria-current="page">
+                                                Our Products
+                                            </a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">Our Expertise</a>
+                                            <a href="/skin_insight.html" aria-current="page">
+                                                Skin Insights
+                                            </a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">Testimonials</a>
+                                            <a href="/Aboutus.html" aria-label="Learn about us">About us</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <a href="/Testimonial.html" aria-label="Read client testimonials">Testimonials</a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">FAQs</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" role="link">Contact us</a>
+                                            <a href="/FAQ.html" aria-label="Frequently asked questions">FAQ</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <!--  -->
                                 <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(20%-58px)]">
-                                    <span class="inline-block text-body font-semibold">Our Policy</span>
-                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal">
+                                    <span class="inline-block text-body font-medium text-button-bg">Our Policy</span>
+                                    <ul class="space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li>a]:font-normal [&_li>a]:text-button-bg">
                                         <li>
-                                            <a href="#" role="link">Terms of Use</a>
+                                            <a href="/termsofuse.html" role="link">Terms of Use</a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">Privacy Policy</a>
+                                            <a href="/Privacy_policy.html" role="link">Privacy Policy</a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">Grievance Policy</a>
+                                            <a href="/Grievance_policy.html" role="link">Grievance Policy</a>
                                         </li>
                                         <li>
-                                            <a href="#" role="link">Refunds & Cancellations Policy</a>
+                                            <a href="/refund_policy.html" role="link">Refunds & Cancellations Policy</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <!--  -->
                                
                                 <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(30%-58px)]">
-                                    <span class="inline-block text-body font-semibold">Other Skin Problems</span>
-                                    <ul class="address space-y-10 [&_li>a]:inline-block [&_li>a]:text-sm [&_li]:text-sm [&_li>a]:font-normal [&_li]:font-normal [&_li]:flex [&_li]:justify-start [&_li]:items-start [&_li]:gap-10">
+                                    <span class="inline-block text-body font-medium text-button-bg">Other Skin Problems</span>
+                                    <ul class="address space-y-16 [&_li>a]:inline-block [&_li>a]:text-sm [&_li]:text-sm [&_li>a]:font-normal [&_li]:font-normal [&_li]:flex [&_li]:justify-start [&_li]:items-start [&_li]:gap-10 *:text-button-bg">
                                          <li>
                                             <img src="./assets/images/phone.svg" alt="icon of phone for calling" role="img">
                                             <a href="tel:+919510514689" role="link" aria-label="Call 9510514689">9510514689</a>
@@ -1267,27 +1297,27 @@
                                         </li>
                                         <li>
                                             <img src="./assets/images/map-pin.svg" alt="icon of map for location" role="img">
-                                            <span aria-label="Company address">
-                                                Ellitee LLP, #656, 3rd floor, 27th Main, 13th Cross Rd, 
-            opp. PWD Quarters, 1st Sector, HSR Layout, Bengaluru, 
-            Karnataka 560102
+                                            <span id="companyAddress" aria-label="Company address" class="block leading-relaxed">
+                                               Ellitee LLP
+SH-403 Shiven Shoppers, Adajan DN, Surat – 
+395009, Gujarat, India
                                             </span>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="copyright font-normal text-sm text-center py-16 text-dark1">
+                        <div class="copyright font-normal text-sm text-center py-16 text-button-bg">
                             <p> &copy; 2025-Ellitee™. All Rights Reserved</p>
                         </div>
                     </div>
                 </footer>
-    <!-- Footer End -->
+            <!-- Footer End -->
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
  
 
-<script>
+<!-- <script>
 document.addEventListener("DOMContentLoaded", () => {
 
   /* ===============================
@@ -1404,10 +1434,135 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+</script> -->
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  /* ===============================
+     EXISTING VARIABLES
+  =============================== */
+  const tabLinks = document.querySelectorAll(".tablinks");
+  const tabContents = document.querySelectorAll(".tabcontent");
+  const mobileSelect = document.getElementById("mobileTabSelect");
+
+  /* ===============================
+     SHARED TAB SWITCH FUNCTION
+  =============================== */
+  function activateTab(targetId) {
+    const activeTab = document.getElementById(targetId);
+    if (!activeTab) return;
+
+    // Hide all tabs
+    tabContents.forEach(tab => {
+      tab.style.display = "none";
+      tab.classList.remove("active");
+    });
+
+    // Show active tab
+    activeTab.style.display = "block";
+    activeTab.classList.add("active");
+
+    /* Scroll behavior */
+    activeTab.scrollTo({ top: 0, behavior: "smooth" });
+
+    if (activeTab.scrollHeight <= activeTab.clientHeight) {
+      window.scrollTo({
+        top: activeTab.offsetTop - 200,
+        behavior: "smooth"
+      });
+    }
+
+    // Button styles (desktop)
+    tabLinks.forEach(btn => {
+      btn.classList.remove("active");
+      btn.style.color = "#6A6A6A";
+    });
+
+    const activeBtn = document.querySelector(
+      `.tablinks[data-tab="${targetId}"]`
+    );
+
+    if (activeBtn) {
+      activeBtn.classList.add("active");
+      activeBtn.style.color = "#0E0E0E";
+    }
+
+    // Sync mobile select
+    if (mobileSelect) {
+      mobileSelect.value = targetId;
+    }
+
+    // Re-init accordions
+    initAccordions(activeTab);
+  }
+
+  /* ===============================
+     INITIAL TAB (FIRST)
+  =============================== */
+  if (tabLinks.length > 0) {
+    activateTab(tabLinks[0].dataset.tab);
+  }
+
+  /* ===============================
+     DESKTOP TAB CLICK
+  =============================== */
+  tabLinks.forEach(btn => {
+    btn.addEventListener("click", () => {
+      activateTab(btn.dataset.tab);
+    });
+  });
+
+  /* ===============================
+     MOBILE SELECT CHANGE
+  =============================== */
+  if (mobileSelect) {
+    mobileSelect.addEventListener("change", () => {
+      activateTab(mobileSelect.value);
+    });
+  }
+
+  /* ===============================
+     ACCORDIONS (UNCHANGED)
+  =============================== */
+  function initAccordions(scope = document) {
+    const items = scope.querySelectorAll(".accordion-item1");
+
+    items.forEach(item => {
+      const btn = item.querySelector(".accordion-btn1");
+      const content = item.querySelector(".accordion-content1");
+      const plus = item.querySelector(".icon-plus");
+      const minus = item.querySelector(".icon-minus");
+
+      content.style.maxHeight = content.scrollHeight + "px";
+      plus.classList.add("hidden");
+      minus.classList.remove("hidden");
+
+      btn.onclick = () => {
+        const isOpen = content.style.maxHeight !== "0px";
+        content.style.maxHeight = isOpen ? "0px" : content.scrollHeight + "px";
+        plus.classList.toggle("hidden", !isOpen);
+        minus.classList.toggle("hidden", isOpen);
+      };
+    });
+  }
+
+  /* ===============================
+     RESIZE FIX (UNCHANGED)
+  =============================== */
+  window.addEventListener("resize", () => {
+    document.querySelectorAll(".accordion-content1").forEach(content => {
+      if (content.style.maxHeight !== "0px") {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  });
+
+});
 </script>
-
-
-
 
     
 </body>
