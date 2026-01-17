@@ -13,7 +13,7 @@
         <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     </head>
     <body>
-          <!-- Header -->
+        <!-- Header -->
         <header class="sticky top-0 left-0 w-full bg-white border-y border-gray-200 py-24 z-100">
             <div class="container">
                 <div class="flex items-center justify-between py-4 gap-4">
@@ -31,7 +31,7 @@
                                     Home
                                 </a>
                             </li>
-                             <li>
+                            <li>
                                 <a href="/category.html" aria-current="page">
                                     Our Products
                                 </a>
@@ -44,7 +44,6 @@
                             <li>
                                 <a href="/Aboutus.html" aria-label="Learn about us">About us</a>
                             </li>
-                         
                             <li>
                                 <a href="/Testimonial.html" aria-label="Read client testimonials">Testimonials</a>
                             </li>
@@ -56,7 +55,7 @@
                     <div class="flex justify-center items-center gap-8">
                         <!-- Contact Desktop Button -->
                         <a href="tel:+919510514689" class="hidden sm:block btn-dark relative z-100" aria-label="Contact Ellitee team">
-                           <span>Build Your Routine</span> 
+                            <span>Build Your Routine</span>
                         </a>
                         <!-- Contact Mobile Button -->
                         <a href="tel:+919510514689" class="btn-dark relative z-100 p-12 h-52 sm:hidden flex justify-center items-center" aria-label="Contact Ellitee team">
@@ -271,7 +270,7 @@
                                     </button>
                                 </div>
                                 <button class="btn-dark1 flex gap-4 justify-center items-center">
-                                    <span>Add to Cart</span> 
+                                    <span>Add to Cart</span>
                                     <img src="./assets/images/cartIcon.svg" alt="cart icon" role="img">
                                 </button>
                             </div>
@@ -358,27 +357,31 @@
                             </div>
                         </div>
                     </div>
+                    <!-- new version -->
                     <!-- tab details -->
                     <div class="tab-main w-full mt-32 lg:mt-64 xl:mt-100 hidden md:block">
                         <!-- Tabs -->
                         <div class="flex gap-16 xl:gap-64 overflow-x-auto whitespace-nowrap no-scrollbar pb-2">
-                            <button class="tab-btn px-4 py-2 text-t_20 xl:text-h3 font-medium border-b-2 border-black text-button-bg" data-tab="special">
+                            <button class="tab-btn px-4 py-2 text-h4 xl:text-h3 font-medium border-b-2 border-black text-button-bg" data-tab="special">
                                 What SpotCorrect™ Does
                             </button>
-                            <button class="tab-btn px-4 py-2 text-t_20 xl:text-h3 font-medium border-b-2 border-transparent text-grey" data-tab="how">
-                                How to Use
+                            <button class="tab-btn px-4 py-2 text-h4 xl:text-h3 font-medium border-b-2 border-transparent text-grey" data-tab="why">
+                                Why It Works
                             </button>
-                            <button class="tab-btn px-4 py-2 text-t_20 xl:text-h3 font-medium border-b-2 border-transparent text-grey" data-tab="ingredients">
-                                Ingredients
+                            <button class="tab-btn px-4 py-2 text-h4 xl:text-h3 font-medium border-b-2 border-transparent text-grey" data-tab="who">
+                                Who It’s For
                             </button>
-                            <button class="tab-btn px-4 py-2 text-t_20 xl:text-h3 font-medium border-b-2 border-transparent text-grey" data-tab="who">
-                                Who Can Use
+                            <button class="tab-btn px-4 py-2 text-h4 xl:text-h3 font-medium border-b-2 border-transparent text-grey" data-tab="how">
+                                How To Use
+                            </button>
+                            <button class="tab-btn px-4 py-2 text-h4 xl:text-h3 font-medium border-b-2 border-transparent text-grey" data-tab="key">
+                                Key Product Details
                             </button>
                         </div>
                         <!-- Tab Content -->
                         <div class="mt-40">
                             <div class="tab-content" id="special">
-                                <ul class="space-y-24 text-button-bg text-t_20 [&_li]:flex [&_li]:justify-start [&_li]:items-center [&_li]:gap-12">
+                                <ul class="space-y-24 text-button-bg text-t_20 [&_li]:flex [&_li]:justify-start [&_li]:items-center [&_li]:gap-12  *:font-normal">
                                     <li>
                                         <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
                                         Reduce the appearance of dark spots and uneven tone
@@ -401,9 +404,9 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="tab-content hidden" id="how">
+                            <div class="tab-content hidden" id="why">
                                 <div class="flex flex-wrap gap-20">
-                                    <div class="flex flex-col w-full lg:w-[calc(50%-15px)] xl:w-[calc(25%-15px)] justify-start items-start p-24 space-y-32 xxl:space-y-48">
+                                    <div class="flex flex-col w-full lg:w-[calc(50%-15px)] xl:w-[calc(25%-15px)] justify-start items-start p-24 space-y-32 xxl:space-y-48  *:font-normal">
                                         <img
                                             src="./assets/images/tab_how_icon1.svg"
                                             alt="icon 1"
@@ -441,11 +444,82 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-content hidden" id="ingredients">
-                                <p class="text-grey">Argan Oil, Coconut Oil, Aloe Vera, Tea Tree Extract, Vitamin E.</p>
-                            </div>
                             <div class="tab-content hidden" id="who">
-                                <p class="text-grey">Suitable for all hair types including oily, dry, curly, and treated hair.</p>
+                                <div class="flex gap-56">
+                                    <div class="space-y-24 [&_ul]:flex [&_ul]:flex-col [&_ul]:gap-24 text-button-bg text-t_20 [&_ul_li]:flex [&_ul_li]:justify-start [&_ul_li]:items-center [&_ul_li]:gap-12  [&_ul_li]:font-normal">
+                                        <span class="block text-button-bg text-t_20 font-medium">Skin Type</span>
+                                        <ul>
+                                            <li>
+                                                <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
+                                                <span>Oily skin</span>
+                                            </li>
+                                            <li>
+                                                <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
+                                                <span>Acne-prone skin</span>
+                                            </li>
+                                            <li>
+                                                <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
+                                                <span>Combination skin</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="space-y-24 [&amp;_ul]:flex [&amp;_ul]:flex-col [&amp;_ul]:gap-24 text-button-bg text-t_20 [&amp;_ul_li]:flex [&amp;_ul_li]:justify-start [&amp;_ul_li]:items-center [&amp;_ul_li]:gap-12 [&amp;_ul_li]:font-normal">
+                                        <span class="block text-button-bg text-t_20 font-medium">Concerns</span>
+                                        <ul>
+                                            <li>
+                                                <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
+                                                <span>Active acne</span>
+                                            </li>
+                                            <li>
+                                                <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
+                                                <span>Blackheads &amp; whiteheads</span>
+                                            </li>
+                                            <li>
+                                                <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
+                                                <span>Excess oil &amp; clogged pores</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content hidden" id="how">
+                                <div class="text-t_20 text-button-bg text-normal! space-y-24 xl:space-y-40  *:font-normal">
+                                    <div class="[&_ul]:flex [&_ul]:flex-col [&_ul]:gap-16 [&_ul]:pl-34 [&_ul>li]:list-decimal">
+                                        <ul>
+                                            <li>Wet your face with lukewarm water</li>
+                                            <li>Apply a small amount of ClearGel™</li>
+                                            <li>Massage gently for 20–30 seconds</li>
+                                            <li>Wet your face with lukewarm water</li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex flex-wrap justify-start gap-16 md:gap-32 lg:gap-64 items-center">
+                                        <span>
+                                            <span class="text-button-bg font-bold">Frequency:</span>  Use 1–2 times daily</span>
+                                        <span> Follow with a moisturizer. Use sunscreen during the daytime.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content hidden" id="key">
+                                <ul class="space-y-24 text-button-bg text-t_20 [&_li]:flex [&_li]:justify-start [&_li]:items-center [&_li]:gap-12  *:font-normal">
+                                    <li>
+                                        <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
+                                        <span class="text-button-bg font-bold">Texture:</span>
+                                        Lightweight gel
+                                    </li>
+                                    <li>
+                                        <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
+                                        <span class="text-button-bg font-bold">Free From:</span>
+                                        Parabens, sulfates,
+                                    </li>
+                                    <li>
+                                        <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
+                                        Dermatologically tested
+                                    </li>
+                                    <li>
+                                        <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
+                                        Suitable for daily use
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -459,26 +533,22 @@
                             </button>
                             <div class="accordion-content" id="special">
                                 <div class="pb-16">
-                                    <ul class="space-y-24 text-button-bg text-t_20 [&_li]:flex [&_li]:justify-start [&_li]:items-center [&_li]:gap-12">
+                                    <ul class="space-y-24 text-button-bg text-t_20 [&_li]:flex [&_li]:justify-start [&_li]:items-center [&_li]:gap-12  *:font-normal">
                                         <li>
                                             <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
-                                            Reduce the appearance of dark spots and uneven tone
+                                            Hydrate acne-prone skin without clogging pores
                                         </li>
                                         <li>
                                             <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
-                                            Improve the look of post-acne marks
+                                            Calm visible redness and irritation
                                         </li>
                                         <li>
                                             <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
-                                            Calm visible redness and blotchiness
+                                            Support a healthy skin barrier
                                         </li>
                                         <li>
                                             <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
-                                            Enhance overall skin clarity and brightness
-                                        </li>
-                                        <li>
-                                            <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
-                                            Support smoother, more even-looking skin over time
+                                            Maintain comfortable, clear-looking skin
                                         </li>
                                     </ul>
                                 </div>
@@ -486,13 +556,13 @@
                         </div>
                         <!-- Item 2 -->
                         <div class="border-b border-grey/30">
-                            <button class="accordion-btn w-full flex items-center justify-between pb-16 text-left text-h3 font-medium text-grey" aria-expanded="false" data-target="how">
-                                How to Use
+                            <button class="accordion-btn w-full flex items-center justify-between pb-16 text-left text-h3 font-medium text-grey" aria-expanded="false" data-target="why">
+                                Why It Works
                                 <span class="transition-transform duration-300">&#9662;</span>
                             </button>
-                            <div class="accordion-content" id="how">
+                            <div class="accordion-content" id="why">
                                 <div class="pb-16 text-grey">
-                                    <div class="flex flex-wrap gap-20">
+                                    <div class="flex flex-wrap gap-20  *:font-normal">
                                         <div class="flex flex-col w-full lg:w-[calc(50%-15px)] xl:w-[calc(25%-15px)] justify-start items-start p-24 space-y-32 xxl:space-y-48">
                                             <img
                                                 src="./assets/images/tab_how_icon1.svg"
@@ -500,33 +570,45 @@
                                                 role="img"
                                                 class="mx-auto"
                                             >
-                                            <div class="w-full text-center space-y-12">
-                                                <span class="block text-[clamp(18px,2vw,20px)] font-medium text-button-bg">Niacinamide 10%</span>
-                                                <span class="block text-grey text-sm">Helps refine pores, strengthen the skin barrier, and visibly improve uneven tone and marks while balancing oil.</span>
+                                            <div class="card-content w-full text-center space-y-12 h-full">
+                                                <span class="card-title block text-[clamp(18px,2vw,20px)] font-medium text-button-bg">Acne Buster™ Complex</span>
+                                                <span class="card-desc block text-grey text-sm">A clinically studied complex that helps address acne-related concerns while supporting clearer-looking skin.</span>
                                             </div>
                                         </div>
                                         <div class="flex flex-col w-full lg:w-[calc(50%-15px)] xl:w-[calc(25%-15px)] justify-start items-start p-24 space-y-32 xxl:space-y-48">
                                             <img
-                                                src="./assets/images/how-mockup2.svg"
+                                                src="./assets/images/tab_how_icon2.svg"
                                                 alt="icon 2"
                                                 role="img"
                                                 class="mx-auto"
                                             >
-                                            <div class="w-full text-center space-y-12">
-                                                <span class="block text-[clamp(18px,2vw,20px)] font-medium text-button-bg">Clair Blanche™ 1%</span>
-                                                <span class="block text-grey text-sm">A patented multi-pathway brightening complex designed to target visible pigmentation patterns and support tone uniformity.</span>
+                                            <div class="card-content w-full text-center space-y-12 h-full flex flex-col flex-1">
+                                                <span class="card-title block text-[clamp(18px,2vw,20px)] font-medium text-button-bg flex-1">Aquaxyl™</span>
+                                                <span class="card-desc block text-grey text-sm flex-1">A multi-dimensional hydration complex that improves moisture retention and strengthens the skin barrier without heaviness.</span>
                                             </div>
                                         </div>
                                         <div class="flex flex-col w-full lg:w-[calc(50%-15px)] xl:w-[calc(25%-15px)] justify-start items-start p-24 space-y-32 xxl:space-y-48">
                                             <img
-                                                src="./assets/images/how-mockup3.svg"
+                                                src="./assets/images/tab_how_icon3.svg"
                                                 alt="icon 3"
                                                 role="img"
                                                 class="mx-auto"
                                             >
-                                            <div class="w-full text-center space-y-12">
-                                                <span class="block text-[clamp(18px,2vw,20px)] font-medium text-button-bg">Zinc PCA 1%</span>
-                                                <span class="block text-grey text-sm">Helps regulate excess oil and calm visible redness, reducing the chance of future marks.</span>
+                                            <div class="card-content w-full text-center space-y-12 h-full flex flex-col flex-1">
+                                                <span class="card-title block text-[clamp(18px,2vw,20px)] font-medium text-button-bg flex-1">Niacinamide</span>
+                                                <span class="card-desc block text-grey text-sm flex-1">Helps balance oil, improve skin comfort, and support barrier health over time.</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col w-full lg:w-[calc(50%-15px)] xl:w-[calc(25%-15px)] justify-start items-start p-24 space-y-32 xxl:space-y-48">
+                                            <img
+                                                src="./assets/images/tab_how_icon4.svg"
+                                                alt="icon 4"
+                                                role="img"
+                                                class="mx-auto"
+                                            >
+                                            <div class="card-content w-full text-center space-y-12 h-full flex flex-col flex-1">
+                                                <span class="card-title block text-[clamp(18px,2vw,20px)] font-medium text-button-bg flex-1">Panthenol & Skin-Identical Humectants</span>
+                                                <span class="card-desc block text-grey text-sm flex-1">Help soothe irritation, reduce dryness, and maintain long-lasting hydration.</span>
                                             </div>
                                         </div>
                                     </div>
@@ -535,29 +617,105 @@
                         </div>
                         <!-- Item 3 -->
                         <div class="border-b border-grey/30">
-                            <button class="accordion-btn w-full flex items-center justify-between pb-16 text-left text-h3 font-medium text-grey" aria-expanded="false" data-target="ingredients">
-                                Ingredients
+                            <button class="accordion-btn w-full flex items-center justify-between pb-16 text-left text-h3 font-medium text-grey" aria-expanded="false" data-target="who">
+                                Who It’s For
                                 <span class="transition-transform duration-300">&#9662;</span>
                             </button>
-                            <div class="accordion-content" id="ingredients">
+                            <div class="accordion-content" id="who">
                                 <div class="pb-16 text-grey">
-                                    <p>
-                                        Argan Oil, Coconut Oil, Aloe Vera, Tea Tree Extract, Vitamin E.
-                                    </p>
+                                    <div class="flex gap-20 flex-col sm:flex-row  *:font-normal">
+                                        <div class="space-y-24 [&_ul]:flex [&_ul]:flex-col [&_ul]:gap-16 text-button-bg text-t_20 [&_ul_li]:flex [&_ul_li]:justify-start [&_ul_li]:items-center [&_ul_li]:gap-12  [&_ul_li]:font-normal">
+                                            <span class="block text-button-bg text-t_20 font-medium">Skin Type</span>
+                                            <ul>
+                                                <li>
+                                                    <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
+                                                    <span>Oily skin</span>
+                                                </li>
+                                                <li>
+                                                    <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
+                                                    <span>Acne-prone skin</span>
+                                                </li>
+                                                <li>
+                                                    <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
+                                                    <span>Combination skin</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="space-y-24 [&amp;_ul]:flex [&amp;_ul]:flex-col [&amp;_ul]:gap-24 text-button-bg text-t_20 [&amp;_ul_li]:flex [&amp;_ul_li]:justify-start [&amp;_ul_li]:items-center [&amp;_ul_li]:gap-12 [&amp;_ul_li]:font-normal">
+                                            <span class="block text-button-bg text-t_20 font-medium">Concerns</span>
+                                            <ul>
+                                                <li>
+                                                    <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
+                                                    <span>Active acne</span>
+                                                </li>
+                                                <li>
+                                                    <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
+                                                    <span>Blackheads &amp; whiteheads</span>
+                                                </li>
+                                                <li>
+                                                    <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
+                                                    <span>Excess oil &amp; clogged pores</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <!-- Item 4 -->
                         <div class="border-b border-grey/30">
-                            <button class="accordion-btn w-full flex items-center justify-between pb-16 text-left text-h3 font-medium text-grey" aria-expanded="false" data-target="who">
-                                Who Can Use
+                            <button class="accordion-btn w-full flex items-center justify-between pb-16 text-left text-h3 font-medium text-grey" aria-expanded="false" data-target="how">
+                                How To Use
                                 <span class="transition-transform duration-300">&#9662;</span>
                             </button>
-                            <div class="accordion-content" id="who">
+                            <div class="accordion-content" id="how">
                                 <div class="pb-16 text-grey">
-                                    <p>
-                                        Suitable for all hair types including oily, dry, curly, and treated hair.
-                                    </p>
+                                    <div class="text-t_20 text-button-bg text-normal! space-y-24 xl:space-y-40  *:font-normal">
+                                        <div class="[&_ul]:flex [&_ul]:flex-col [&_ul]:gap-16 [&_ul]:pl-34 [&_ul>li]:list-decimal">
+                                            <ul>
+                                                <li>Wet your face with lukewarm water</li>
+                                                <li>Apply a small amount of ClearGel™</li>
+                                                <li>Massage gently for 20–30 seconds</li>
+                                                <li>Wet your face with lukewarm water</li>
+                                            </ul>
+                                        </div>
+                                        <div class="flex flex-wrap justify-start gap-16 md:gap-32 lg:gap-64 items-center">
+                                            <span>
+                                                <span class="text-button-bg font-bold">Frequency:</span>  Use 1–2 times daily</span>
+                                            <span> Follow with a moisturizer. Use sunscreen during the daytime.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="border-b border-grey/30">
+                            <button class="accordion-btn w-full flex items-center justify-between pb-16 text-left text-h3 font-medium text-grey" aria-expanded="false" data-target="key">
+                                Key Product Details
+                                <span class="transition-transform duration-300">&#9662;</span>
+                            </button>
+                            <div class="accordion-content" id="key">
+                                <div class="pb-16 text-grey">
+                                    <ul class="space-y-16 text-button-bg text-t_20 [&_li]:flex [&_li]:justify-start [&_li]:items-center [&_li]:gap-12  *:font-normal">
+                                        <li>
+                                            <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
+                                            <span class="text-button-bg font-bold">Texture:</span>
+                                            Lightweight gel
+                                        </li>
+                                        <li>
+                                            <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
+                                            <span class="text-button-bg font-bold">Free From:</span>
+                                            Parabens, sulfates,
+                                        </li>
+                                        <li>
+                                            <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
+                                            Dermatologically tested
+                                        </li>
+                                        <li>
+                                            <img src="./assets/images/tab-right-tick.svg" alt="tick icon" role="img">
+                                            Suitable for daily use
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -593,11 +751,11 @@
                     <div>
                         <div class="heading text-center space-y-24 mb-32 lg:mb-54">
                             <h2 class="text-h2 font-light">
-                                How to Take
-                                <span class="font-bold">Your Skin Photo</span>
+                                <span class="font-bold">Your 3-Step</span>
+                                Clear Skin Routine
                             </h2>
                             <div class="text-grey font-normal">
-                                <p>Follow these simple steps to ensure accurate results</p>
+                                <p>Created for Indian skin, with clarity and care</p>
                             </div>
                         </div>
                         <!-- analysis -->
@@ -642,7 +800,9 @@
                         </div>
                         <!--  -->
                         <div class="flex justify-center">
-                            <a href="#" role="link" class="btn-dark"><span>Shop This Routine</span> </a>
+                            <a href="#" role="link" class="btn-dark">
+                                <span>Shop This Routine</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -729,9 +889,6 @@
                                 <span class="font-bold">You may</span>
                                 also like
                             </h2>
-                            <div class="text-body text-grey">
-                                <p>Our community’s top-picked skincare essentials  proven, trusted, and loved daily.</p>
-                            </div>
                         </div>
                         <div class="products mt-32 lg:mt-54 space-y-32 lg:space-y-54 ">
                             <div class="swiper productSwiper">
@@ -784,7 +941,7 @@
                                                 <!-- Action Buttons -->
                                                 <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
                                                     <button aria-label="Add ClearGel™ Anti-Acne Facewash to cart" class="btn-dark1 flex justify-center items-center gap-12">
-                                                         <span>Add To Cart</span>
+                                                        <span>Add To Cart</span>
                                                         <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                     </button>
                                                     <button aria-label="Add ClearGel™ Anti-Acne Facewash to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
@@ -818,7 +975,7 @@
                                                 <!-- Action Buttons -->
                                                 <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
                                                     <button aria-label="Add ClearGel™ Anti-Acne Facewash to cart" class="btn-dark1 flex justify-center items-center gap-12">
-                                                         <span>Add To Cart</span>
+                                                        <span>Add To Cart</span>
                                                         <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                     </button>
                                                     <button aria-label="Add ClearGel™ Anti-Acne Facewash to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
@@ -853,7 +1010,7 @@
                                                     <!-- Action Buttons -->
                                                     <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
                                                         <button aria-label="Add ClearGel™ Anti-Acne Facewash to cart" class="btn-dark1 flex justify-center items-center gap-12">
-                                                             <span>Add To Cart</span>
+                                                            <span>Add To Cart</span>
                                                             <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                         </button>
                                                         <button aria-label="Add ClearGel™ Anti-Acne Facewash to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
@@ -889,7 +1046,7 @@
                                                     <!-- Action Buttons -->
                                                     <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
                                                         <button aria-label="Add ClearGel™ Anti-Acne Facewash to cart" class="btn-dark1 flex justify-center items-center gap-12">
-                                                             <span>Add To Cart</span>
+                                                            <span>Add To Cart</span>
                                                             <img src="./assets/images/cart-white.svg" alt="Cart icon">
                                                         </button>
                                                         <button aria-label="Add ClearGel™ Anti-Acne Facewash to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
@@ -991,11 +1148,12 @@
                                             <div class="swiper-slide p-16 bg-white h-auto!">
                                                 <div class="flex items-center justify-between gap-20 mb-16">
                                                     <div>
-                                                         <span class="font-medium review-title text-button-bg text-t_20">Riya Shah</span>
+                                                        <span class="font-medium review-title text-button-bg text-t_20">Riya Shah</span>
                                                     </div>
                                                     <div class="flex flex-col justify-start">
-                                                       
-                                                        <span class="text-yellow-500">★ <span class="text-button-bg">4.2</span></span>
+                                                        <span class="text-yellow-500">★
+                                                            <span class="text-button-bg">4.2</span>
+                                                        </span>
                                                     </div>
                                                 </div>
                                                 <div class="text-sm py-12 mb-4 review-text">
@@ -1010,12 +1168,13 @@
                                             <!-- CARD 2 -->
                                             <div class="swiper-slide p-16 bg-white  h-auto!">
                                                 <div class="flex items-center justify-between gap-20 mb-16">
-                                                   <div>
-                                                         <span class="font-medium review-title text-button-bg text-t_20">Amit Verma</span>
+                                                    <div>
+                                                        <span class="font-medium review-title text-button-bg text-t_20">Amit Verma</span>
                                                     </div>
                                                     <div class="flex flex-col justify-start">
-                                                        
-                                                       <span class="text-yellow-500">★ <span class="text-button-bg">4.5</span></span>
+                                                        <span class="text-yellow-500">★
+                                                            <span class="text-button-bg">4.5</span>
+                                                        </span>
                                                     </div>
                                                 </div>
                                                 <div class="text-sm py-12 mb-4 review-text">
@@ -1036,12 +1195,13 @@
                                             <!-- CARD 3 -->
                                             <div class="swiper-slide p-16 bg-white  h-auto!">
                                                 <div class="flex items-center justify-between gap-20 mb-16">
-                                                     <div>
-                                                         <span class="font-medium review-title text-button-bg text-t_20">Neha Kulkarni</span>
+                                                    <div>
+                                                        <span class="font-medium review-title text-button-bg text-t_20">Neha Kulkarni</span>
                                                     </div>
                                                     <div class="flex flex-col justify-start">
-                                                        
-                                                       <span class="text-yellow-500">★ <span class="text-button-bg">4</span></span>
+                                                        <span class="text-yellow-500">★
+                                                            <span class="text-button-bg">4</span>
+                                                        </span>
                                                     </div>
                                                 </div>
                                                 <div class="text-sm py-12 mb-4 review-text">
@@ -1057,11 +1217,12 @@
                                             <div class="swiper-slide p-16 bg-white  h-auto!">
                                                 <div class="flex items-center justify-between gap-20 mb-16">
                                                     <div>
-                                                         <span class="font-medium review-title text-button-bg text-t_20">Amit Verma</span>
+                                                        <span class="font-medium review-title text-button-bg text-t_20">Amit Verma</span>
                                                     </div>
                                                     <div class="flex flex-col justify-start">
-                                                        
-                                                       <span class="text-yellow-500">★ <span class="text-button-bg">4.5</span></span>
+                                                        <span class="text-yellow-500">★
+                                                            <span class="text-button-bg">4.5</span>
+                                                        </span>
                                                     </div>
                                                 </div>
                                                 <div class="text-sm py-12 mb-4 review-text">
@@ -1076,12 +1237,13 @@
                                             <!-- CARD 3 -->
                                             <div class="swiper-slide p-16 bg-white  h-auto!">
                                                 <div class="flex items-center justify-between gap-20 mb-16">
-                                                   <div>
-                                                         <span class="font-medium review-title text-button-bg text-t_20">Amit Verma</span>
+                                                    <div>
+                                                        <span class="font-medium review-title text-button-bg text-t_20">Amit Verma</span>
                                                     </div>
                                                     <div class="flex flex-col justify-start">
-                                                        
-                                                       <span class="text-yellow-500">★ <span class="text-button-bg">4.5</span></span>
+                                                        <span class="text-yellow-500">★
+                                                            <span class="text-button-bg">4.5</span>
+                                                        </span>
                                                     </div>
                                                 </div>
                                                 <div class="text-sm py-12 mb-4 review-text">
@@ -1316,15 +1478,20 @@
                         </div>
                     </section>
                     <!-- FAQ Section (section-7)  Ends-->
-                     <div class="tagline bg-grey_light py-28">
-                <div class="container">
-                    <h2 class="text-h2 font-light text-center"><span class="font-bold">SpotCorrect™  <br>
-                   </span> Target marks <span class="font-bold">with clarity</span> not <span class="font-bold">aggression.</span></h2>
-                </div>
-            </div>
+                    <div class="tagline bg-grey_light py-28">
+                        <div class="container">
+                            <h2 class="text-h2 font-light text-center">
+                                <span class="font-bold">SpotCorrect™
+                                    <br>
+                                </span> Target marks
+                                <span class="font-bold">with clarity</span> not
+                                <span class="font-bold">aggression.</span>
+                            </h2>
+                        </div>
+                    </div>
                 </main>
-             <!-- Footer Starts -->
-         <footer class="border-t border-t-solid border-t-[#0000001A]">
+                <!-- Footer Starts -->
+                <footer class="border-t border-t-solid border-t-[#0000001A]">
                     <div class="container">
                         <div class="foot-top py-74 border-b border-b-solid border-b-[#0000001A]">
                             <div class="flex justify-between gap-20 md:gap-40 xl:gap-58 flex-wrap">
@@ -1334,9 +1501,9 @@
                                         <img src="./assets/images/company-logo.svg" alt="Ellitee logo">
                                     </a>
                                     <div class="space-y-16">
-                                        <span class="inline-block text-sm text-button-bg">
-                                            Find out your skin or hair concerns and
-                              what a dermatologist advises for them, for free.
+                                           <span class="inline-block text-sm text-button-bg">
+                                            Thoughtful skincare, guided by science.<br>
+Designed for Indian skin, environment, and everyday routines.
                                         </span>
                                         <div class="flex gap-16 justify-start items-center">
                                             <a href="#" aria-label="Go to instagram" class="relative z-10">
@@ -1373,7 +1540,6 @@
                                         <li>
                                             <a href="/Aboutus.html" aria-label="Learn about us">About us</a>
                                         </li>
-                                    
                                         <li>
                                             <a href="/Testimonial.html" aria-label="Read client testimonials">Testimonials</a>
                                         </li>
@@ -1401,11 +1567,10 @@
                                     </ul>
                                 </div>
                                 <!--  -->
-                               
                                 <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(30%-58px)]">
                                     <span class="inline-block text-body font-medium text-button-bg">Other Skin Problems</span>
                                     <ul class="address space-y-16 [&_li>a]:inline-block [&_li>a]:text-sm [&_li]:text-sm [&_li>a]:font-normal [&_li]:font-normal [&_li]:flex [&_li]:justify-start [&_li]:items-start [&_li]:gap-10 *:text-button-bg">
-                                         <li>
+                                        <li>
                                             <img src="./assets/images/phone.svg" alt="icon of phone for calling" role="img">
                                             <a href="tel:+919510514689" role="link" aria-label="Call 9510514689">9510514689</a>
                                         </li>
@@ -1416,7 +1581,7 @@
                                         <li>
                                             <img src="./assets/images/map-pin.svg" alt="icon of map for location" role="img">
                                             <span id="companyAddress" aria-label="Company address" class="block leading-relaxed">
-                                               Ellitee LLP
+                                                Ellitee LLP
 SH-403 Shiven Shoppers, Adajan DN, Surat – 
 395009, Gujarat, India
                                             </span>
@@ -1429,8 +1594,8 @@ SH-403 Shiven Shoppers, Adajan DN, Surat –
                             <p> &copy; 2025-Ellitee™. All Rights Reserved</p>
                         </div>
                     </div>
-        </footer>
-        <!-- Footer End -->
+                </footer>
+                <!-- Footer End -->
                 <script src="./assets/js/swiper-bundle.min.js"></script>
                 <script src="./assets/js/script.js"></script>
                 <!-- Hero Section -->
