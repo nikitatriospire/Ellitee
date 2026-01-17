@@ -1,51 +1,51 @@
 // --------------Mobile Menu--------------
-// const menuBtn = document.getElementById("menuBtn");
-// const menu = document.getElementById("menu");
-// const menuList = document.getElementById("menuList");
-// const bars = menuBtn.querySelectorAll(".bar");
-// let menuOpen = false;
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("menu");
+const menuList = document.getElementById("menuList");
+const bars = menuBtn.querySelectorAll(".bar");
+let menuOpen = false;
 
-// // match the CSS transition duration (ms)
-// const TRANSITION_MS = 300;
+// match the CSS transition duration (ms)
+const TRANSITION_MS = 300;
 
-// menuBtn.addEventListener("click", () => {
-//   menuOpen = !menuOpen;
-//   menuBtn.setAttribute("aria-expanded", menuOpen);
+menuBtn.addEventListener("click", () => {
+  menuOpen = !menuOpen;
+  menuBtn.setAttribute("aria-expanded", menuOpen);
 
-//   // BAR (hamburger -> cross) animation (non-destructive, toggles only the needed classes)
-//   bars[0].classList.toggle("rotate-45", menuOpen);
-//   bars[0].classList.toggle("translate-y-[8px]", menuOpen);
-//   bars[1].classList.toggle("opacity-0", menuOpen);
-//   bars[2].classList.toggle("-rotate-45", menuOpen);
-//   bars[2].classList.toggle("-translate-y-[8px]", menuOpen);
+  // BAR (hamburger -> cross) animation (non-destructive, toggles only the needed classes)
+  bars[0].classList.toggle("rotate-45", menuOpen);
+  bars[0].classList.toggle("translate-y-[8px]", menuOpen);
+  bars[1].classList.toggle("opacity-0", menuOpen);
+  bars[2].classList.toggle("-rotate-45", menuOpen);
+  bars[2].classList.toggle("-translate-y-[8px]", menuOpen);
 
-//   if (menuOpen) {
-//     document.body.style.overflow = "hidden";
+  if (menuOpen) {
+    document.body.style.overflow = "hidden";
 
-//     menu.classList.remove("h-0");
-//     menu.classList.add("h-screen");
+    menu.classList.remove("h-0");
+    menu.classList.add("h-screen");
 
-//     // Force a reflow so the UL transition always runs (optional but reliable)
-//     void menuList.offsetWidth;
+    // Force a reflow so the UL transition always runs (optional but reliable)
+    void menuList.offsetWidth;
 
-//     // Show UL (fade + translate to 0) and enable pointer events
-//     menuList.classList.remove("opacity-0", "-translate-y-2", "pointer-events-none");
-//     menuList.classList.add("opacity-100", "translate-y-0", "pointer-events-auto");
-//   } else {
-//     // 🔓 Enable page scroll again
-//     document.body.style.overflow = "";
+    // Show UL (fade + translate to 0) and enable pointer events
+    menuList.classList.remove("opacity-0", "-translate-y-2", "pointer-events-none");
+    menuList.classList.add("opacity-100", "translate-y-0", "pointer-events-auto");
+  } else {
+    // 🔓 Enable page scroll again
+    document.body.style.overflow = "";
 
-//     // Close menu: first hide UL (fade out + translate), disable pointer events immediately
-//     menuList.classList.remove("opacity-100", "translate-y-0", "pointer-events-auto");
-//     menuList.classList.add("opacity-0", "-translate-y-2", "pointer-events-none");
+    // Close menu: first hide UL (fade out + translate), disable pointer events immediately
+    menuList.classList.remove("opacity-100", "translate-y-0", "pointer-events-auto");
+    menuList.classList.add("opacity-0", "-translate-y-2", "pointer-events-none");
 
-//     // After UL transition finishes, collapse the NAV so no flash
-//     setTimeout(() => {
-//       menu.classList.remove("h-screen");
-//       menu.classList.add("h-0");
-//     }, TRANSITION_MS);
-//   }
-// });
+    // After UL transition finishes, collapse the NAV so no flash
+    setTimeout(() => {
+      menu.classList.remove("h-screen");
+      menu.classList.add("h-0");
+    }, TRANSITION_MS);
+  }
+});
 
 /*-----------------------HOMEPAGE-------------------*/
 
