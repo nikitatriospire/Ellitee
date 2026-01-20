@@ -148,7 +148,7 @@
   a {
     @apply cursor-pointer;
   }
-  nav ul li a {
+  nav ul li a:not(.submenu-link) {
     @apply relative block text-button-bg capitalize text-h3 lg:text-[16px] font-medium
   before:content-[''] before:w-0 before:h-0.5 before:bg-button-bg before:absolute before:left-0 before:-bottom-4 before:opacity-0 before:invisible before:transition-all before:duration-500 before:ease-in-out
   hover:before:w-full hover:before:visible hover:before:opacity-100
@@ -1045,8 +1045,8 @@ input[type="range"]:focus {
   padding: 24px;
 }
 .submenu-inner {
-  flex: 0 0 25%;
-  padding: 0 1rem;
+  /* flex: 0 0 25%; */
+  /* padding: 0 1rem; */
 }
 .submenu-title {
   font-family: inherit;
@@ -1147,12 +1147,49 @@ input[type="range"]:focus {
   background-color: rgba(0, 0, 0, 0.7);
   transition: all 0.45s ease-in-out;
 }
+.submenu-inner ul, .submenu-inner{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.submenu-inner ul li a{
+  font-size: 16px ;
+  width:fit-content;
+}
+.submenu-inner ul li a span{
+  position:relative;
+  padding-bottom:2px;
+}
+.submenu-inner ul li a span::before{
+  content:'';
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:0%;
+  height:2px;
+  background-color:var(--black-300);
+  opacity:0;
+  visibility:hidden;
+  transition:all 0.4s ease-in-out;
+}
+.submenu-inner ul li a:hover span::before{
+  width:100%;
+  opacity:1;
+  visibility:visible;
+}
+.submenu-item .submenu-link{
+  font-size:18px;
+  font-weight:500;
+}
+.submenu .submenu-item{
+  margin:0;
+}
 @media only screen and (max-width: 1023px) {
   .menu {
     position: fixed;
     top: 0;
     left: 0;
-    width: 75%;
+    width: 55%;
     height: 100%;
     z-index: 100;
     overflow: hidden;
@@ -1226,7 +1263,7 @@ input[type="range"]:focus {
     min-width: auto;
     margin: 0;
     padding: 1rem;
-    padding-top: 4rem;
+    padding-top: 5rem;
     opacity: 0;
     overflow-y: auto;
     visibility: visible;
@@ -1234,20 +1271,40 @@ input[type="range"]:focus {
     box-shadow: none;
     display:none;
   }
-  .submenu.is-active {
+  .submenu.is-active, .submenu-inn.is-active {
     opacity: 1;
     visibility: visible;
     z-index: 99;
     gap: 20px;
-    overflow-y: auto;
+    overflow-y: scroll;
+    height: 100vh;
+    overflow-x: hidden;
   }
   .overlay.is-active {
     opacity: 1;
     visibility: visible;
   }
+  .submenu-inn.is-active {
+    top: 44px;
+    left: 0;
+    height:100%;
+}
+ .submenu-inn {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  background-color: hsl(206, 5%, 100%);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: 0.25s;
+  width: 100%;
+  padding: 24px;
+}
+.multimenu {
+  grid-template-columns: 1fr !important;
+}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 575px) {
   .menu {
     width: 100%;
   }
