@@ -86,7 +86,7 @@
                 <div class="container">
                     <div class="flex flex-col-reverse lg:flex-row gap-20 lg:gap-40 xxl:gap-86 min-h-600">
                         <!-- Left Content -->
-                        <div class="w-full lg:w-[50%] xl:w-[60%] xxl:w-[45%] flex flex-col justify-center px-16 md:px-0 pb-40 lg:pb-80 xxl:pb-104 pt-20 sm:pt-40 lg:pt-80 xxl:pt-104 space-y-34 relative z-10">
+                        <div class="w-full lg:w-[50%] xl:w-[60%] xxl:w-[45%] flex flex-col justify-center px-16 md:px-0 pb-40 lg:pb-80 xxl:pb-104 pt-20 sm:pt-40 lg:pt-80 xxl:pt-104 space-y-32 lg:space-y-48 relative z-10">
                             <div class="flex flex-col justify-center space-y-24">
                                 <h1 class="text-h2.64 font-light text-button-bg">
                                     <span class="font-bold">Understand Your Skin 
@@ -103,7 +103,7 @@
                             </div>
                             <div>
                                 <a href="#" class="btn-dark" aria-label="Shop sunscreen products">
-                                    <span>Shop Skincare</span>
+                                    <span>Begin Skin Assessment</span>
                                 </a>
                             </div>
                         </div>
@@ -149,7 +149,7 @@
                         </div>
                         <!-- RIGHT (CONTENT) -->
                         <div class="w-full lg:w-1/2">
-                            <div class="content space-y-24">
+                            <div class="content space-y-24 lg:space-y-48">
                                 <h2 class="text-h2 font-light">
                                     
                                     Why <span class="font-bold">Skin Understanding</span> Matters
@@ -184,22 +184,22 @@
                             </div>
                         </div>
                         <!-- tab area -->
-                        <div class="mt-32 xl:mt-48 space-x-16 xl:space-x-54 flex justify-center items-center">
+                        <div class="mt-32 xl:mt-48 gap-16 xl:gap-48 flex justify-center items-center">
                             <!-- Tabs -->
                             <!-- Prev Arrow -->
                             <button id="tabPrevMobile" aria-label="Scroll tabs left" class="p-2 border rounded-full bg-white shadow active:scale-90 lg:hidden flex justify-center w-32 h-32">
                                 ←
                             </button>
                             <!-- Scrollable Tabs -->
-                            <div class="flex gap-32 xl:gap-68 overflow-x-auto no-scrollbar flex-1 whitespace-nowrap justify-start lg:justify-center items-center" id="tabs">
-                                <button class="tab-btn active font-medium pb-2 border-b-2 border-black" data-tab="0">Acne</button>
-                                <button class="tab-btn pb-2" data-tab="1">Pigmentation</button>
-                                <button class="tab-btn pb-2" data-tab="2">Uneven Texture</button>
-                                <button class="tab-btn pb-2" data-tab="3">Pores</button>
-                                <button class="tab-btn pb-2" data-tab="4">Redness</button>
-                                <button class="tab-btn pb-2" data-tab="5">Uneven Skin Tone</button>
-                                <button class="tab-btn pb-2" data-tab="6">Fine Lines</button>
-                                <button class="tab-btn pb-2" data-tab="7">Hydration</button>
+                            <div class="flex gap-32 xl:gap-68 overflow-x-auto no-scrollbar flex-1 whitespace-nowrap justify-start lg:justify-between items-center" id="tabs">
+                                <button class="tab-btn active text-t_20 xl:text-h3 font-normal pb-2 border-b-2 border-black" data-tab="0">Acne</button>
+                                <button class="tab-btn text-t_20 xl:text-h3 font-normal pb-2" data-tab="1">Pigmentation</button>
+                                <button class="tab-btn text-t_20 xl:text-h3 font-normal pb-2" data-tab="2">Uneven Texture</button>
+                                <button class="tab-btn text-t_20 xl:text-h3 font-normal pb-2" data-tab="3">Pores</button>
+                                <button class="tab-btn text-t_20 xl:text-h3 font-normal pb-2" data-tab="4">Redness</button>
+                                <button class="tab-btn text-t_20 xl:text-h3 font-normal pb-2" data-tab="5">Uneven Skin Tone</button>
+                                <button class="tab-btn text-t_20 xl:text-h3 font-normal pb-2" data-tab="6">Fine Lines</button>
+                                <button class="tab-btn text-t_20 xl:text-h3 font-normal pb-2" data-tab="7">Hydration</button>
                             
                             </div>
                             <!-- Next Arrow -->
@@ -211,7 +211,7 @@
                         <div id="tabContentWrapper" class="mt-32 xl:mt-48">
                             <!-- Item 1 -->
                             <div class="tab-content block" data-index="0">
-                                <div class="grid grid-flow-dense lg:grid-cols-2 gap-32 xl:gap-60">
+                                <div class="grid grid-flow-dense lg:grid-cols-2 gap-32 xl:gap-80">
                                     <div class="order-2 lg:order-1">
                                         <h3 class="text-h2 font-bold mb-24">Acne</h3>
                                         <div class="text-gray-600 space-y-16 lg:space-y-24">
@@ -226,7 +226,7 @@
                             </div>
                             <!-- Item 2 -->
                             <div class="tab-content hidden" data-index="1">
-                                <div class="grid grid-flow-dense lg:grid-cols-2 gap-32 xl:gap-60">
+                                <div class="grid grid-flow-dense lg:grid-cols-2 gap-32 xl:gap-80">
                                     <div class="order-2 lg:order-1">
                                         <h2 class="text-h2 font-bold mb-24">Pigmentation</h2>
                                          <div class="text-gray-600 space-y-16 lg:space-y-24">
@@ -242,7 +242,7 @@
                             </div>
                             <!-- Item 3 -->
                             <div class="tab-content hidden" data-index="2">
-                                <div class="grid lg:grid-cols-2 gap-32 xl:gap-60">
+                                <div class="grid lg:grid-cols-2 gap-32 xl:gap-80">
                                     <div class="order-2 lg:order-1">
                                         <h2 class="text-h2 font-bold mb-24">Uneven Texture</h2>
                                          <div class="text-gray-600 space-y-16 lg:space-y-24">
@@ -258,7 +258,7 @@
                             </div>
                             <!-- Item 4 -->
                             <div class="tab-content hidden" data-index="3">
-                                <div class="grid lg:grid-cols-2 gap-32 xl:gap-60">
+                                <div class="grid lg:grid-cols-2 gap-32 xl:gap-80">
                                     <div class="order-2 lg:order-1">
                                         <h2 class="text-h2 font-bold mb-24">Pores</h2>
                                          <div class="text-gray-600 space-y-16 lg:space-y-24">
@@ -273,7 +273,7 @@
                             </div>
                             <!-- Item 5 -->
                             <div class="tab-content hidden" data-index="4">
-                                <div class="grid lg:grid-cols-2 gap-32 xl:gap-60">
+                                <div class="grid lg:grid-cols-2 gap-32 xl:gap-80">
                                     <div class="order-2 lg:order-1">
                                         <h2 class="text-h2 font-bold mb-24">Redness</h2>
                                          <div class="text-gray-600 space-y-16 lg:space-y-24">
@@ -288,7 +288,7 @@
                             </div>
                             <!-- Item 6 -->
                             <div class="tab-content hidden" data-index="5">
-                                <div class="grid lg:grid-cols-2 gap-32 xl:gap-60">
+                                <div class="grid lg:grid-cols-2 gap-32 xl:gap-80">
                                     <div class="order-2 lg:order-1">
                                         <h2 class="text-h2 font-bold mb-24">Uneven Skin Tone</h2>
                                          <div class="text-gray-600 space-y-16 lg:space-y-24">
@@ -303,7 +303,7 @@
                             </div>
                             <!-- Item 7 -->
                             <div class="tab-content hidden" data-index="6">
-                                <div class="grid lg:grid-cols-2 gap-32 xl:gap-60">
+                                <div class="grid lg:grid-cols-2 gap-32 xl:gap-80">
                                     <div class="order-2 lg:order-1">
                                         <h2 class="text-h2 font-bold mb-24">Fine Lines</h2>
                                          <div class="text-gray-600 space-y-16 lg:space-y-24">
@@ -318,7 +318,7 @@
                             </div>
                             <!-- Item 8 -->
                             <div class="tab-content hidden" data-index="7">
-                                <div class="grid lg:grid-cols-2 gap-32 xl:gap-60">
+                                <div class="grid lg:grid-cols-2 gap-32 xl:gap-80">
                                     <div class="order-2 lg:order-1">
                                         <h2 class="text-h2 font-bold mb-24">Hydration</h2>
                                          <div class="text-gray-600 space-y-16 lg:space-y-24">
@@ -334,7 +334,7 @@
                          
                             <!-- Navigation buttons -->
                             <div class="flex justify-between gap-32 xl:gap-100 pt-32 lg:-mt-80 lg:w-[45%]">
-                                <button id="prevBtn1" class="border border-grey px-24 py-12 text-base flex items-center gap-4 text-[#4D4D4D]">
+                                <button id="prevBtn1" class="border border-[#6A6A6A] px-24 py-12 text-base flex items-center gap-4">
                                     <span>
                                        <svg
                                                     width="24"
@@ -352,10 +352,10 @@
                                                 </svg>
 
                                     </span>
-                                    Back
+                                    <span>Back</span>
                                 </button>
-                                <button id="nextBtn1" class="border border-grey text-white px-24 py-12 text-base flex items-center gap-4">
-                                    Next
+                                <button id="nextBtn1" class="border border-[#6A6A6A] px-24 py-12 text-base flex items-center gap-4">
+                                   <span> Next</span>
                                     <span>
                                  <svg
                                                     width="24"
@@ -397,7 +397,7 @@
                       
                     </div>
                     <!-- Product Grid -->
-                    <div class="products mt-32 lg:mt-54">
+                    <div class="products mt-32 lg:mt-48">
                         <div class="product-block grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-32" role="list">
                             <!-- ITEM 1 -->
                             <div role="listitem">
@@ -487,19 +487,19 @@
         <!-- Skin Journey Section (section-4) -->
         <section class="py-40 md:py-60 xl:py-100 bg-grey_light">
             <div class="container">
-                <div class="inner flex gap-32 flex-col lg:flex-row">
-                    <div class="w-full lg:w-[43%]">
-                        <div class="lg:sticky lg:top-100 md:w-1/2 lg:w-full 1xl:w-3/4 xxl:w-2/4 lg:mx-auto">
-                            <img src="./assets/images/skin-analysis.webp" lt="AI-powered skin analysis illustration" role="img">
+                <div class="inner flex gap-32 lg:gap-48 1xl:gap-80 flex-col lg:flex-row">
+                    <div class="w-full lg:w-2/6 xl:w-auto">
+                        <div class="lg:sticky lg:top-100 w-auto">
+                            <img src="./assets/images/skin-analysis.webp" lt="AI-powered skin analysis illustration" role="img" class="h-auto md:h-665 xl:h-auto">
                         </div>
                     </div>
-                    <div class="p-0 sm:p-28 w-full lg:w-[57%] space-y-40">
+                    <div class="p-0 sm:p-28 lg:w-2/3 xl:w-auto space-y-40 flex flex-col justify-center">
                         <div class="heading text-left space-y-24">
                             <h2 class="text-h2 font-light">
                                 A Calmer Way to <span class="font-bold">Approach Skincare</span>
                             </h2>
                             <div class="text-grey font-normal">
-                                <p>Each step of your journey is powered by AI and dermatology expertise to achieve healthier, glowing, and balanced skin.</p>
+                                <p>Ellitee Skin Insights is built to reduce confusion, not create dependency. By understanding your skin first, skincare becomes simpler, more consistent, and easier to trust.</p>
                             </div>
                         </div>
                         <!-- key benefits -->
@@ -532,7 +532,7 @@
         <section class="py-40 md:py-60 xl:py-100">
             <div class="container">
                 <div>
-                    <div class="heading text-center space-y-24 mb-32 lg:mb-54 xl:mb-80 1xl:mb-131">
+                    <div class="heading text-center space-y-24 mb-32 lg:mb-48">
                         <h2 class="text-h2 font-light">
                            How to Take  <span class="font-bold">Your Skin Photo</span>
                         </h2>
@@ -586,16 +586,16 @@
         <section class="py-40 md:py-60 xl:py-100">
             <div class="container">
                 <div class="inner">
-                    <div class="heading text-center space-y-24 mb-32 lg:mb-54 xl:mb-80 1xl:mb-100">
+                    <div class="heading text-center space-y-24 mb-32 lg:mb-48">
                         <h2 class="text-h2 font-light">
                             <span class="font-bold">Skin Questions </span>
                              We Help You Answer
                         </h2>
                     </div>
                     <!--  -->
-                    <div class="flex gap-32 xl:gap-54 flex-col lg:flex-row">
+                    <div class="">
                         <div class="block-left w-full max-w-1140 mx-auto">
-                            <div class="w-full max-w-2xl mx-auto space-y-34 flex flex-col justify-start xl:justify-between">
+                            <div class="w-full max-w-2xl mx-auto space-y-24 lg:space-y-40 flex flex-col justify-start xl:justify-between">
                                 <!-- Accordion Item -->
                                 <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                     <button class="accordion-btn1 w-full flex justify-between items-center text-left">
@@ -726,8 +726,6 @@
                                 </div>
                             </div>
                         </div>
-                        
-                    
                 </div>
             </div>
         </div>
@@ -737,16 +735,16 @@
         <section class="py-40 md:py-60 xl:py-100">
             <div class="container">
                 <div class="inner">
-                    <div class="heading text-center space-y-24 mb-32 lg:mb-54 xl:mb-80 1xl:mb-100">
+                    <div class="heading text-center space-y-24 mb-32 lg:mb-48">
                         <h2 class="text-h2 font-light">
                             <span class="font-bold"> Frequently</span>
                             asked questions
                         </h2>
                     </div>
                     <!--  -->
-                    <div class="flex gap-32 xl:gap-54 flex-col lg:flex-row">
+                    <div class="">
                         <div class="block-left w-full max-w-1140 mx-auto">
-                            <div class="w-full max-w-2xl mx-auto space-y-34 flex flex-col justify-start xl:justify-between">
+                            <div class="w-full max-w-2xl mx-auto space-y-24 lg:space-y-40 flex flex-col justify-start xl:justify-between">
                                 <!-- Accordion Item -->
                                 <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                     <button class="accordion-btn1 w-full flex justify-between items-center text-left">
@@ -836,8 +834,6 @@
                                
                             </div>
                         </div>
-                        
-                    
                 </div>
             </div>
         </div>
@@ -898,6 +894,9 @@ Designed for Indian skin, environment, and everyday routines.
                                         <li>
                                             <a href="/Testimonial.html" aria-label="Read client testimonials">Testimonials</a>
                                         </li>
+                                         <li>
+                                            <a href="/contact.html" aria-label="contact us">Contact us</a>
+                                        </li>
                                         <li>
                                             <a href="/FAQ.html" aria-label="Frequently asked questions">FAQ</a>
                                         </li>
@@ -924,7 +923,7 @@ Designed for Indian skin, environment, and everyday routines.
                                 <!--  -->
                                
                                 <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(30%-58px)]">
-                                    <span class="inline-block text-body font-medium text-button-bg">Other Skin Problems</span>
+                                    <span class="inline-block text-body font-medium text-button-bg">Contact us</span>
                                     <ul class="address space-y-16 [&_li>a]:inline-block [&_li>a]:text-sm [&_li]:text-sm [&_li>a]:font-normal [&_li]:font-normal [&_li]:flex [&_li]:justify-start [&_li]:items-start [&_li]:gap-10 *:text-button-bg">
                                          <li>
                                             <img src="./assets/images/phone.svg" alt="icon of phone for calling" role="img">
@@ -947,7 +946,7 @@ SH-403 Shiven Shoppers, Adajan DN, Surat –
                             </div>
                         </div>
                         <div class="copyright font-normal text-sm text-center py-16 text-button-bg">
-                            <p> &copy; 2025-Ellitee™. All Rights Reserved</p>
+                            <p> &copy; <span id="currentYear">2026</span>-Ellitee™. All Rights Reserved</p>
                         </div>
                     </div>
         </footer>
@@ -1065,50 +1064,56 @@ window.addEventListener("resize", () => {
         </script>
     <!-- section 2 tab js -->
     <script>
+// Tabs & content
 const tabs = document.querySelectorAll(".tab-btn");
 const contents = document.querySelectorAll(".tab-content");
 let currentIndex = 0;
 
-// Buttons
+// Desktop buttons
 const prevBtns = document.getElementById("prevBtn1");
 const nextBtns = document.getElementById("nextBtn1");
 
+// Mobile buttons
 const mobilePrev = document.getElementById("tabPrevMobile");
 const mobileNext = document.getElementById("tabNextMobile");
 
+// Only desktop buttons get dark style
 function styleButton(btn, enabled) {
     if (!btn) return;
 
     if (enabled) {
-        btn.classList.add("bg-black", "text-white");
-        btn.classList.remove("bg-white", "text-black", "opacity-50");
+        btn.classList.add("btn-dark", "opacity-100");
+        btn.classList.remove("bg-white", "text-[#4D4D4D]");
     } else {
-        btn.classList.remove("bg-black", "text-white");
-        btn.classList.add("bg-white", "text-black", "opacity-50");
+        btn.classList.remove("btn-dark", "opacity-100");
+        btn.classList.add("bg-white", "text-[#4D4D4D]");
     }
 }
 
+// Update button states
 function updateButtonState() {
     const first = currentIndex === 0;
     const last = currentIndex === contents.length - 1;
 
-    // Prev only available after first tab
+    // Desktop buttons
     styleButton(prevBtns, !first);
-    styleButton(mobilePrev, !first);
-
-    // Next only available before last tab
     styleButton(nextBtns, !last);
-    styleButton(mobileNext, !last);
+
+    // Mobile buttons: just disable/enable
+    if (mobilePrev) mobilePrev.disabled = first;
+    if (mobileNext) mobileNext.disabled = last;
 }
 
+// Show a tab by index
 function showTab(index) {
     if (index < 0) index = 0;
     if (index >= contents.length) index = contents.length - 1;
 
-    // update UI
+    // Remove active state from all
     tabs.forEach(t => t.classList.remove("active", "border-b-2", "border-black"));
     contents.forEach(c => c.classList.add("hidden"));
 
+    // Activate current
     tabs[index].classList.add("active", "border-b-2", "border-black");
     contents[index].classList.remove("hidden");
 
@@ -1116,7 +1121,7 @@ function showTab(index) {
     updateButtonState();
     scrollToActiveTab();
 
-    // NEW: Update text colors
+    // Update text colors
     updateTabTextColors();
 }
 
@@ -1127,7 +1132,7 @@ tabs.forEach(btn => {
     });
 });
 
-// Next / Prev clicks
+// Desktop Next / Prev
 if (nextBtns) {
     nextBtns.addEventListener("click", () => {
         if (currentIndex < contents.length - 1) showTab(currentIndex + 1);
@@ -1139,6 +1144,7 @@ if (prevBtns) {
     });
 }
 
+// Mobile Next / Prev
 if (mobileNext) {
     mobileNext.addEventListener("click", () => {
         if (currentIndex < contents.length - 1) showTab(currentIndex + 1);
@@ -1162,11 +1168,7 @@ function scrollToActiveTab() {
     });
 }
 
-// Init
-showTab(0);
-
-
-// Make inactive tabs grey & active tab dark
+// Update tab text colors
 function updateTabTextColors() {
     tabs.forEach(btn => {
         if (btn.classList.contains("active")) {
@@ -1179,8 +1181,9 @@ function updateTabTextColors() {
     });
 }
 
-// Run once on load
-updateTabTextColors();
+// Initialize first tab
+showTab(0);
+
     </script>
 </body>
 </html>

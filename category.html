@@ -128,10 +128,9 @@
             <!-- product section (Section-2) -->
             <section class="py-30 md:py-60 xl:py-100" aria-label="Skincare products section with filters and product grid">
                 <div class="container">
-                    <div class="flex flex-col gap-32 lg:gap-54">
+                    <div class="flex flex-col gap-32 lg:gap-48">
                         <div class="heading space-y-24">
                             <h2 class="text-h2 font-light text-center">
-                               
                                 Why  <span class="font-bold">Ellitee™ Products</span> Are Different
                             </h2>
                             <div class="text-grey font-normal leading-relaxed text-center">
@@ -141,700 +140,702 @@
                                 <p>Instead of layering multiple competing actives, we focus on balance, tolerance, and consistency helping skin improve steadily over time.</p>
                             </div>
                         </div>
-                        <div class="hidden lg:flex justify-between">
-                            <div class="w-3/12 text-button-bg">
-                                <p><strong>Sort By:</strong> Shop by skin concern, routine step, or product type to find what fits your skin best.</p>
+                        <div class="flex flex-col gap-24">
+                            <div class="hidden lg:flex justify-between">
+                                <div class="w-3/12 text-button-bg">
+                                    <p><strong>Sort By:</strong> Shop by skin concern, routine step, or product type to find what fits your skin best.</p>
+                                </div>
+                                <div class="text-right text-button-bg">
+                                    <p>Our <strong>Skincare</strong> Essentials</p>
+                                    <span class="text-grey">Every product earns its place in your routine.</span>
+                                </div>
                             </div>
-                            <div class="text-right text-button-bg">
-                                <p>Our <strong>Skincare</strong> Essentials</p>
-                                <span class="text-grey">Every product earns its place in your routine.</span>
-                            </div>
-                        </div>
-                        <div class="flex gap-32 lg:flex-row flex-col justify-start items-start">
-                            <!-- Mobile Filter Button -->
-                            <button id="filterToggleBtn" class="lg:hidden w-full px-24 py-16 bg-grey_light text-button-bg text-body font-medium shadow-md">
-                                Filter & Sort
-                            </button>
-                            <div
-                                id="mobileFilterPanel"
-                                class="lg:w-3/12 pt-100 lg:pt-28 pb-28 px-28 space-y-32 bg-grey_light shadow-sm 
-           fixed lg:sticky top-140 left-0 w-full h-screen lg:h-full overflow-y-auto lg:overflow-y-hidden
-           translate-x-full lg:translate-x-0 transition-transform duration-300 z-200 lg:z-10"
-                                role="complementary"
-                                aria-label="Product filters sidebar"
-                            >
-                                <!-- Close Button -->
-                                <button id="filterCloseBtn" class="lg:hidden absolute top-32 right-32 z-50">
-                                    <img src="./assets/images/close-icon.svg" alt="Close filter" class="w-24 h-24">
+                            <div class="flex gap-32 lg:flex-row flex-col justify-start items-start">
+                                <!-- Mobile Filter Button -->
+                                <button id="filterToggleBtn" class="lg:hidden w-full px-24 py-16 bg-grey_light text-button-bg text-body font-medium shadow-md">
+                                    Filter & Sort
                                 </button>
-                                <!-- Sort By -->
-                                <div>
-                                    <label for="sortBy" class="block text-t_20 font-normal mb-16">Sort By:</label>
-                                    <div class="relative w-fit">
-                                        <select id="sortBy" name="sortBy" class="w-ful border border-solid border-grey px-24 py-12 appearance-none font-normal">
-                                            <option value="popular">Popular</option>
-                                            <option value="low-high">Price: Low to High</option>
-                                            <option value="high-low">Price: High to Low</option>
-                                            <option value="newest">Newest First</option>
-                                        </select>
-                                        <span class="absolute right-24 top-1/2 -translate-y-1/2 text-gray-500">▼</span>
-                                    </div>
-                                </div>
-                                <!-- Product Type -->
-                                <div>
-                                    <h3 class="accordion-titles  text-t_20 font-normal mb-16 flex justify-between items-center">Product Type:
-                                        <img src="./assets/images/rightarrow.svg" alt="" class="rightarrow w-18 transition-all duration-300 lg:hidden">
-                                    </h3>
-                                    <div class="accordion-contents space-y-12 hidden lg:block">
-                                        <!-- Cleanser -->
-                                        <label for="cleanser" class="flex items-center gap-12 cursor-pointer group">
-                                            <input
-                                                id="cleanser"
-                                                name="product_type[]"
-                                                value="cleanser"
-                                                type="checkbox"
-                                                class="custom-checkbox peer"
-                                            >
-                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
-                                            <span class="text-grey peer-checked:text-black text-base font-normal">Cleanser</span>
-                                        </label>
-                                        <!-- Toner -->
-                                        <label for="toner" class="flex items-center gap-12 cursor-pointer group">
-                                            <input
-                                                id="toner"
-                                                name="product_type[]"
-                                                value="toner"
-                                                type="checkbox"
-                                                class="custom-checkbox peer"
-                                            >
-                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
-                                            <span class="text-grey peer-checked:text-black text-base font-normal">Toner</span>
-                                        </label>
-                                        <!-- Moisturizer -->
-                                        <label for="moisturizer" class="flex items-center gap-12 cursor-pointer">
-                                            <input
-                                                id="moisturizer"
-                                                name="product_type[]"
-                                                value="moisturizer"
-                                                type="checkbox"
-                                                class="custom-checkbox peer"
-                                            >
-                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
-                                            <span class="text-grey peer-checked:text-black text-base font-normal">Moisturizer</span>
-                                        </label>
-                                        <!-- Sunscreen -->
-                                        <label for="sunscreen" class="flex items-center gap-12 cursor-pointer">
-                                            <input
-                                                id="sunscreen"
-                                                name="product_type[]"
-                                                value="sunscreen"
-                                                type="checkbox"
-                                                class="custom-checkbox peer"
-                                            >
-                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
-                                            <span class="text-grey peer-checked:text-black text-base font-normal">Sunscreen</span>
-                                        </label>
-                                        <!-- Serum -->
-                                        <label for="serum" class="flex items-center gap-12 cursor-pointer">
-                                            <input
-                                                id="serum"
-                                                name="product_type[]"
-                                                value="serum"
-                                                type="checkbox"
-                                                class="custom-checkbox peer"
-                                            >
-                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
-                                            <span class="text-grey peer-checked:text-black text-base font-normal">Serum</span>
-                                        </label>
-                                        <!-- Exfoliator -->
-                                        <label for="exfoliator" class="flex items-center gap-12 cursor-pointer">
-                                            <input
-                                                id="exfoliator"
-                                                name="product_type[]"
-                                                value="exfoliator"
-                                                type="checkbox"
-                                                class="custom-checkbox peer"
-                                            >
-                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
-                                            <span class="text-grey peer-checked:text-black text-base font-normal">Exfoliator</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <!-- Price -->
-                                <div class="w-full lg:max-w-sm space-y-16">
-                                    <h3 class="accordion-titles  text-t_20 font-normal mb-8 flex justify-between items-center">Price:
-                                        <img src="./assets/images/rightarrow.svg" alt="" class="rightarrow w-18 transition-all duration-300 lg:hidden">
-                                    </h3>
-                                    <div class="accordion-contents  items-center gap-16 hidden lg:flex">
-                                        <!-- Min Input -->
-                                        <div class="relative w-fit px-24 py-12 border-2 border-solid border-grey flex justify-center items-center gap-10">
-                                            <span class="text-gray-600">₹</span>
-                                            <input
-                                                id="minInput"
-                                                name="min_price"
-                                                type="number"
-                                                value="0"
-                                                class="w-full focus:outline-none"
-                                            >
-                                        </div>
-                                        <span class="text-base">to</span>
-                                        <!-- Max Input -->
-                                        <div class="relative w-fit px-24 py-12 border-2 border-solid border-grey flex justify-center items-center gap-10">
-                                            <span class="text-gray-600">₹</span>
-                                            <input
-                                                id="maxInput"
-                                                name="max_price"
-                                                type="number"
-                                                value="786"
-                                                class="w-full focus:outline-none"
-                                            >
-                                        </div>
-                                    </div>
-                                    <!-- Range Slider -->
-                                    <div class="relative h-6 mt-4 max-w-sm lg:w-auto">
-                                        <input
-                                            id="minRange"
-                                            name="min_range"
-                                            type="range"
-                                            aria-label="Minimum range value"
-                                            min="0"
-                                            max="786"
-                                            value="0"
-                                            class="absolute inset-0 w-full appearance-none bg-transparent pointer-events-auto"
-                                        >
-                                        <input
-                                            id="maxRange"
-                                            name="max_range"
-                                            type="range"
-                                            aria-label="Maximum range value"
-                                            min="0"
-                                            max="786"
-                                            value="786"
-                                            class="absolute inset-0 w-full appearance-none bg-transparent pointer-events-auto"
-                                        >
-                                        <div class="absolute top-1/2 -translate-y-1/2 w-full h-1 bg-gray-300 rounded-full -z-20"></div>
-                                        <div id="activeTrack" class="absolute top-1/2 -translate-y-1/2 h-2 bg-black rounded-full"></div>
-                                    </div>
-                                </div>
-                                <!-- Skin Type -->
-                                <div>
-                                    <h3 class="accordion-titles text-t_20 font-normal mb-16 flex justify-between items-center">Skin Type:
-                                        <img src="./assets/images/rightarrow.svg" alt="" class="rightarrow w-18 transition-all duration-300 lg:hidden">
-                                    </h3>
-                                    <div class="accordion-contents space-y-12 hidden lg:block">
-                                        <label for="oily" class="flex items-center gap-12 cursor-pointer group">
-                                            <input
-                                                id="oily"
-                                                name="skin_type[]"
-                                                value="oily"
-                                                type="checkbox"
-                                                class="custom-checkbox peer"
-                                            >
-                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
-                                            <span class="text-grey peer-checked:text-black text-base font-normal">Oily</span>
-                                        </label>
-                                        <label for="dry" class="flex items-center gap-12 cursor-pointer group">
-                                            <input
-                                                id="dry"
-                                                name="skin_type[]"
-                                                value="dry"
-                                                type="checkbox"
-                                                class="custom-checkbox peer"
-                                            >
-                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
-                                            <span class="text-grey peer-checked:text-black text-base font-normal">Dry</span>
-                                        </label>
-                                        <label for="combination" class="flex items-center gap-12 cursor-pointer">
-                                            <input
-                                                id="combination"
-                                                name="skin_type[]"
-                                                value="combination"
-                                                type="checkbox"
-                                                class="custom-checkbox peer"
-                                            >
-                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
-                                            <span class="text-grey peer-checked:text-black text-base font-normal">Combination</span>
-                                        </label>
-                                        <label for="sensitive" class="flex items-center gap-12 cursor-pointer">
-                                            <input
-                                                id="sensitive"
-                                                name="skin_type[]"
-                                                value="sensitive"
-                                                type="checkbox"
-                                                class="custom-checkbox peer"
-                                            >
-                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
-                                            <span class="text-grey peer-checked:text-black text-base font-normal">Sensitive</span>
-                                        </label>
-                                        <label for="normal" class="flex items-center gap-12 cursor-pointer">
-                                            <input
-                                                id="normal"
-                                                name="skin_type[]"
-                                                value="normal"
-                                                type="checkbox"
-                                                class="custom-checkbox peer"
-                                            >
-                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
-                                            <span class="text-grey peer-checked:text-black text-base font-normal">Normal</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <!-- Concern -->
-                                <div>
-                                    <h3 class="accordion-titles flex justify-between items-center text-t_20 font-normal mb-16">Concern:
-                                        <img src="./assets/images/rightarrow.svg" alt="" class="rightarrow w-18 transition-all duration-300 lg:hidden">
-                                    </h3>
-                                    <div class="accordion-contents space-y-12 hidden lg:block">
-                                        <label for="acne" class="flex items-center gap-12 cursor-pointer group">
-                                            <input
-                                                id="acne"
-                                                name="concern[]"
-                                                value="acne"
-                                                type="checkbox"
-                                                class="custom-checkbox peer"
-                                            >
-                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
-                                            <span class="text-grey peer-checked:text-black text-base font-normal">Acne & Pimples</span>
-                                        </label>
-                                        <label for="antiaging" class="flex items-center gap-12 cursor-pointer group">
-                                            <input
-                                                id="antiaging"
-                                                name="concern[]"
-                                                value="antiaging"
-                                                type="checkbox"
-                                                class="custom-checkbox peer"
-                                            >
-                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
-                                            <span class="text-grey peer-checked:text-black text-base font-normal">Anti-Aging / Wrinkles</span>
-                                        </label>
-                                        <label for="hydration" class="flex items-center gap-12 cursor-pointer">
-                                            <input
-                                                id="hydration"
-                                                name="concern[]"
-                                                value="hydration"
-                                                type="checkbox"
-                                                class="custom-checkbox peer"
-                                            >
-                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
-                                            <span class="text-grey peer-checked:text-black text-base font-normal">Hydration / Dryness</span>
-                                        </label>
-                                        <label for="pigmentation" class="flex items-center gap-12 cursor-pointer">
-                                            <input
-                                                id="pigmentation"
-                                                name="concern[]"
-                                                value="pigmentation"
-                                                type="checkbox"
-                                                class="custom-checkbox peer"
-                                            >
-                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
-                                            <span class="text-grey peer-checked:text-black text-base font-normal">Pigmentation / Dark Spots</span>
-                                        </label>
-                                        <label for="circles" class="flex items-center gap-12 cursor-pointer">
-                                            <input
-                                                id="circles"
-                                                name="concern[]"
-                                                value="circles"
-                                                type="checkbox"
-                                                class="custom-checkbox peer"
-                                            >
-                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
-                                            <span class="text-grey peer-checked:text-black text-base font-normal">Dark Circles</span>
-                                        </label>
-                                        <label for="sun_protection" class="flex items-center gap-12 cursor-pointer">
-                                            <input
-                                                id="sun_protection"
-                                                name="concern[]"
-                                                value="sun_protection"
-                                                type="checkbox"
-                                                class="custom-checkbox peer"
-                                            >
-                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
-                                            <span class="text-grey peer-checked:text-black text-base font-normal">Sun Protection</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <!-- Discount -->
-                                <div>
-                                    <h3 class="accordion-titles flex justify-between items-center text-t_20 font-normal mb-16">Discount:
-                                        <img src="./assets/images/rightarrow.svg" alt="" class="rightarrow w-18 transition-all duration-300 lg:hidden">
-                                    </h3>
-                                    <div class="accordion-contents space-y-12 hidden lg:block">
-                                        <label for="discount10" class="flex items-center gap-12 cursor-pointer group">
-                                            <input
-                                                id="discount10"
-                                                name="discount[]"
-                                                value="10"
-                                                type="checkbox"
-                                                class="custom-checkbox peer"
-                                            >
-                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
-                                            <span class="text-grey peer-checked:text-black text-base font-normal">10% Off or More</span>
-                                        </label>
-                                        <label for="discount25" class="flex items-center gap-12 cursor-pointer group">
-                                            <input
-                                                id="discount25"
-                                                name="discount[]"
-                                                value="25"
-                                                type="checkbox"
-                                                class="custom-checkbox peer"
-                                            >
-                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
-                                            <span class="text-grey peer-checked:text-black text-base font-normal">25% Off or More</span>
-                                        </label>
-                                        <label for="discount50" class="flex items-center gap-12 cursor-pointer">
-                                            <input
-                                                id="discount50"
-                                                name="discount[]"
-                                                value="50"
-                                                type="checkbox"
-                                                class="custom-checkbox peer"
-                                            >
-                                            <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
-                                            <span class="text-grey peer-checked:text-black text-base font-normal">50% Off or More</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <!-- CLEAR & APPLY -->
-                                <div class="flex items-center justify-between lg:hidden mb-24">
-                                    <button id="filterClearBtn" class="btn-dark bg-transparent border border-grey1 text-button-bg">Clear</button>
-                                    <button id="filterApplyBtn" class="btn-dark">
-                                        Apply
+                                <div
+                                    id="mobileFilterPanel"
+                                    class="lg:w-3/12 pt-100 lg:pt-28 pb-28 px-28 space-y-32 bg-grey_light shadow-sm 
+            fixed lg:sticky top-140 left-0 w-full h-screen lg:h-full overflow-y-auto lg:overflow-y-hidden
+            translate-x-full lg:translate-x-0 transition-transform duration-300 z-200 lg:z-10"
+                                    role="complementary"
+                                    aria-label="Product filters sidebar"
+                                >
+                                    <!-- Close Button -->
+                                    <button id="filterCloseBtn" class="lg:hidden absolute top-32 right-32 z-50">
+                                        <img src="./assets/images/close-icon.svg" alt="Close filter" class="w-24 h-24">
                                     </button>
-                                </div>
-                            </div>
-                            <div class="lg:w-3/4">
-                                <div class="product-block grid grid-cols-1 sm:grid-cols-2 1xl:grid-cols-3 gap-32">
-                                    <!-- item1 -->
-                                    <div class="product-item" data-category="cream">
-                                        <a
-                                            href="/product_detail.html"
-                                            class="group flex flex-col gap-24"
-                                            aria-label="View product: Scalp Moisturizing Cream"
-                                            role="link"
-                                        >
-                                            <!-- Product Image -->
-                                            <div class="relative overflow-hidden" role="img" aria-label="CalmGel™ Anti-Acne Gel Moisturizer image">
-                                                <img src="./assets/images/antiacnecream.webp" alt="CalmGel™ Anti-Acne Gel Moisturizer" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
-                                                
-                                                <!-- Action Buttons -->
-                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark1 flex justify-center items-center gap-12">
-                                                       <span> Add To Cart</span>
-                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
-                                                    </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
-                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
-                                                    </button>
-                                                   
-                                                </div>
+                                    <!-- Sort By -->
+                                    <!-- <div>
+                                        <label for="sortBy" class="block text-t_20 font-normal mb-16">Sort By:</label>
+                                        <div class="relative w-fit">
+                                            <select id="sortBy" name="sortBy" class="w-ful border border-solid border-grey px-24 py-12 appearance-none font-normal">
+                                                <option value="popular">Popular</option>
+                                                <option value="low-high">Price: Low to High</option>
+                                                <option value="high-low">Price: High to Low</option>
+                                                <option value="newest">Newest First</option>
+                                            </select>
+                                            <span class="absolute right-24 top-1/2 -translate-y-1/2 text-gray-500">▼</span>
+                                        </div>
+                                    </div> -->
+                                    <!-- Product Type -->
+                                    <div>
+                                        <h3 class="accordion-titles  text-t_20 font-normal mb-16 flex justify-between items-center">Product Type:
+                                            <img src="./assets/images/rightarrow.svg" alt="" class="rightarrow w-18 transition-all duration-300 lg:hidden">
+                                        </h3>
+                                        <div class="accordion-contents space-y-12 hidden lg:block">
+                                            <!-- Cleanser -->
+                                            <label for="cleanser" class="flex items-center gap-12 cursor-pointer group">
+                                                <input
+                                                    id="cleanser"
+                                                    name="product_type[]"
+                                                    value="cleanser"
+                                                    type="checkbox"
+                                                    class="custom-checkbox peer"
+                                                >
+                                                <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                                <span class="text-grey peer-checked:text-black text-base font-normal">Cleanser</span>
+                                            </label>
+                                            <!-- Toner -->
+                                            <label for="toner" class="flex items-center gap-12 cursor-pointer group">
+                                                <input
+                                                    id="toner"
+                                                    name="product_type[]"
+                                                    value="toner"
+                                                    type="checkbox"
+                                                    class="custom-checkbox peer"
+                                                >
+                                                <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                                <span class="text-grey peer-checked:text-black text-base font-normal">Toner</span>
+                                            </label>
+                                            <!-- Moisturizer -->
+                                            <label for="moisturizer" class="flex items-center gap-12 cursor-pointer">
+                                                <input
+                                                    id="moisturizer"
+                                                    name="product_type[]"
+                                                    value="moisturizer"
+                                                    type="checkbox"
+                                                    class="custom-checkbox peer"
+                                                >
+                                                <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                                <span class="text-grey peer-checked:text-black text-base font-normal">Moisturizer</span>
+                                            </label>
+                                            <!-- Sunscreen -->
+                                            <label for="sunscreen" class="flex items-center gap-12 cursor-pointer">
+                                                <input
+                                                    id="sunscreen"
+                                                    name="product_type[]"
+                                                    value="sunscreen"
+                                                    type="checkbox"
+                                                    class="custom-checkbox peer"
+                                                >
+                                                <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                                <span class="text-grey peer-checked:text-black text-base font-normal">Sunscreen</span>
+                                            </label>
+                                            <!-- Serum -->
+                                            <label for="serum" class="flex items-center gap-12 cursor-pointer">
+                                                <input
+                                                    id="serum"
+                                                    name="product_type[]"
+                                                    value="serum"
+                                                    type="checkbox"
+                                                    class="custom-checkbox peer"
+                                                >
+                                                <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                                <span class="text-grey peer-checked:text-black text-base font-normal">Serum</span>
+                                            </label>
+                                            <!-- Exfoliator -->
+                                            <label for="exfoliator" class="flex items-center gap-12 cursor-pointer">
+                                                <input
+                                                    id="exfoliator"
+                                                    name="product_type[]"
+                                                    value="exfoliator"
+                                                    type="checkbox"
+                                                    class="custom-checkbox peer"
+                                                >
+                                                <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                                <span class="text-grey peer-checked:text-black text-base font-normal">Exfoliator</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- Price -->
+                                    <div class="w-full lg:max-w-sm space-y-16">
+                                        <h3 class="accordion-titles  text-t_20 font-normal mb-8 flex justify-between items-center">Price:
+                                            <img src="./assets/images/rightarrow.svg" alt="" class="rightarrow w-18 transition-all duration-300 lg:hidden">
+                                        </h3>
+                                        <div class="accordion-contents  items-center gap-16 hidden lg:flex">
+                                            <!-- Min Input -->
+                                            <div class="relative w-fit px-24 py-12 border-2 border-solid border-grey flex justify-center items-center gap-10">
+                                                <span class="text-gray-600">₹</span>
+                                                <input
+                                                    id="minInput"
+                                                    name="min_price"
+                                                    type="number"
+                                                    value="0"
+                                                    class="w-full focus:outline-none"
+                                                >
                                             </div>
-                                            <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
-                                                 <span class="text-body">Rs 799.00</span>
-                                                <span class="text-t_20">CalmGel™ Anti-Acne Gel Moisturizer</span>
-                                            
-                                            <div class="text-grey text-body">
-                                                <ul>
-                                                    <li>Acne-prone • Combination • Sensitive</li>
-                                                </ul>
+                                            <span class="text-base">to</span>
+                                            <!-- Max Input -->
+                                            <div class="relative w-fit px-24 py-12 border-2 border-solid border-grey flex justify-center items-center gap-10">
+                                                <span class="text-gray-600">₹</span>
+                                                <input
+                                                    id="maxInput"
+                                                    name="max_price"
+                                                    type="number"
+                                                    value="786"
+                                                    class="w-full focus:outline-none"
+                                                >
                                             </div>
                                         </div>
-                                        </a>
+                                        <!-- Range Slider -->
+                                        <div class="relative h-6 mt-4 max-w-sm lg:w-auto">
+                                            <input
+                                                id="minRange"
+                                                name="min_range"
+                                                type="range"
+                                                aria-label="Minimum range value"
+                                                min="0"
+                                                max="786"
+                                                value="0"
+                                                class="absolute inset-0 w-full appearance-none bg-transparent pointer-events-auto"
+                                            >
+                                            <input
+                                                id="maxRange"
+                                                name="max_range"
+                                                type="range"
+                                                aria-label="Maximum range value"
+                                                min="0"
+                                                max="786"
+                                                value="786"
+                                                class="absolute inset-0 w-full appearance-none bg-transparent pointer-events-auto"
+                                            >
+                                            <div class="absolute top-1/2 -translate-y-1/2 w-full h-1 bg-gray-300 rounded-full -z-20"></div>
+                                            <div id="activeTrack" class="absolute top-1/2 -translate-y-1/2 h-2 bg-black rounded-full"></div>
+                                        </div>
                                     </div>
-                                    <!-- item2 -->
-                                    <div class="product-item" data-category="facewash">
-                                        <a
-                                            href="/product_detail-facewash.html"
-                                            class="group flex flex-col gap-24"
-                                            aria-label="View product: Scalp Moisturizing Cream"
-                                            role="link"
-                                        >
-                                            <!-- Product Image -->
-                                            <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
-                                                <img src="./assets/images/cleargel-facewash.png" alt="ClearGel™ Anti-Acne Facewash" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                    <!-- Skin Type -->
+                                    <div>
+                                        <h3 class="accordion-titles text-t_20 font-normal mb-16 flex justify-between items-center">Skin Type:
+                                            <img src="./assets/images/rightarrow.svg" alt="" class="rightarrow w-18 transition-all duration-300 lg:hidden">
+                                        </h3>
+                                        <div class="accordion-contents space-y-12 hidden lg:block">
+                                            <label for="oily" class="flex items-center gap-12 cursor-pointer group">
+                                                <input
+                                                    id="oily"
+                                                    name="skin_type[]"
+                                                    value="oily"
+                                                    type="checkbox"
+                                                    class="custom-checkbox peer"
+                                                >
+                                                <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                                <span class="text-grey peer-checked:text-black text-base font-normal">Oily</span>
+                                            </label>
+                                            <label for="dry" class="flex items-center gap-12 cursor-pointer group">
+                                                <input
+                                                    id="dry"
+                                                    name="skin_type[]"
+                                                    value="dry"
+                                                    type="checkbox"
+                                                    class="custom-checkbox peer"
+                                                >
+                                                <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                                <span class="text-grey peer-checked:text-black text-base font-normal">Dry</span>
+                                            </label>
+                                            <label for="combination" class="flex items-center gap-12 cursor-pointer">
+                                                <input
+                                                    id="combination"
+                                                    name="skin_type[]"
+                                                    value="combination"
+                                                    type="checkbox"
+                                                    class="custom-checkbox peer"
+                                                >
+                                                <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                                <span class="text-grey peer-checked:text-black text-base font-normal">Combination</span>
+                                            </label>
+                                            <label for="sensitive" class="flex items-center gap-12 cursor-pointer">
+                                                <input
+                                                    id="sensitive"
+                                                    name="skin_type[]"
+                                                    value="sensitive"
+                                                    type="checkbox"
+                                                    class="custom-checkbox peer"
+                                                >
+                                                <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                                <span class="text-grey peer-checked:text-black text-base font-normal">Sensitive</span>
+                                            </label>
+                                            <label for="normal" class="flex items-center gap-12 cursor-pointer">
+                                                <input
+                                                    id="normal"
+                                                    name="skin_type[]"
+                                                    value="normal"
+                                                    type="checkbox"
+                                                    class="custom-checkbox peer"
+                                                >
+                                                <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                                <span class="text-grey peer-checked:text-black text-base font-normal">Normal</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- Concern -->
+                                    <div>
+                                        <h3 class="accordion-titles flex justify-between items-center text-t_20 font-normal mb-16">Concern:
+                                            <img src="./assets/images/rightarrow.svg" alt="" class="rightarrow w-18 transition-all duration-300 lg:hidden">
+                                        </h3>
+                                        <div class="accordion-contents space-y-12 hidden lg:block">
+                                            <label for="acne" class="flex items-center gap-12 cursor-pointer group">
+                                                <input
+                                                    id="acne"
+                                                    name="concern[]"
+                                                    value="acne"
+                                                    type="checkbox"
+                                                    class="custom-checkbox peer"
+                                                >
+                                                <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                                <span class="text-grey peer-checked:text-black text-base font-normal">Acne & Pimples</span>
+                                            </label>
+                                            <label for="antiaging" class="flex items-center gap-12 cursor-pointer group">
+                                                <input
+                                                    id="antiaging"
+                                                    name="concern[]"
+                                                    value="antiaging"
+                                                    type="checkbox"
+                                                    class="custom-checkbox peer"
+                                                >
+                                                <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                                <span class="text-grey peer-checked:text-black text-base font-normal">Anti-Aging / Wrinkles</span>
+                                            </label>
+                                            <label for="hydration" class="flex items-center gap-12 cursor-pointer">
+                                                <input
+                                                    id="hydration"
+                                                    name="concern[]"
+                                                    value="hydration"
+                                                    type="checkbox"
+                                                    class="custom-checkbox peer"
+                                                >
+                                                <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                                <span class="text-grey peer-checked:text-black text-base font-normal">Hydration / Dryness</span>
+                                            </label>
+                                            <label for="pigmentation" class="flex items-center gap-12 cursor-pointer">
+                                                <input
+                                                    id="pigmentation"
+                                                    name="concern[]"
+                                                    value="pigmentation"
+                                                    type="checkbox"
+                                                    class="custom-checkbox peer"
+                                                >
+                                                <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                                <span class="text-grey peer-checked:text-black text-base font-normal">Pigmentation / Dark Spots</span>
+                                            </label>
+                                            <label for="circles" class="flex items-center gap-12 cursor-pointer">
+                                                <input
+                                                    id="circles"
+                                                    name="concern[]"
+                                                    value="circles"
+                                                    type="checkbox"
+                                                    class="custom-checkbox peer"
+                                                >
+                                                <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                                <span class="text-grey peer-checked:text-black text-base font-normal">Dark Circles</span>
+                                            </label>
+                                            <label for="sun_protection" class="flex items-center gap-12 cursor-pointer">
+                                                <input
+                                                    id="sun_protection"
+                                                    name="concern[]"
+                                                    value="sun_protection"
+                                                    type="checkbox"
+                                                    class="custom-checkbox peer"
+                                                >
+                                                <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                                <span class="text-grey peer-checked:text-black text-base font-normal">Sun Protection</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- Discount -->
+                                    <div>
+                                        <h3 class="accordion-titles flex justify-between items-center text-t_20 font-normal mb-16">Discount:
+                                            <img src="./assets/images/rightarrow.svg" alt="" class="rightarrow w-18 transition-all duration-300 lg:hidden">
+                                        </h3>
+                                        <div class="accordion-contents space-y-12 hidden lg:block">
+                                            <label for="discount10" class="flex items-center gap-12 cursor-pointer group">
+                                                <input
+                                                    id="discount10"
+                                                    name="discount[]"
+                                                    value="10"
+                                                    type="checkbox"
+                                                    class="custom-checkbox peer"
+                                                >
+                                                <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                                <span class="text-grey peer-checked:text-black text-base font-normal">10% Off or More</span>
+                                            </label>
+                                            <label for="discount25" class="flex items-center gap-12 cursor-pointer group">
+                                                <input
+                                                    id="discount25"
+                                                    name="discount[]"
+                                                    value="25"
+                                                    type="checkbox"
+                                                    class="custom-checkbox peer"
+                                                >
+                                                <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                                <span class="text-grey peer-checked:text-black text-base font-normal">25% Off or More</span>
+                                            </label>
+                                            <label for="discount50" class="flex items-center gap-12 cursor-pointer">
+                                                <input
+                                                    id="discount50"
+                                                    name="discount[]"
+                                                    value="50"
+                                                    type="checkbox"
+                                                    class="custom-checkbox peer"
+                                                >
+                                                <span class="checkbox-box peer-checked:bg-black peer-checked:border-black">✓</span>
+                                                <span class="text-grey peer-checked:text-black text-base font-normal">50% Off or More</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- CLEAR & APPLY -->
+                                    <div class="flex items-center justify-between lg:hidden mb-24">
+                                        <button id="filterClearBtn" class="btn-dark bg-transparent border border-grey1 text-button-bg">Clear</button>
+                                        <button id="filterApplyBtn" class="btn-dark">
+                                            Apply
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="lg:w-3/4">
+                                    <div class="product-block grid grid-cols-1 sm:grid-cols-2 1xl:grid-cols-3 gap-32">
+                                        <!-- item1 -->
+                                        <div class="product-item" data-category="cream">
+                                            <a
+                                                href="/product_detail.html"
+                                                class="group flex flex-col gap-24"
+                                                aria-label="View product: Scalp Moisturizing Cream"
+                                                role="link"
+                                            >
+                                                <!-- Product Image -->
+                                                <div class="relative overflow-hidden" role="img" aria-label="CalmGel™ Anti-Acne Gel Moisturizer image">
+                                                    <img src="./assets/images/antiacnecream.webp" alt="CalmGel™ Anti-Acne Gel Moisturizer" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                    
+                                                    <!-- Action Buttons -->
+                                                    <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                        <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark1 flex justify-center items-center gap-12">
+                                                        <span> Add To Cart</span>
+                                                            <img src="./assets/images/cart-white.svg" alt="Cart icon">
+                                                        </button>
+                                                        <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                            <img src="./assets/images/heart.svg" alt="Wishlist icon">
+                                                        </button>
+                                                    
+                                                    </div>
+                                                </div>
+                                                <!-- Product Info -->
+                                                <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
+                                                    <span class="text-body">Rs 799.00</span>
+                                                    <span class="text-t_20">CalmGel™ Anti-Acne Gel Moisturizer</span>
+                                                
+                                                <div class="text-grey text-body">
+                                                    <ul>
+                                                        <li>Acne-prone • Combination • Sensitive</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <!-- item2 -->
+                                        <div class="product-item" data-category="facewash">
+                                            <a
+                                                href="/product_detail-facewash.html"
+                                                class="group flex flex-col gap-24"
+                                                aria-label="View product: Scalp Moisturizing Cream"
+                                                role="link"
+                                            >
+                                                <!-- Product Image -->
+                                                <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
+                                                    <img src="./assets/images/cleargel-facewash.png" alt="ClearGel™ Anti-Acne Facewash" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                    
+                                                    <!-- Action Buttons -->
+                                                    <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                        <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark1 flex justify-center items-center gap-12">
+                                                            <span> Add To Cart</span>
+                                                            <img src="./assets/images/cart-white.svg" alt="Cart icon">
+                                                        </button>
+                                                        <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                            <img src="./assets/images/heart.svg" alt="Wishlist icon">
+                                                        </button>
+                                                    
+                                                    </div>
+                                                </div>
+                                                <!-- Product Info -->
+                                                <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
+                                                    <span class="text-body">Rs 399.00</span>
+                                                    <span class="text-t_20">ClearGel™ Anti-Acne Facewash</span>
+                                                
+                                                    <div class="text-grey text-body">
+                                                        <ul>
+                                                            <li>Acne-prone • Combination • Sensitive</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- item3 -->
+                                        <div class="product-item" data-category="serum">
+                                            <a
+                                                href="/product_detail-serum.html"
+                                                class="group flex flex-col gap-24"
+                                                aria-label="View product: Scalp Moisturizing Cream"
+                                                role="link"
+                                            >
+                                                <!-- Product Image -->
+                                                <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
+                                                    <img src="./assets/images/spot-correctorserum.png" alt="SpotCorrect – Advanced Brightening Serum" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                
+                                                    <!-- Action Buttons -->
+                                                    <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                        <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark1 flex justify-center items-center gap-12">
+                                                        <span> Add To Cart</span>
+                                                            <img src="./assets/images/cart-white.svg" alt="Cart icon">
+                                                        </button>
+                                                        <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                            <img src="./assets/images/heart.svg" alt="Wishlist icon">
+                                                        </button>
+                                                    
+                                                    </div>
+                                                </div>
+                                                <!-- Product Info -->
+                                                <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
+                                                    <span class="text-body">Rs 1099.00</span>
+                                                    <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
+                                                
+                                                    <div class="text-grey text-body">
+                                                        <ul>
+                                                            <li>Acne-prone • Combination • Sensitive</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- item4 -->
+                                        <div class="product-item" data-category="combo-duo">
+                                            <a
+                                                href="#"
+                                                class="group flex flex-col gap-24"
+                                                aria-label="View product: SpotCorrect™ – Advanced Brightening Serum duo combo"
+                                                role="link"
+                                            >
+                                                <!-- Product Image -->
+                                                <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
+                                                    <img src="./assets/images/combo-serummoisturizer.png" alt="combo-serum moisturizer" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
                                                 
                                                 <!-- Action Buttons -->
-                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark1 flex justify-center items-center gap-12">
+                                                    <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                        <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark1 flex justify-center items-center gap-12">
                                                         <span> Add To Cart</span>
-                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
-                                                    </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
-                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
-                                                    </button>
-                                                   
+                                                            <img src="./assets/images/cart-white.svg" alt="Cart icon">
+                                                        </button>
+                                                        <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                            <img src="./assets/images/heart.svg" alt="Wishlist icon">
+                                                        </button>
+                                                    
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
-                                                 <span class="text-body">Rs 399.00</span>
-                                                <span class="text-t_20">ClearGel™ Anti-Acne Facewash</span>
-                                            
-                                                <div class="text-grey text-body">
-                                                    <ul>
-                                                        <li>Acne-prone • Combination • Sensitive</li>
-                                                    </ul>
+                                                <!-- Product Info -->
+                                                <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
+                                                    <span class="text-body">Rs 1099.00</span>
+                                                    <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
+                                                
+                                                    <div class="text-grey text-body">
+                                                        <ul>
+                                                            <li>Acne-prone • Combination • Sensitive/li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <!-- item3 -->
-                                    <div class="product-item" data-category="serum">
-                                        <a
-                                            href="/product_detail-serum.html"
-                                            class="group flex flex-col gap-24"
-                                            aria-label="View product: Scalp Moisturizing Cream"
-                                            role="link"
-                                        >
-                                            <!-- Product Image -->
-                                            <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
-                                                <img src="./assets/images/spot-correctorserum.png" alt="SpotCorrect – Advanced Brightening Serum" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
-                                              
-                                                <!-- Action Buttons -->
-                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark1 flex justify-center items-center gap-12">
-                                                       <span> Add To Cart</span>
-                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
-                                                    </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
-                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
-                                                    </button>
-                                                   
+                                            </a>
+                                        </div>
+                                        <!-- item5 -->
+                                        <div class="product-item" data-category="combo-duo">
+                                            <a
+                                                href="#"
+                                                class="group flex flex-col gap-24"
+                                                aria-label="View product: Duo combo of serum and clear gel facewash"
+                                                role="link"
+                                            >
+                                                <!-- Product Image -->
+                                                <div class="relative overflow-hidden" role="img" aria-label="Duo combo of serum and clear gel facewash image">
+                                                    <img src="./assets/images/combo-serum-facewash.png" alt="Duo combo of serum and clear gel facewash" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                    <!-- Action Buttons -->
+                                                    <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                        <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark1 flex justify-center items-center gap-12">
+                                                            <span> Add To Cart</span>
+                                                            <img src="./assets/images/cart-white.svg" alt="Cart icon">
+                                                        </button>
+                                                        <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                            <img src="./assets/images/heart.svg" alt="Wishlist icon">
+                                                        </button>
+                                                    
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
-                                                 <span class="text-body">Rs 1099.00</span>
-                                                <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
-                                            
-                                                <div class="text-grey text-body">
-                                                    <ul>
-                                                        <li>Acne-prone • Combination • Sensitive</li>
-                                                    </ul>
+                                                <!-- Product Info -->
+                                                <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
+                                                    <span class="text-body">Rs 1099.00</span>
+                                                    <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
+                                                
+                                                    <div class="text-grey text-body">
+                                                        <ul>
+                                                            <li>Acne-prone • Combination • Sensitive</li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <!-- item4 -->
-                                    <div class="product-item" data-category="combo-duo">
-                                        <a
-                                            href="#"
-                                            class="group flex flex-col gap-24"
-                                            aria-label="View product: SpotCorrect™ – Advanced Brightening Serum duo combo"
-                                            role="link"
-                                        >
-                                            <!-- Product Image -->
-                                            <div class="relative overflow-hidden" role="img" aria-label="Scalp Moisturizing Cream image">
-                                                <img src="./assets/images/combo-serummoisturizer.png" alt="combo-serum moisturizer" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
-                                              
-                                               <!-- Action Buttons -->
-                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark1 flex justify-center items-center gap-12">
-                                                       <span> Add To Cart</span>
-                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
-                                                    </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
-                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
-                                                    </button>
-                                                   
+                                            </a>
+                                        </div>
+                                        <!-- item6 -->
+                                        <div class="product-item" data-category="combo-duo">
+                                            <a
+                                                href="#"
+                                                class="group flex flex-col gap-24"
+                                                aria-label="View product: SpotCorrect™ – Advanced Brightening Serum"
+                                                role="link"
+                                            >
+                                                <!-- Product Image -->
+                                                <div class="relative overflow-hidden" role="img" aria-label="CalmGel™ Anti-Acne Gel Moisturizer with facewash image">
+                                                    <img src="./assets/images/combo-moisturizer-facewash.png" alt="CalmGel™ Anti-Acne Gel Moisturizer duo combo with clear gel facewash" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                    <!-- Action Buttons -->
+                                                    <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                        <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark1 flex justify-center items-center gap-12">
+                                                            <span> Add To Cart</span>
+                                                            <img src="./assets/images/cart-white.svg" alt="Cart icon">
+                                                        </button>
+                                                        <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                            <img src="./assets/images/heart.svg" alt="Wishlist icon">
+                                                        </button>
+                                                    
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
-                                                 <span class="text-body">Rs 1099.00</span>
-                                                <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
-                                            
-                                                <div class="text-grey text-body">
-                                                    <ul>
-                                                        <li>Acne-prone • Combination • Sensitive/li>
-                                                    </ul>
+                                                <!-- Product Info -->
+                                                <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
+                                                    <span class="text-body">Rs 1099.00</span>
+                                                    <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
+                                                
+                                                    <div class="text-grey text-body">
+                                                        <ul>
+                                                            <li>Acne-prone • Combination • Sensitive</li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <!-- item5 -->
-                                    <div class="product-item" data-category="combo-duo">
-                                        <a
-                                            href="#"
-                                            class="group flex flex-col gap-24"
-                                            aria-label="View product: Duo combo of serum and clear gel facewash"
-                                            role="link"
-                                        >
-                                            <!-- Product Image -->
-                                            <div class="relative overflow-hidden" role="img" aria-label="Duo combo of serum and clear gel facewash image">
-                                                <img src="./assets/images/combo-serum-facewash.png" alt="Duo combo of serum and clear gel facewash" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
-                                                <!-- Action Buttons -->
-                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark1 flex justify-center items-center gap-12">
-                                                        <span> Add To Cart</span>
-                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
-                                                    </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
-                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
-                                                    </button>
-                                                   
+                                            </a>
+                                        </div>
+                                        <!-- item7 -->
+                                        <div class="product-item" data-category="combo-duo">
+                                            <a
+                                                href="#"
+                                                class="group flex flex-col gap-24"
+                                                aria-label="View product: combo-moisturizer-serum"
+                                                role="link"
+                                            >
+                                                <!-- Product Image -->
+                                                <div class="relative overflow-hidden" role="img" aria-label="combo-moisturizer-serum">
+                                                    <img src="./assets/images/combo-moisturizer-serum2.png" alt="Scalp Moisturizing Cream powerful duo for skin care" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                    <!-- Action Buttons -->
+                                                    <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                        <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark1 flex justify-center items-center gap-12">
+                                                            <span> Add To Cart</span>
+                                                            <img src="./assets/images/cart-white.svg" alt="Cart icon">
+                                                        </button>
+                                                        <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                            <img src="./assets/images/heart.svg" alt="Wishlist icon">
+                                                        </button>
+                                                    
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
-                                                 <span class="text-body">Rs 1099.00</span>
-                                                <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
-                                            
-                                                <div class="text-grey text-body">
-                                                    <ul>
-                                                        <li>Acne-prone • Combination • Sensitive</li>
-                                                    </ul>
+                                                <!-- Product Info -->
+                                                <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
+                                                    <span class="text-body">Rs 1099.00</span>
+                                                    <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
+                                                
+                                                    <div class="text-grey text-body">
+                                                        <ul>
+                                                            <li>Acne-prone • Combination • Sensitive</li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <!-- item6 -->
-                                    <div class="product-item" data-category="combo-duo">
-                                        <a
-                                            href="#"
-                                            class="group flex flex-col gap-24"
-                                            aria-label="View product: SpotCorrect™ – Advanced Brightening Serum"
-                                            role="link"
-                                        >
-                                            <!-- Product Image -->
-                                            <div class="relative overflow-hidden" role="img" aria-label="CalmGel™ Anti-Acne Gel Moisturizer with facewash image">
-                                                <img src="./assets/images/combo-moisturizer-facewash.png" alt="CalmGel™ Anti-Acne Gel Moisturizer duo combo with clear gel facewash" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
-                                                <!-- Action Buttons -->
-                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark1 flex justify-center items-center gap-12">
-                                                        <span> Add To Cart</span>
-                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
-                                                    </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
-                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
-                                                    </button>
-                                                   
+                                            </a>
+                                        </div>
+                                        <!-- item8 -->
+                                        <div class="product-item" data-category="combo-duo">
+                                            <a
+                                                href="#"
+                                                class="group flex flex-col gap-24"
+                                                aria-label="View product: combo-facewash-serum"
+                                                role="link"
+                                            >
+                                                <!-- Product Image -->
+                                                <div class="relative overflow-hidden" role="img" aria-label="combo-moisturizer-serum">
+                                                    <img src="./assets/images/combo-facewash-serum2.png" alt=" Moisturizing Cream powerful duo for skin care" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                    <!-- Action Buttons -->
+                                                    <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                        <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark1 flex justify-center items-center gap-12">
+                                                            <span> Add To Cart</span>
+                                                            <img src="./assets/images/cart-white.svg" alt="Cart icon">
+                                                        </button>
+                                                        <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                            <img src="./assets/images/heart.svg" alt="Wishlist icon">
+                                                        </button>
+                                                    
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
-                                                 <span class="text-body">Rs 1099.00</span>
-                                                <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
-                                            
-                                                <div class="text-grey text-body">
-                                                    <ul>
-                                                        <li>Acne-prone • Combination • Sensitive</li>
-                                                    </ul>
+                                                <!-- Product Info -->
+                                                <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
+                                                    <span class="text-body">Rs 1099.00</span>
+                                                    <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
+                                                
+                                                    <div class="text-grey text-body">
+                                                        <ul>
+                                                            <li>Acne-prone • Combination • Sensitive</li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <!-- item7 -->
-                                    <div class="product-item" data-category="combo-duo">
-                                        <a
-                                            href="#"
-                                            class="group flex flex-col gap-24"
-                                            aria-label="View product: combo-moisturizer-serum"
-                                            role="link"
-                                        >
-                                            <!-- Product Image -->
-                                            <div class="relative overflow-hidden" role="img" aria-label="combo-moisturizer-serum">
-                                                <img src="./assets/images/combo-moisturizer-serum2.png" alt="Scalp Moisturizing Cream powerful duo for skin care" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
-                                                <!-- Action Buttons -->
-                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark1 flex justify-center items-center gap-12">
-                                                        <span> Add To Cart</span>
-                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
-                                                    </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
-                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
-                                                    </button>
-                                                   
+                                            </a>
+                                        </div>
+                                        <!-- item9 -->
+                                        <div class="product-item" data-category="combo-duo">
+                                            <a
+                                                href="#"
+                                                class="group flex flex-col gap-24"
+                                                aria-label="View product: combo-moisturizer-serum"
+                                                role="link"
+                                            >
+                                                <!-- Product Image -->
+                                                <div class="relative overflow-hidden" role="img" aria-label="combo-moisturizer-facewash">
+                                                    <img src="./assets/images/combo-facewash-moisturiser2.png" alt="Scalp Moisturizing Cream powerful duo for skin care" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
+                                                    <!-- Action Buttons -->
+                                                    <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
+                                                        <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark1 flex justify-center items-center gap-12">
+                                                            <span> Add To Cart</span>
+                                                            <img src="./assets/images/cart-white.svg" alt="Cart icon">
+                                                        </button>
+                                                        <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
+                                                            <img src="./assets/images/heart.svg" alt="Wishlist icon">
+                                                        </button>
+                                                    
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
-                                                 <span class="text-body">Rs 1099.00</span>
-                                                <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
-                                            
-                                                <div class="text-grey text-body">
-                                                    <ul>
-                                                        <li>Acne-prone • Combination • Sensitive</li>
-                                                    </ul>
+                                                <!-- Product Info -->
+                                                <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
+                                                    <span class="text-body">Rs 1099.00</span>
+                                                    <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
+                                                
+                                                    <div class="text-grey text-body">
+                                                        <ul>
+                                                            <li>Acne-prone • Combination • Sensitive</li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <!-- item8 -->
-                                     <div class="product-item" data-category="combo-duo">
-                                        <a
-                                            href="#"
-                                            class="group flex flex-col gap-24"
-                                            aria-label="View product: combo-facewash-serum"
-                                            role="link"
-                                        >
-                                            <!-- Product Image -->
-                                            <div class="relative overflow-hidden" role="img" aria-label="combo-moisturizer-serum">
-                                                <img src="./assets/images/combo-facewash-serum2.png" alt=" Moisturizing Cream powerful duo for skin care" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
-                                                <!-- Action Buttons -->
-                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark1 flex justify-center items-center gap-12">
-                                                        <span> Add To Cart</span>
-                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
-                                                    </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
-                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
-                                                    </button>
-                                                   
-                                                </div>
-                                            </div>
-                                            <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
-                                                 <span class="text-body">Rs 1099.00</span>
-                                                <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
-                                            
-                                                <div class="text-grey text-body">
-                                                    <ul>
-                                                        <li>Acne-prone • Combination • Sensitive</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <!-- item9 -->
-                                     <div class="product-item" data-category="combo-duo">
-                                        <a
-                                            href="#"
-                                            class="group flex flex-col gap-24"
-                                            aria-label="View product: combo-moisturizer-serum"
-                                            role="link"
-                                        >
-                                            <!-- Product Image -->
-                                            <div class="relative overflow-hidden" role="img" aria-label="combo-moisturizer-facewash">
-                                                <img src="./assets/images/combo-facewash-moisturiser2.png" alt="Scalp Moisturizing Cream powerful duo for skin care" class="transition-all duration-500 ease-linear group-hover:scale-105 size-full object-cover">
-                                                <!-- Action Buttons -->
-                                                <div class="w-full absolute -bottom-60 left-1/2 transform -translate-x-1/2 flex justify-center gap-8 xl:gap-16 transition-all duration-500 ease-linear opacity-0 invisible group-hover:bottom-34 group-hover:opacity-100 group-hover:visible z-10" role="group" aria-label="Product action buttons">
-                                                    <button aria-label="Add Scalp Moisturizing Cream to cart" class="btn-dark1 flex justify-center items-center gap-12">
-                                                        <span> Add To Cart</span>
-                                                        <img src="./assets/images/cart-white.svg" alt="Cart icon">
-                                                    </button>
-                                                    <button aria-label="Add Scalp Moisturizing Cream to wishlist" class="w-54 h-54 bg-black flex justify-center items-center">
-                                                        <img src="./assets/images/heart.svg" alt="Wishlist icon">
-                                                    </button>
-                                                   
-                                                </div>
-                                            </div>
-                                            <!-- Product Info -->
-                                            <div class="flex flex-col gap-4 font-normal text-button-bg text-left">
-                                                 <span class="text-body">Rs 1099.00</span>
-                                                <span class="text-t_20">SpotCorrect™ – Advanced Brightening Serum</span>
-                                            
-                                                <div class="text-grey text-body">
-                                                    <ul>
-                                                        <li>Acne-prone • Combination • Sensitive</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </a>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                       </div>     
                     </div>
                 </div>
             </section>
@@ -853,7 +854,7 @@
                                 <p>Great skin isn’t about using more products it’s about using the right ones in the right order.</p>
                                 <p>Ellitee™ helps you build a routine based on your skin’s needs, not trends or guesswork.</p>
                             </div>
-                            <div class="w-full flex justify-center mt-24 lg:mt-40">
+                            <div class="w-full flex justify-center mt-24 lg:mt-48">
                                 <a href="#" class="btn-dark" aria-label="Build Your Routine">
                                     <span>Build Your Routine</span>
                                 </a>
@@ -1099,8 +1100,8 @@
             <!-- Clinically Tested Section (section-4) -->
             <section class="py-30 md:py-60 xl:py-100 bg-grey_light">
                         <div class="container">
-                            <div class="flex flex-col gap-32 lg:gap-54">
-                                <div class="block1 flex gap-32 justify-center items-center lg:flex-row flex-col">
+                            <div class="flex flex-col gap-32 lg:gap-48">
+                                <div class="block1 flex gap-32 lg:gap-10 xl:gap-80 justify-center items-center lg:flex-row flex-col">
                                     <div class="w-full lg:w-1/2 lg:sticky lg:top-10">
                                         <div class="relative">
                                             <img src="./assets/images/clinically-tested1.png" alt="image 1 for clinically tested section relative z-10">
@@ -1118,7 +1119,7 @@
                                     </div>
                                 </div>
                                 <!--  -->
-                                <div class="block1 flex gap-32 justify-center items-center lg:flex-row-reverse flex-col">
+                                <div class="block1 flex gap-32 lg:gap-10 xl:gap-80 justify-center items-center lg:flex-row-reverse flex-col">
                                     <div class="w-full lg:w-1/2 lg:sticky lg:top-10">
                                         <div class="relative">
                                             <img src="./assets/images/clinically-tested2.webp" alt="image 2 for clinically tested section relative z-10">
@@ -1143,16 +1144,16 @@
              <section>
                 <div class="container">
                     <div class="inner py-20 sm:py-40 md:py-60 xl:py-100">
-                            <div class="heading text-center space-y-24 mb-32 lg:mb-54 xl:mb-80 1xl:mb-100">
+                            <div class="heading text-center space-y-24 mb-32 lg:mb-48">
                                 <h2 class="text-h2 font-light">
                                     
                                      <span class="font-bold">Shopping</span> With Clarity 
                                 </h2>
                             </div>
                             <!--  -->
-                            <div class="flex gap-32 xl:gap-54 flex-col lg:flex-row">
+                            <div class="">
                                 <div class="block-left w-full max-w-1100 mx-auto">
-                                    <div class="w-full max-w-2xl mx-auto space-y-34 flex flex-col justify-start xl:justify-between">
+                                    <div class="w-full max-w-2xl mx-auto space-y-24 lg:space-y-40 flex flex-col justify-start xl:justify-between">
                                         <!-- Accordion Item 1-->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
@@ -1246,15 +1247,15 @@
                     <!-- Shopping With Clarity Ends-->
                     <!-- FAQ -->
                     <div class="inner py-20 sm:py-40 md:py-60 xl:py-100">
-                            <div class="heading text-center space-y-24 mb-32 lg:mb-54 xl:mb-80 1xl:mb-100">
+                            <div class="heading text-center space-y-24 mb-32 lg:mb-48">
                                 <h2 class="text-h2 font-light">
                                      <span class="font-bold">Frequently</span> Asked Questions 
                                 </h2>
                             </div>
                             <!--  -->
-                            <div class="flex gap-32 xl:gap-54 flex-col lg:flex-row">
+                            <div class="">
                                 <div class="block-left w-full max-w-1100 mx-auto">
-                                    <div class="w-full max-w-2xl mx-auto space-y-34 flex flex-col justify-start xl:justify-between">
+                                    <div class="w-full max-w-2xl mx-auto space-y-24 lg:space-y-40 flex flex-col justify-start xl:justify-between">
                                         <!-- Accordion Item 1-->
                                         <div class="accordion-item1 pb-24 border-b border-b-solid border-b-[#0E0E0E33]">
                                             <button class="accordion-btn1 w-full flex justify-between items-center text-left">
@@ -1536,6 +1537,9 @@ Designed for Indian skin, environment, and everyday routines.
                                         <li>
                                             <a href="/Testimonial.html" aria-label="Read client testimonials">Testimonials</a>
                                         </li>
+                                           <li>
+                                            <a href="/contact.html" aria-label="contact us">Contact us</a>
+                                        </li>
                                         <li>
                                             <a href="/FAQ.html" aria-label="Frequently asked questions">FAQ</a>
                                         </li>
@@ -1562,7 +1566,7 @@ Designed for Indian skin, environment, and everyday routines.
                                 <!--  -->
                                
                                 <div class="space-y-16 w-full md:w-[calc(50%-20px)] xl:w-[calc(30%-58px)]">
-                                    <span class="inline-block text-body font-medium text-button-bg">Other Skin Problems</span>
+                                    <span class="inline-block text-body font-medium text-button-bg">Contact us</span>
                                     <ul class="address space-y-16 [&_li>a]:inline-block [&_li>a]:text-sm [&_li]:text-sm [&_li>a]:font-normal [&_li]:font-normal [&_li]:flex [&_li]:justify-start [&_li]:items-start [&_li]:gap-10 *:text-button-bg">
                                          <li>
                                             <img src="./assets/images/phone.svg" alt="icon of phone for calling" role="img">
@@ -1585,7 +1589,7 @@ SH-403 Shiven Shoppers, Adajan DN, Surat –
                             </div>
                         </div>
                         <div class="copyright font-normal text-sm text-center py-16 text-button-bg">
-                            <p> &copy; 2025-Ellitee™. All Rights Reserved</p>
+                            <p> &copy; <span id="currentYear">2026</span>-Ellitee™. All Rights Reserved</p>
                         </div>
                     </div>
         </footer>
