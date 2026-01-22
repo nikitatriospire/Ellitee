@@ -999,7 +999,7 @@ input[type="range"]:focus {
 }
 
 .darkmode .brand {
-  color: hsl(329, 86%, 70%);
+  color: #0e0e0e;
 }
 /* === NAVBAR === */
 .navbar {
@@ -1038,7 +1038,7 @@ input[type="range"]:focus {
   opacity: 0;
   visibility: hidden;
   background-color: hsl(206, 5%, 100%);
-  border-top: 2px solid hsl(330, 81%, 60%);
+  border-top: 3px solid #0e0e0e;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   transition: 0.25s;
   width: 100%;
@@ -1184,6 +1184,10 @@ input[type="range"]:focus {
 .submenu .submenu-item{
   margin:0;
 }
+.submenu-inn ul li a{
+  color:#646464;
+  font-weight:400;
+}
 @media only screen and (max-width: 1023px) {
   .menu {
     position: fixed;
@@ -1275,19 +1279,38 @@ input[type="range"]:focus {
     opacity: 1;
     visibility: visible;
     z-index: 99;
-    gap: 20px;
+    gap: 12px;
     overflow-y: scroll;
     height: 100vh;
     overflow-x: hidden;
+    display:flex !important;
+    flex-wrap:wrap;
+  }
+  .multimenu{
+    flex-direction: column;
+  }
+  .multimenu .submenu-inner{
+    width: 100%;
+  }
+  .submenu-image{
+    height:250px;
+    object-position: bottom;
   }
   .overlay.is-active {
     opacity: 1;
     visibility: visible;
+    z-index: 999;
   }
   .submenu-inn.is-active {
-    top: 44px;
+    top: 56px;
     left: 0;
     height:100%;
+}
+.submenu-inner ul, .submenu-inner {
+    gap: 16px;
+}
+.submenu-inner {
+    width: calc(50% - 6px);
 }
  .submenu-inn {
   position: absolute;
@@ -1313,4 +1336,7 @@ input[type="range"]:focus {
   .megamenu-column-4 {
     grid-template-columns: 1fr !important;
   }
+  .submenu-inner {
+    width:100%;
+}
 }
